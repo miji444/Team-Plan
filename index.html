@@ -126,15 +126,17 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .tl-del:hover{color:var(--red);background:var(--red-l)}
 
 /* Cards row */
-.cards-row{display:flex;align-items:center;gap:5px;padding:8px 10px;flex:1;overflow-x:auto;flex-wrap:wrap}
+.cards-row{display:flex;align-items:stretch;gap:5px;padding:8px 10px;flex:1;overflow-x:auto;flex-wrap:nowrap}
 .cards-row::-webkit-scrollbar{height:3px}
 .cards-row::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
 
 /* Divider arrow between role groups */
-.role-sep{color:var(--border2);font-size:16px;flex-shrink:0;line-height:1}
+.role-sep{color:var(--border2);font-size:16px;flex-shrink:0;line-height:1;align-self:center}
 
 /* ── CARD ── */
 .card{border:1px solid var(--border);border-radius:var(--r);padding:7px 9px;background:#fff;cursor:grab;position:relative;width:104px;flex-shrink:0;min-height:72px;display:flex;flex-direction:column;gap:2px;transition:border-color .12s,transform .12s,box-shadow .12s}
+/* Cluster Engineer card slightly wider to stand out as first/main */
+.card.is-cluster-eng{width:116px!important;}
 .card:hover{border-color:var(--border2);background:var(--bg);box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:2}
 .card.avs{border:1.5px solid var(--purple);background:var(--purple-l)}
 .card.sub{border:1.5px solid var(--amber);background:var(--amber-l)}
@@ -277,12 +279,86 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 
 @media print{.hdr,.btop,.leg,.abar,.side,#login,.nav,.hbtns,.cluster-btns,.tl-del,.cbtn,.add-member-btn{display:none!important}body{background:#fff}.blayout{grid-template-columns:1fr}}
 
+/* ── CLUSTER BODY: CE big card left + teams stacked right ── */
+.cluster-body{display:flex;align-items:stretch}
+.cluster-teams{flex:1;display:flex;flex-direction:column}
+.cluster-teams .team-line{border-left:none!important}
+
+/* ── BIG CLUSTER ENGINEER CARD ── */
+.ce-big-card{
+  width:120px;flex-shrink:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;padding:12px 8px;
+  background:linear-gradient(160deg,#EEF2FF 0%,#E0E7FF 100%);
+  border-right:3px solid #4F46E5;
+  border-top:none;
+  cursor:grab;
+  position:relative;
+  transition:background .15s;
+}
+.ce-big-card:hover{background:linear-gradient(160deg,#E0E7FF 0%,#C7D2FE 100%)}
+.ce-big-badge{
+  font-size:9px;font-weight:700;
+  background:#4F46E5;color:#fff;
+  border-radius:5px;padding:2px 7px;
+  text-align:center;letter-spacing:.02em;
+  white-space:nowrap;
+}
+.ce-big-name{
+  font-size:14px;font-weight:800;
+  color:#3730A3;text-align:center;
+  line-height:1.2;word-break:break-word;
+}
+.ce-big-teams{
+  font-size:9px;color:#6366F1;
+  background:#EEF2FF;border:1px solid #C7D2FE;
+  border-radius:4px;padding:1px 6px;
+  margin-top:2px;
+}
+
+/* ── CLUSTER ENGINEER & LEAD TECH CARD HIGHLIGHTS ── */
+.card.is-cluster-eng{
+  border:2px solid #4F46E5!important;
+  background:linear-gradient(160deg,#EEF2FF 0%,#E0E7FF 100%)!important;
+  box-shadow:0 0 0 3px rgba(79,70,229,.18),0 3px 10px rgba(79,70,229,.2)!important;
+  border-top:4px solid #4F46E5!important;
+}
+.card.is-lead-tech{
+  border:2px solid #0D9488!important;
+  background:linear-gradient(135deg,#F0FDFA 0%,#CCFBF1 100%)!important;
+  box-shadow:0 0 0 3px rgba(13,148,136,.13),0 2px 8px rgba(13,148,136,.15)!important;
+}
+.role-crown{display:inline-flex;align-items:center;gap:3px;font-size:8px;font-weight:700;border-radius:4px;padding:1px 5px;margin-bottom:2px;letter-spacing:.02em}
+.role-crown.ce{background:#4F46E5;color:#fff}
+.role-crown.lt{background:#99F6E4;color:#0F766E}
+
+/* ── MAN DAYS HIGHLIGHT ── */
+.tl-days-highlight{
+  display:flex;align-items:center;gap:4px;
+  background:linear-gradient(90deg,#EFF6FF,#DBEAFE);
+  border:1px solid #93C5FD;border-radius:6px;
+  padding:3px 7px;margin-top:3px;
+}
+.tl-days-highlight .md-label{font-size:9px;font-weight:700;color:#1D4ED8;letter-spacing:.03em;white-space:nowrap}
+.tl-days-highlight input{width:52px;padding:2px 5px;border:1px solid #93C5FD;border-radius:4px;font-size:10px;font-family:var(--f);color:#1D4ED8;background:#fff;outline:none;text-align:center;font-weight:700}
+.tl-days-highlight input:focus{border-color:#2563EB;box-shadow:0 0 0 2px rgba(37,99,235,.2)}
+
+/* ── CLUSTER HEADER LEADER BADGES ── */
+.cluster-leaders{display:flex;flex-wrap:wrap;gap:5px;align-items:center;padding:5px 12px;background:linear-gradient(90deg,#F8FAFC,#EFF6FF);border-bottom:1px solid var(--border)}
+.leader-badge{display:inline-flex;align-items:center;gap:4px;border-radius:6px;padding:3px 8px;font-size:10px;font-weight:700;white-space:nowrap}
+.leader-badge.ce-badge{background:#4F46E5;color:#fff;border:1px solid #4338CA}
+.leader-badge.lt-badge{background:#99F6E4;color:#0F766E;border:1px solid #5EEAD4}
+
 /* ── SKILLS & CONTRACTOR ── */
 .skill-tag{display:inline-block;font-size:8px;padding:1px 4px;border-radius:3px;font-weight:600;background:#E0F2FE;color:#0369A1;margin:1px 1px 0 0}
 .card-skills{display:flex;flex-wrap:wrap;margin-top:3px}
 .contractor-tag{font-size:8px;padding:1px 5px;border-radius:3px;font-weight:600;background:#FEF3C7;color:#92400E;margin-top:2px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .shift-night{font-size:8px;padding:1px 5px;border-radius:3px;background:#1E293B;color:#fff;margin-top:2px;display:inline-block}
 .shift-off{font-size:8px;padding:1px 5px;border-radius:3px;background:#F1F5F9;color:#64748B;margin-top:2px;display:inline-block}
+.tag-training{font-size:8px;padding:1px 5px;border-radius:3px;background:#FEF9C3;color:#854D0E;border:1px solid #FDE047;margin-top:2px;display:inline-block;font-weight:700}
+.tag-temp{font-size:8px;padding:1px 5px;border-radius:3px;background:#FFE4E6;color:#9F1239;border:1px dashed #FDA4AF;margin-top:2px;display:inline-block;font-weight:700}
+.card.has-training{border-top:3px solid #EAB308!important}
+.card.has-temp{border-top:3px dashed #F43F5E!important}
 /* ── CALENDAR ── */
 .cal-wrap{background:#fff;border:1px solid var(--border);border-radius:var(--rl);padding:12px;margin-bottom:12px}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
@@ -385,14 +461,22 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
         <button class="tb grn" onclick="window.print()">Print</button>
       </div>
       <div class="leg">
-        <div class="li"><div class="ld" style="background:#2563EB"></div>Cluster Engineer</div>
-        <div class="li"><div class="ld" style="background:#7C3AED"></div>Expert / Lead Tech</div>
+        <div class="li"><div class="ld" style="background:#4F46E5;box-shadow:0 0 0 2px #C7D2FE"></div><strong style="color:#4338CA">Cluster Engineer (Head)</strong></div>
+        <div class="li"><div class="ld" style="background:#0D9488;box-shadow:0 0 0 2px #99F6E4"></div><strong style="color:#0F766E">Lead Tech (2nd)</strong></div>
+        <div class="li"><div class="ld" style="background:#7C3AED"></div>Expert</div>
         <div class="li"><div class="ld" style="background:#0D9488"></div>Technician</div>
-        <div class="li"><div class="ld" style="background:#D97706"></div>Driver</div>
+        <div class="li"><div class="ld" style="background:#059669"></div>Jr. Technician</div>
+        <div class="li"><div class="ld" style="background:#D97706"></div>Driver / Sub Team</div>
         <div class="li"><div class="ld" style="background:#475569"></div>Support</div>
         <div class="ls"></div>
         <div class="li"><div class="lb" style="border:1.5px solid #7C3AED;background:#EDE9FE"></div>AVS member</div>
         <div class="li"><div class="lb" style="border:1.5px solid #D97706;background:#FEF3C7"></div>Sub Team</div>
+        <div class="ls"></div>
+        <div class="li"><span style="font-size:9px;font-weight:700;background:#4F46E5;color:#fff;border-radius:4px;padding:1px 6px">&#9733; Cluster Engineer</span></div>
+        <div class="li"><span style="font-size:9px;font-weight:700;background:#99F6E4;color:#0F766E;border-radius:4px;padding:1px 6px">&#9670; Lead Tech</span></div>
+        <div class="ls"></div>
+        <div class="li"><span class="tag-training">&#127979; Training</span></div>
+        <div class="li"><span class="tag-temp">&#8987; Temporary</span></div>
       </div>
       <div class="abar" id="abar">
         <!-- dynamically filled by renderAccomBar() -->
@@ -468,9 +552,9 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 const USERS={admin:'team2024',manager:'dist2024',supervisor:'super2024'};
 let AC={HAZ:['#DBEAFE','#1D4ED8'],RAK:['#DCFCE7','#15803D'],AKG:['#FEF3C7','#92400E'],SHJ:['#EDE9FE','#6D28D9'],PER:['#FCE7F3','#9D174D'],DIP:['#FFEDD5','#C2410C']};
 let ACNAMES={HAZ:'Hor Al Anz',RAK:'Ras Al Khor',AKG:'Al Kail Gate',SHJ:'Sharjah',PER:'Personal',DIP:'DIP'};
-const RC={'Cluster Engineer':'#2563EB','Cluster Lead':'#2563EB','Expert':'#7C3AED','Lead Tech':'#7C3AED','Technician':'#0D9488','Helper':'#0D9488','Sub Team':'#D97706','Driver':'#D97706','Back Office':'#475569','QC':'#475569','Planning':'#475569'};
+const RC={'Cluster Engineer':'#2563EB','Cluster Lead':'#2563EB','Expert':'#7C3AED','Lead Tech':'#7C3AED','Technician':'#0D9488','Jr. Technician':'#059669','Helper':'#0D9488','Sub Team':'#D97706','Driver':'#D97706','Back Office':'#475569','QC':'#475569','Planning':'#475569'};
 const AVS=new Set(['Jerry','Sateesh B','Nayanur','Zino','Vishnu Thambi','Hein','Joy']);
-const ROLES=['Cluster Engineer','Expert','Lead Tech','Technician','Helper','Sub Team','Driver','Back Office','QC','Planning'];
+const ROLES=['Cluster Engineer','Expert','Lead Tech','Technician','Jr. Technician','Helper','Sub Team','Driver','Back Office','QC','Planning'];
 const WORK_TYPES=[
   {key:'PPM',label:'PPM Team',color:'#2563EB',bg:'#EFF6FF'},
   {key:'CALLOUT',label:'Callout',color:'#7C3AED',bg:'#EDE9FE'},
@@ -839,7 +923,6 @@ function wtInfo(key){return WORK_TYPES.find(w=>w.key===key)||WORK_TYPES[WORK_TYP
 function acHTML(arr){return(arr||[]).map(a=>`<span class="ap" style="background:${AC[a][0]};color:${AC[a][1]}">${a}</span>`).join('');}
 function cardCls(m){let c='card';if(AVS.has(m.name))c+=' avs';else if(m.role==='Sub Team')c+=' sub';return c;}
 function chipCls(m){let c='pchip';if(AVS.has(m.name))c+=' avs';else if(m.role==='Sub Team')c+=' sub';return c;}
-function roleGroup(r){if(['Cluster Engineer','Cluster Lead'].includes(r))return 0;if(['Expert','Lead Tech'].includes(r))return 1;if(['Technician','Helper'].includes(r))return 2;if(r==='Sub Team')return 3;if(r==='Driver')return 4;return 5;}
 function isPPMTeam(tl){return tl.type==='PPM';}
 function ppmTeamsOnly(cl){return cl.teams.filter(isPPMTeam);}
 function nonPPMTeams(cl){return cl.teams.filter(t=>!isPPMTeam(t));}
@@ -848,6 +931,7 @@ function totalClusterDays(cl){return cl.teams.reduce((a,t)=>a+(parseInt(t.manDay
 function totalClusterMembers(cl){return cl.teams.reduce((a,t)=>a+t.members.length,0);}
 // Roles excluded from PPM day count: Cluster Engineer, Cluster Lead, Lead Tech, Expert
 function isPPMWorker(m){return m.role!=='Cluster Engineer'&&m.role!=='Cluster Lead'&&m.role!=='Lead Tech'&&m.role!=='Expert';}
+function roleGroup(r){if(['Cluster Engineer','Cluster Lead'].includes(r))return 0;if(['Expert','Lead Tech'].includes(r))return 1;if(['Technician','Jr. Technician','Helper'].includes(r))return 2;if(r==='Sub Team')return 3;if(r==='Driver')return 4;return 5;}
 // Count of Technicians/Helpers/Drivers/Sub Team (PPM-eligible) in a team line
 function ppmWorkerCount(tl){return tl.members.filter(isPPMWorker).length;}
 // Members with excluded roles placed inside a PPM team (warning)
@@ -881,16 +965,28 @@ function licIcon(m){
 
 function cardHTML(m,tlId){
   const col=RC[m.role]||'#888';
-  const cls=cardCls(m);
+  var cls=cardCls(m);
+  const isCE=m.role==='Cluster Engineer'||m.role==='Cluster Lead';
+  const isLT=m.role==='Lead Tech';
+  if(isCE) cls+=' is-cluster-eng';
+  else if(isLT) cls+=' is-lead-tech';
+  if(m.inTraining) cls+=' has-training';
+  if(m.isTemp) cls+=' has-temp';
+  var crownBadge='';
+  if(isCE) crownBadge='<div class="role-crown ce">&#9733; Cluster Engineer</div>';
+  else if(isLT) crownBadge='<div class="role-crown lt">&#9670; Lead Tech</div>';
   var extras='';
   if(m.skills&&m.skills.length) extras+='<div class="card-skills">'+m.skills.map(function(s){return '<span class="skill-tag">'+s+'</span>';}).join('')+'</div>';
   if(m.role==='Sub Team'&&m.contractor) extras+='<span class="contractor-tag" title="'+m.contractor+'">&#127970; '+m.contractor+'</span>';
   if(m.shift==='night') extras+='<span class="shift-night">&#9790; Night</span>';
   else if(m.shift==='off') extras+='<span class="shift-off">Day off</span>';
+  if(m.inTraining) extras+='<span class="tag-training">&#127979; Training</span>';
+  if(m.isTemp) extras+='<span class="tag-temp">&#8987; Temporary</span>';
   return '<div class="'+cls+'" data-id="'+m.id+'" data-tl="'+tlId+'" draggable="true">'+
     '<div class="rdot" style="background:'+col+'"></div>'+
+    crownBadge+
     '<div class="crole">'+m.role+'</div>'+
-    '<div class="cname2">'+m.name+'</div>'+
+    '<div class="cname2" style="font-weight:'+(isCE?'700':isLT?'600':'500')+'">'+m.name+'</div>'+
     (m.accom&&m.accom.length?'<div class="caccom">'+acHTML(m.accom)+'</div>':'')+
     extras+
     licIcon(m)+
@@ -899,6 +995,29 @@ function cardHTML(m,tlId){
 
 // Called after render() to bind all drag/click events via addEventListener
 function bindCards(){
+  // Also bind the big CE card on the left of each cluster
+  document.querySelectorAll('.ce-big-card[data-id]').forEach(function(el){
+    var mid=el.dataset.id;
+    var tlId=el.dataset.tl;
+    var fresh=el.cloneNode(true);
+    el.parentNode.replaceChild(fresh,el);
+    fresh.addEventListener('dragstart',function(e){
+      drag=mid; dragFrom='slot'; _wasDragging=false;
+      e.dataTransfer.effectAllowed='move';
+      setTimeout(function(){ _wasDragging=true; fresh.style.opacity='.4'; },0);
+    });
+    fresh.addEventListener('dragend',function(){
+      fresh.style.opacity='';
+      drag=null; dragFrom=null;
+      setTimeout(function(){ _wasDragging=false; },80);
+    });
+    fresh.addEventListener('click',function(e){
+      if(_wasDragging) return;
+      e.stopPropagation();
+      openCardMenu(e,mid,tlId);
+    });
+  });
+
   document.querySelectorAll('.card[data-id]').forEach(function(el){
     var mid=el.dataset.id;
     var tlId=el.dataset.tl;
@@ -982,12 +1101,12 @@ function bindCards(){
   });
 }
 
-function teamLineHTML(tl,secId,clId){
+function teamLineHTML(tl,secId,clId,ceId){
   const wt=wtInfo(tl.type);
   const isPPM=isPPMTeam(tl);
   const workers=ppmWorkerCount(tl);
   const warned=isPPM?ppmWarningMembers(tl):[];
-  const leadMember=tl.members.find(m=>m.role==='Cluster Engineer'||m.role==='Lead Tech'||m.role==='Expert')||tl.members[0];
+  const leadMember=tl.members.find(m=>m.role==='Lead Tech'||m.role==='Expert')||tl.members.find(m=>m.id!==ceId)||tl.members[0];
   let html=`<div class="team-line" data-tl="${tl.id}" style="border-left:3px solid ${isPPM?'#2563EB':wt.color}">
     <div class="tl-meta">
       <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">
@@ -995,8 +1114,8 @@ function teamLineHTML(tl,secId,clId){
         ${isPPM&&warned.length>0?`<span title="Warning: ${warned.map(m=>m.name+' ('+m.role+')').join(', ')} are Lead/Manager — excluded from PPM days" style="font-size:9px;color:#D97706;background:#FEF3C7;border-radius:4px;padding:1px 5px;font-weight:600;cursor:help">⚠ ${warned.length} excluded</span>`:''}
         ${!isPPM?`<span style="font-size:9px;color:#7C3AED;background:#EDE9FE;border-radius:4px;padding:1px 5px;font-weight:600">Non-PPM</span>`:''}
       </div>
-      ${isPPM?`<div class="tl-days">
-        <span style="font-size:9px;color:var(--text3)">PPM Days:</span>
+      ${isPPM?`<div class="tl-days-highlight">
+        <span class="md-label">&#128197; Man Days:</span>
         <input type="number" value="${tl.manDays||0}" min="0"
           onchange="updateManDays('${tl.id}',this.value)"
           onclick="ev=>ev.stopPropagation()"
@@ -1006,16 +1125,26 @@ function teamLineHTML(tl,secId,clId){
         <strong>${workers}</strong> PPM worker${workers!==1?'s':''} · ${tl.members.length} total
         ${warned.length>0?`<span style="color:#D97706"> (${warned.length} excl.)</span>`:''}
       </div>`:`<div style="font-size:9px;color:#7C3AED;margin-top:2px">Callout / WO / Enquiry</div>`}
-      ${leadMember?`<div class="tl-name">Lead: ${leadMember.name}</div>`:''}
+      ${leadMember&&leadMember.id!==ceId?`<div class="tl-name">Lead: ${leadMember.name}</div>`:''}
     </div>
     <div class="cards-row" data-tl="${tl.id}"
       ondragover="ev=>{ev.preventDefault();ev.currentTarget.classList.add('over')}"
       ondragleave="ev=>ev.currentTarget.classList.remove('over')"
       ondrop="dropToRow(event,'${tl.id}')">`;
 
-  // Cards with role-group separators
-  tl.members.forEach((m,i)=>{
-    if(i>0&&roleGroup(tl.members[i-1].role)!==roleGroup(m.role)){
+  // Sort: Lead Tech first (CE is shown in big card), then by roleGroup — exclude CE
+  const sorted=[...tl.members]
+    .filter(m=>m.id!==ceId)
+    .sort((a,b)=>{
+      const rank=m=>{
+        if(m.role==='Lead Tech') return 0;
+        return roleGroup(m.role)+1;
+      };
+      return rank(a)-rank(b);
+    });
+
+  sorted.forEach((m,i)=>{
+    if(i>0&&roleGroup(sorted[i-1].role)!==roleGroup(m.role)){
       html+=`<div class="role-sep">›</div>`;
     }
     html+=cardHTML(m,tl.id);
@@ -1037,12 +1166,29 @@ function clusterHTML(cl,secId){
   const ppmTeamCount=ppmTeamsOnly(cl).length;
   const nonPPMCount=nonPPMTeams(cl).length;
   const totalMembers=totalClusterMembers(cl);
-
-  // count total PPM workers (excluding Cluster Engineer + Lead Tech + Expert) across all PPM teams
   const totalPPMWorkers=ppmTeamsOnly(cl).reduce((a,t)=>a+ppmWorkerCount(t),0);
-  // count all warning members (excluded roles inside PPM teams)
   const totalWarned=ppmTeamsOnly(cl).reduce((a,t)=>a+ppmWarningMembers(t).length,0);
 
+  // Find the Cluster Engineer across all teams
+  var clusterEng=null, clusterEngTlId=null;
+  cl.teams.forEach(function(tl){
+    tl.members.forEach(function(m){
+      if(!clusterEng&&(m.role==='Cluster Engineer'||m.role==='Cluster Lead')){
+        clusterEng=m; clusterEngTlId=tl.id;
+      }
+    });
+  });
+
+  // Build the big CE card (spans all teams on the left)
+  var ceBigCard='';
+  if(clusterEng){
+    ceBigCard=`<div class="ce-big-card" data-id="${clusterEng.id}" data-tl="${clusterEngTlId}" draggable="true">
+      <div class="ce-big-badge">&#9733; Cluster Engineer</div>
+      <div class="ce-big-name">${clusterEng.name}</div>
+      ${clusterEng.accom&&clusterEng.accom.length?'<div class="caccom" style="justify-content:center;margin-top:6px">'+acHTML(clusterEng.accom)+'</div>':''}
+      <div class="ce-big-teams">${cl.teams.length} team${cl.teams.length!==1?'s':''}</div>
+    </div>`;
+  }
 
   let html=`<div class="cluster" id="cl-${cl.id}">
     <div class="cluster-hdr">
@@ -1051,7 +1197,7 @@ function clusterHTML(cl,secId){
         <div class="cstat">Members: <strong>${totalMembers}</strong></div>
         ${ppmTeamCount>0?`
         <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF">PPM Teams: <strong style="color:#2563EB">${ppmTeamCount}</strong></div>
-        <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF">PPM Days: <strong style="color:#2563EB">${ppmDays}</strong></div>
+        <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF;font-weight:700;color:#1D4ED8">&#128197; Man Days: <strong style="color:#1D4ED8">${ppmDays}</strong></div>
         <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF">PPM Workers: <strong style="color:#2563EB">${totalPPMWorkers}</strong> <span style="font-size:9px;color:#94A3B8">(excl. Lead/Mgr)</span></div>
         ${totalWarned>0?`<div class="cstat" style="border-color:#FDE68A;background:#FEF3C7;color:#D97706">⚠ <strong>${totalWarned}</strong> Lead/Mgr in PPM team</div>`:''}`:''}
         ${nonPPMCount>0?`<div class="cstat" style="border-color:#DDD6FE;background:#EDE9FE">Non-PPM: <strong style="color:#7C3AED">${nonPPMCount} team${nonPPMCount>1?'s':''}</strong></div>`:''}
@@ -1060,10 +1206,16 @@ function clusterHTML(cl,secId){
         <button class="cbtn" onclick="openAddTeam('${secId}','${cl.id}')">+ Add Team</button>
         <button class="cbtn del-cl" onclick="openDeleteCluster('${secId}','${cl.id}')">Delete Cluster</button>
       </div>
-    </div>`;
+    </div>
+    <div class="cluster-body">
+      ${ceBigCard}
+      <div class="cluster-teams">`; 
 
-  cl.teams.forEach(tl=>{html+=teamLineHTML(tl,secId,cl.id);});
-  html+=`</div>`;
+  // Sort: Callout/non-PPM first, PPM teams after
+  const teamOrder=r=>{if(r==='CALLOUT')return 0;if(r==='WORKORDER')return 1;if(r==='ENQUIRY')return 2;if(r==='NIGHT')return 3;if(r==='DAY')return 4;if(r==='PPM')return 5;return 6;};
+  const sortedTeams=[...cl.teams].sort((a,b)=>teamOrder(a.type)-teamOrder(b.type));
+  sortedTeams.forEach(tl=>{html+=teamLineHTML(tl,secId,cl.id,clusterEng?clusterEng.id:null);});
+  html+=`</div></div></div>`;
   return html;
 }
 
@@ -1314,7 +1466,7 @@ function _mkItem(icon,label,isOn,cls,fn){
   return d;
 }
 
-var ROLE_ICONS={'Cluster Engineer':'&#9733;','Cluster Lead':'&#9733;','Expert':'&#128269;','Lead Tech':'&#128295;','Technician':'&#9881;','Helper':'&#128296;','Sub Team':'&#128101;','Driver':'&#9875;','Back Office':'&#128203;','QC':'&#128202;','Planning':'&#128197;'};
+var ROLE_ICONS={'Cluster Engineer':'&#9733;','Cluster Lead':'&#9733;','Expert':'&#128269;','Lead Tech':'&#128295;','Technician':'&#9881;','Jr. Technician':'&#128308;','Helper':'&#128296;','Sub Team':'&#128101;','Driver':'&#9875;','Back Office':'&#128203;','QC':'&#128202;','Planning':'&#128197;'};
 
 function openCardMenu(ev,mid,tlId){
   ev.stopPropagation();
@@ -1402,6 +1554,20 @@ function openCardMenu(ev,mid,tlId){
     }
     menu.appendChild(ctSec);
   }
+
+  // Tags: Training / Temporary
+  var tagSec=_mkSec('Status Tags');
+  tagSec.appendChild(_mkItem('&#127979;','In Training',!!m.inTraining,'',function(){
+    var mf2=findMember(mid);if(!mf2)return;
+    mf2.m.inTraining=!mf2.m.inTraining;
+    persist();render();toast(m.name+': Training '+(mf2.m.inTraining?'tagged':'removed'));
+  }));
+  tagSec.appendChild(_mkItem('&#8987;','Temporary in Team',!!m.isTemp,'',function(){
+    var mf2=findMember(mid);if(!mf2)return;
+    mf2.m.isTemp=!mf2.m.isTemp;
+    persist();render();toast(m.name+': Temporary '+(mf2.m.isTemp?'tagged':'removed'));
+  }));
+  menu.appendChild(tagSec);
 
   // Switch team
   var sw=_mkSec('Move to');
