@@ -89,47 +89,44 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .blayout{display:grid;grid-template-columns:1fr 210px;gap:10px;align-items:start}
 
 /* ── SECTION ── */
-.section{margin-bottom:8px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
-.shdr{display:flex;align-items:center;gap:8px;padding:7px 12px;cursor:pointer;user-select:none}
+.section{margin-bottom:10px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.shdr{display:flex;align-items:center;gap:8px;padding:9px 14px;cursor:pointer;user-select:none}
 .shdr h3{font-size:12px;font-weight:700;color:#fff;flex:1}
 .shdr .sc{font-size:10px;background:rgba(255,255,255,.22);color:#fff;border-radius:7px;padding:1px 8px}
 .shdr .sa{font-size:10px;color:rgba(255,255,255,.5)}
-.sbody{padding:8px 10px;background:#fff}
-
-/* Side panel sticky */
-.side{display:flex;flex-direction:column;gap:7px;position:sticky;top:10px}
+.sbody{padding:10px 12px;background:#fff}
 
 /* ── CLUSTER ── */
-.cluster{margin-bottom:10px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
+.cluster{margin-bottom:8px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
 .cluster:last-child{margin-bottom:0}
 .cluster-hdr{display:flex;align-items:center;gap:6px;padding:5px 10px;background:var(--slate-l);border-bottom:1px solid var(--border)}
 .cluster-hdr h4{font-size:11px;font-weight:700;color:var(--text);flex:1}
-.cluster-stats{display:flex;gap:4px;align-items:center}
-.cstat{font-size:9px;color:var(--text3);background:#fff;border:1px solid var(--border);border-radius:4px;padding:1px 5px}
+.cluster-stats{display:flex;gap:6px;align-items:center}
+.cstat{font-size:10px;color:var(--text3);background:#fff;border:1px solid var(--border);border-radius:5px;padding:2px 7px}
 .cstat strong{color:var(--text);font-weight:600}
-.cluster-btns{display:flex;gap:3px}
-.cbtn{font-size:10px;padding:2px 7px;border:1px solid var(--border);border-radius:var(--r);background:#fff;color:var(--text2);cursor:pointer;font-family:var(--f);font-weight:500;transition:all .12s}
+.cluster-btns{display:flex;gap:4px}
+.cbtn{font-size:10px;padding:3px 9px;border:1px solid var(--border);border-radius:var(--r);background:#fff;color:var(--text2);cursor:pointer;font-family:var(--f);font-weight:500;transition:all .12s}
 .cbtn:hover{background:var(--blue-l);border-color:var(--blue-m);color:var(--blue)}
 .cbtn.del-cl{color:var(--red)}
 .cbtn.del-cl:hover{background:var(--red-l);border-color:#FECACA}
 
 /* ── TEAM LINE ── */
-.team-line{display:flex;align-items:stretch;border-bottom:1px solid var(--border);background:#fff;position:relative;transition:background .15s}
+.team-line{display:flex;align-items:stretch;border-bottom:1px solid var(--border);background:#fff;position:relative;transition:background .15s;min-height:82px}
 .team-line:last-child{border-bottom:none}
 .team-line:hover{background:#FAFBFC}
 
 /* Left meta strip */
-.tl-meta{width:120px;flex-shrink:0;padding:6px 8px;border-right:1px solid var(--border);background:var(--bg);display:flex;flex-direction:column;gap:3px;justify-content:center}
-.tl-type{font-size:9px;font-weight:700;padding:1px 5px;border-radius:5px;display:inline-flex;align-items:center;gap:3px;width:fit-content}
+.tl-meta{width:120px;flex-shrink:0;padding:6px 8px;border-right:1px solid var(--border);background:var(--bg);display:flex;flex-direction:column;gap:4px;justify-content:center}
+.tl-type{font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;display:inline-flex;align-items:center;gap:3px;width:fit-content}
 .tl-days{font-size:10px;color:var(--text2);display:flex;align-items:center;gap:4px;margin-top:2px}
-.tl-days input{width:46px;padding:2px 4px;border:1px solid var(--border);border-radius:4px;font-size:10px;font-family:var(--f);color:var(--text);background:#fff;outline:none;text-align:center}
+.tl-days input{width:52px;padding:2px 5px;border:1px solid var(--border);border-radius:4px;font-size:10px;font-family:var(--f);color:var(--text);background:#fff;outline:none;text-align:center}
 .tl-days input:focus{border-color:var(--blue)}
-.tl-name{font-size:9px;color:var(--text3);margin-top:1px;font-style:italic}
-.tl-del{position:absolute;top:4px;right:6px;font-size:10px;color:var(--text3);cursor:pointer;padding:2px 5px;border-radius:4px;transition:all .12s;background:none;border:none;font-family:var(--f)}
+.tl-name{font-size:9px;color:var(--text3);margin-top:2px;font-style:italic}
+.tl-del{position:absolute;top:6px;right:8px;font-size:10px;color:var(--text3);cursor:pointer;padding:2px 5px;border-radius:4px;transition:all .12s;background:none;border:none;font-family:var(--f)}
 .tl-del:hover{color:var(--red);background:var(--red-l)}
 
 /* Cards row */
-.cards-row{display:flex;align-items:stretch;gap:4px;padding:6px 8px;flex:1;overflow-x:auto;flex-wrap:nowrap}
+.cards-row{display:flex;align-items:stretch;gap:5px;padding:6px 8px;flex:1;overflow-x:auto;flex-wrap:nowrap}
 .cards-row::-webkit-scrollbar{height:3px}
 .cards-row::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
 
@@ -137,13 +134,13 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .role-sep{color:var(--border2);font-size:16px;flex-shrink:0;line-height:1;align-self:center}
 
 /* ── CARD ── */
-.card{border:1px solid var(--border);border-radius:var(--r);padding:5px 7px;background:#fff;cursor:grab;position:relative;width:88px;flex-shrink:0;min-height:60px;display:flex;flex-direction:column;gap:2px;transition:border-color .12s,transform .12s,box-shadow .12s}
+.card{border:1px solid var(--border);border-radius:var(--r);padding:5px 7px;background:#fff;cursor:grab;position:relative;width:90px;flex-shrink:0;min-height:70px;height:100%;display:flex;flex-direction:column;gap:2px;transition:border-color .12s,transform .12s,box-shadow .12s}
 /* Cluster Engineer card slightly wider to stand out as first/main */
 .card.is-cluster-eng{width:98px!important;}
 .card:hover{border-color:var(--border2);background:var(--bg);box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:2}
 .card.avs{border:1.5px solid var(--purple);background:var(--purple-l)}
 .card.sub{border:1.5px solid var(--amber);background:var(--amber-l)}
-.card.empty{border:1.5px dashed var(--border2);background:var(--slate-l);cursor:default;opacity:.5;min-height:72px}
+.card.empty{border:1.5px dashed var(--border2);background:var(--slate-l);cursor:default;opacity:.5;min-height:70px;height:100%}
 .card.over{border:2px dashed var(--blue)!important;background:var(--blue-l)!important;z-index:10}
 .card.dragging{opacity:.1;transform:scale(.9)}
 .card.lit{outline:2.5px solid var(--amber);outline-offset:2px;z-index:5}
@@ -154,26 +151,22 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 @keyframes pIn{0%{transform:scale(.6) translateY(-14px);opacity:0}70%{transform:scale(1.05) translateY(2px);opacity:1}100%{transform:scale(1) translateY(0);opacity:1}}
 .rdot{width:6px;height:6px;border-radius:50%;position:absolute;top:7px;right:8px}
 .lic{position:absolute;bottom:5px;right:7px;font-size:12px;line-height:1}
-/* ── COMPACT CONTEXT MENU ── */
-.cmenu{position:fixed;z-index:900;background:#fff;border:0.5px solid var(--border2);border-radius:var(--rl);box-shadow:0 8px 32px rgba(0,0,0,.18);min-width:230px;max-width:260px;overflow:hidden;max-height:92vh;display:flex;flex-direction:column}
+.cmenu{position:fixed;z-index:900;background:#fff;border:0.5px solid var(--border2);border-radius:var(--rl);box-shadow:0 8px 32px rgba(0,0,0,.18);min-width:230px;max-width:260px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden}
 .cmenu-hdr{padding:9px 13px;background:var(--navy);color:#fff;flex-shrink:0}
 .cmenu-hdr .chn{font-size:13px;font-weight:600}
 .cmenu-hdr .chr{font-size:10px;color:rgba(255,255,255,.5);margin-top:1px}
 .cmenu-scroll{overflow-y:auto;flex:1}
 .cmenu-scroll::-webkit-scrollbar{width:3px}
 .cmenu-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
-/* Accordion section */
 .cmenu-acc{border-bottom:0.5px solid var(--border)}
-.cmenu-acc:last-child{border-bottom:none}
-.cmenu-acc-hdr{display:flex;align-items:center;gap:7px;padding:7px 13px;cursor:pointer;font-size:11px;font-weight:600;color:var(--text2);user-select:none;transition:background .1s;background:#fff}
+.cmenu-acc-hdr{display:flex;align-items:center;gap:7px;padding:7px 13px;cursor:pointer;font-size:11px;font-weight:600;color:var(--text2);user-select:none;transition:background .1s}
 .cmenu-acc-hdr:hover{background:var(--slate-l)}
-.cmenu-acc-hdr .acc-icon{font-size:13px;width:18px;text-align:center;color:var(--text3)}
+.cmenu-acc-hdr .acc-icon{font-size:12px;width:18px;text-align:center;color:var(--text3)}
 .cmenu-acc-hdr .acc-arrow{margin-left:auto;font-size:10px;color:var(--text3);transition:transform .2s}
-.cmenu-acc-hdr .acc-badge{margin-left:4px;font-size:9px;background:var(--blue);color:#fff;border-radius:9px;padding:0 5px;font-weight:700}
+.cmenu-acc-hdr .acc-badge{font-size:9px;background:var(--blue);color:#fff;border-radius:9px;padding:0 5px;font-weight:700;margin-left:4px}
 .cmenu-acc-body{display:none;border-top:0.5px solid var(--border)}
 .cmenu-acc.open .cmenu-acc-body{display:block}
 .cmenu-acc.open .acc-arrow{transform:rotate(90deg)}
-/* Plain section (non-accordion) */
 .cmenu-sec{border-bottom:0.5px solid var(--border)}
 .cmenu-sec:last-child{border-bottom:none}
 .cmenu-lbl{font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;padding:5px 13px 2px}
@@ -183,14 +176,12 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .cmi.danger:hover{background:var(--red-l);color:var(--red)}
 .cmi .ci{width:18px;text-align:center;font-size:12px;flex-shrink:0;color:var(--text3)}
 .cmi .ck{margin-left:auto;color:var(--blue)}
-/* Quick actions strip */
-.cmenu-actions{display:flex;gap:4px;padding:7px 10px;background:var(--slate-l);border-top:1px solid var(--border)}
+.cmi-grid{display:grid;grid-template-columns:1fr 1fr}
+.cmenu-actions{display:flex;gap:4px;padding:7px 10px;background:var(--slate-l);border-top:1px solid var(--border);flex-shrink:0}
 .cmenu-act-btn{flex:1;font-size:10px;padding:5px 0;border-radius:6px;border:1px solid var(--border);background:#fff;color:var(--text2);cursor:pointer;font-family:var(--f);font-weight:600;text-align:center;transition:all .12s;white-space:nowrap}
 .cmenu-act-btn:hover{background:var(--blue-l);border-color:var(--blue-m);color:var(--blue)}
 .cmenu-act-btn.danger:hover{background:var(--red-l);border-color:#FECACA;color:var(--red)}
-/* Grid inside accordion (for skills 2-col) */
-.cmi-grid{display:grid;grid-template-columns:1fr 1fr}
-.sw-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:4px 0;max-height:340px;overflow-y:auto}
+.sw-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:4px 0}
 .sw-item{border:0.5px solid var(--border);border-radius:var(--r);padding:8px 10px;cursor:pointer;transition:all .12s}
 .sw-item:hover{border-color:var(--blue);background:var(--blue-l)}
 .sw-item.cur{border-color:var(--blue);background:var(--blue-l);pointer-events:none}
@@ -198,40 +189,20 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .sw-cl{font-size:11px;font-weight:500;color:var(--text)}
 .sw-ld{font-size:10px;color:var(--text3)}
 
-/* ── AI ASSISTANT PANEL ── */
-.ai-panel{border:1px solid #818CF8;border-radius:var(--rl);overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(79,70,229,.12)}
-.ai-panel-hdr{padding:8px 12px;background:linear-gradient(135deg,#4F46E5,#7C3AED);display:flex;align-items:center;gap:7px}
-.ai-panel-hdr h4{font-size:12px;font-weight:700;color:#fff;flex:1}
-.ai-panel-hdr .ai-badge{font-size:9px;background:rgba(255,255,255,.2);color:#fff;border-radius:9px;padding:1px 7px;font-weight:700}
-.ai-panel-body{padding:8px}
-.ai-chat-msgs{max-height:180px;overflow-y:auto;display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
-.ai-chat-msgs::-webkit-scrollbar{width:3px}
-.ai-chat-msgs::-webkit-scrollbar-thumb{background:#C7D2FE;border-radius:2px}
-.ai-msg{font-size:11px;line-height:1.5;padding:7px 10px;border-radius:10px;max-width:95%}
-.ai-msg.bot{background:#EEF2FF;color:#3730A3;border-bottom-left-radius:3px;align-self:flex-start}
-.ai-msg.user{background:#4F46E5;color:#fff;border-bottom-right-radius:3px;align-self:flex-end}
-.ai-input-row{display:flex;gap:5px}
-.ai-inp{flex:1;padding:6px 9px;border:1px solid #C7D2FE;border-radius:8px;font-size:11px;font-family:var(--f);color:var(--text);outline:none;transition:border-color .2s;background:#F8F9FF}
-.ai-inp:focus{border-color:#4F46E5;background:#fff}
-.ai-send{padding:6px 10px;background:#4F46E5;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:13px;font-family:var(--f);transition:background .2s;flex-shrink:0}
-.ai-send:hover{background:#4338CA}
-.ai-features{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:7px}
-.ai-feat{font-size:10px;padding:5px 8px;border-radius:7px;background:#EEF2FF;color:#4338CA;border:1px solid #C7D2FE;cursor:pointer;text-align:center;font-weight:500;transition:all .12s;line-height:1.3}
-.ai-feat:hover{background:#E0E7FF;border-color:#818CF8}
-.ai-feat .af-icon{display:block;font-size:14px;margin-bottom:2px}
 
-
-.rdot{width:6px;height:6px;border-radius:50%;position:absolute;top:7px;right:8px}
+.rdot{width:6px;height:6px;border-radius:50%;position:absolute;top:5px;right:6px}
+.lic-tag{display:inline-flex;align-items:center;gap:2px;font-size:8px;font-weight:700;background:#1D4ED8;color:#fff;border-radius:4px;padding:2px 5px;margin-top:3px;letter-spacing:.02em;white-space:nowrap}
 .crole{font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.03em;padding-right:12px;line-height:1.2}
 .cname2{font-size:11px;font-weight:500;color:var(--text);line-height:1.35;word-break:break-word}
 .caccom{display:flex;flex-wrap:wrap;gap:2px;margin-top:3px}
 
 /* Add member button */
-.add-member-btn{width:60px;height:60px;border:1.5px dashed var(--border2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:var(--text3);font-size:9px;flex-shrink:0;transition:all .15s;background:transparent;font-family:var(--f)}
+.add-member-btn{width:62px;align-self:stretch;min-height:70px;border:1.5px dashed var(--border2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:var(--text3);font-size:10px;flex-shrink:0;transition:all .15s;background:transparent;font-family:var(--f)}
 .add-member-btn:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-l)}
-.add-member-btn .plus{font-size:16px;line-height:1;margin-bottom:2px}
+.add-member-btn .plus{font-size:18px;line-height:1;margin-bottom:2px}
 
 /* ── SIDE PANEL ── */
+.side{display:flex;flex-direction:column;gap:7px;position:sticky;top:10px;max-height:calc(100vh - 30px);overflow-y:auto}
 .panel{border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
 .phdr{padding:8px 12px;display:flex;align-items:center;gap:6px}
 .phdr h4{font-size:12px;font-weight:600;color:#fff;flex:1}
@@ -257,7 +228,15 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 /* ── MODAL ── */
 .mbd{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:500;align-items:center;justify-content:center}
 .mbd.on{display:flex}
-.mbox{background:#fff;border-radius:var(--rxl);padding:24px;width:420px;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,.15);max-height:90vh;overflow-y:auto}
+.mbox{background:#fff;border-radius:var(--rxl);padding:24px;width:480px;max-width:96vw;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,.15);max-height:90vh;overflow-y:auto}
+.mbox.sw-modal{padding:0;display:flex;flex-direction:column;overflow:hidden}
+.sw-modal .sw-hdr{padding:16px 20px 12px;flex-shrink:0;border-bottom:1px solid var(--border)}
+.sw-modal .sw-hdr h3{font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px}
+.sw-modal .sw-hdr .sw-sub{font-size:11px;color:var(--text3);margin-bottom:10px}
+.sw-modal .sw-scroll{overflow-y:auto;flex:1;padding:12px 16px}
+.sw-modal .sw-scroll::-webkit-scrollbar{width:4px}
+.sw-modal .sw-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.sw-modal .sw-foot{padding:10px 20px;border-top:1px solid var(--border);flex-shrink:0;text-align:right}
 .mbox h3{font-size:16px;font-weight:700;margin-bottom:16px;color:var(--text)}
 .mrow{margin-bottom:14px}
 .mrow label{font-size:11px;font-weight:600;color:var(--text2);display:block;margin-bottom:5px}
@@ -333,7 +312,7 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 
 /* ── BIG CLUSTER ENGINEER CARD ── */
 .ce-big-card{
-  width:90px;flex-shrink:0;
+  width:90px;flex-shrink:0;align-self:stretch;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:4px;padding:8px 6px;
   background:linear-gradient(160deg,#EEF2FF 0%,#E0E7FF 100%);
@@ -345,9 +324,9 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 }
 .ce-big-card:hover{background:linear-gradient(160deg,#E0E7FF 0%,#C7D2FE 100%)}
 .ce-big-badge{
-  font-size:8px;font-weight:700;
+  font-size:9px;font-weight:700;
   background:#4F46E5;color:#fff;
-  border-radius:4px;padding:1px 5px;
+  border-radius:5px;padding:2px 7px;
   text-align:center;letter-spacing:.02em;
   white-space:nowrap;
 }
@@ -357,10 +336,10 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
   line-height:1.2;word-break:break-word;
 }
 .ce-big-teams{
-  font-size:8px;color:#6366F1;
+  font-size:9px;color:#6366F1;
   background:#EEF2FF;border:1px solid #C7D2FE;
-  border-radius:3px;padding:1px 4px;
-  margin-top:1px;
+  border-radius:4px;padding:1px 6px;
+  margin-top:2px;
 }
 
 /* ── CLUSTER ENGINEER & LEAD TECH CARD HIGHLIGHTS ── */
@@ -431,6 +410,34 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .upcoming-list{background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
 .upcoming-row{display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--border)}
 .upcoming-row:last-child{border-bottom:none}
+/* ── PLAN CARD STYLE ── */
+.plan-card{outline:2px solid rgba(124,58,237,.22);outline-offset:1px}
+#planTab.on{background:rgba(124,58,237,.35)!important;color:#E9D5FF!important}
+
+/* ── SETTINGS PAGE ── */
+.set-section{background:#fff;border:1px solid var(--border);border-radius:var(--rl);margin-bottom:14px;overflow:hidden;box-shadow:var(--shadow)}
+.set-section-hdr{padding:10px 16px;background:var(--navy);display:flex;align-items:center;gap:8px}
+.set-section-hdr h3{font-size:13px;font-weight:700;color:#fff;flex:1}
+.set-section-hdr .set-badge{font-size:10px;background:rgba(255,255,255,.18);color:#fff;border-radius:6px;padding:1px 8px}
+.set-body{padding:14px 16px}
+.set-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.set-row:last-child{border-bottom:none}
+.set-lbl{flex:1;min-width:120px;font-size:12px;color:var(--text);font-weight:500}
+.set-sub{font-size:10px;color:var(--text3);display:block;font-weight:400;margin-top:1px}
+.set-inp{padding:5px 9px;border:1px solid var(--border);border-radius:var(--r);font-size:12px;font-family:var(--f);color:var(--text);outline:none;transition:border-color .2s}
+.set-inp:focus{border-color:var(--blue)}
+.set-btn{font-size:11px;padding:5px 12px;border-radius:var(--r);border:1px solid var(--border);background:#fff;color:var(--text);cursor:pointer;font-family:var(--f);font-weight:500;white-space:nowrap;transition:all .12s}
+.set-btn:hover{background:var(--blue-l);border-color:var(--blue-m);color:var(--blue)}
+.set-btn.danger{color:var(--red)}
+.set-btn.danger:hover{background:var(--red-l);border-color:#FECACA}
+.set-btn.ok{background:var(--navy);color:#fff;border-color:var(--navy)}
+.set-btn.ok:hover{background:var(--navy2)}
+.set-skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:4px;margin-top:4px}
+.set-skill-chip{display:flex;align-items:center;gap:6px;padding:4px 8px;background:#fff;border:1px solid var(--border);border-radius:5px;font-size:11px}
+.set-skill-chip input{border:none;outline:none;font-size:11px;font-family:var(--f);width:100%;color:var(--text);background:transparent}
+.set-skill-chip .del-sk{margin-left:auto;cursor:pointer;color:var(--text3);font-size:12px;line-height:1;background:none;border:none;padding:0;font-family:var(--f);flex-shrink:0}
+.set-skill-chip .del-sk:hover{color:var(--red)}
+
 /* ── MAN DAYS ── */
 .md-section-hdr{padding:7px 12px;color:#fff;font-size:12px;font-weight:700;border-radius:var(--r);margin-bottom:8px}
 .md-cluster-card{background:#fff;border:1px solid var(--border);border-radius:var(--rl);margin-bottom:10px;overflow:hidden}
@@ -449,6 +456,33 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
 .md-stat{background:#fff;border:1px solid var(--border);border-radius:var(--rl);padding:12px;text-align:center}
 .md-stat-val{font-size:24px;font-weight:700}
 .md-stat-lbl{font-size:10px;color:var(--text3);margin-top:2px}
+
+/* ── AI CHAT ── */
+.ai-msg{padding:9px 13px;border-radius:12px;font-size:12px;line-height:1.6;max-width:92%;word-break:break-word}
+.ai-bot{background:#fff;border:1px solid var(--border);align-self:flex-start;border-bottom-left-radius:3px;box-shadow:var(--shadow)}
+.ai-user{background:#2563EB;color:#fff;align-self:flex-end;border-bottom-right-radius:3px}
+.ai-thinking{background:#FEF9C3;border:1px solid #FDE047;align-self:flex-start;color:#92400E;font-style:italic;border-radius:8px}
+
+
+/* ── COMPACT ACCORDION CARD MENU ── */
+.cmenu{min-width:210px;max-width:245px;max-height:82vh;overflow-y:auto}
+.cmacc-hdr{display:flex;align-items:center;justify-content:space-between;padding:6px 12px;cursor:pointer;
+  user-select:none;background:var(--slate-l);border-bottom:0.5px solid var(--border);transition:background .1s}
+.cmacc-hdr:hover{background:#E2E8F0}
+.cmacc-title{font-size:9px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.05em}
+.cmacc-arrow{font-size:8px;color:var(--text3);transition:transform .15s}
+.cmacc-hdr.open .cmacc-arrow{transform:rotate(180deg)}
+.cmacc-body{display:none}
+.cmacc-body.open{display:block}
+.cmacc-body .cmi{padding:5px 13px;font-size:11px}
+.cmenu-qrow{display:flex;border-bottom:1px solid var(--border)}
+.cmenu-qbtn{flex:1;padding:7px 4px;text-align:center;font-size:10px;font-weight:600;cursor:pointer;
+  border:none;background:transparent;font-family:var(--f);color:var(--text2);
+  border-right:0.5px solid var(--border);transition:background .1s}
+.cmenu-qbtn:last-child{border-right:none}
+.cmenu-qbtn:hover{background:var(--blue-l);color:var(--blue)}
+.cmenu-qbtn.danger:hover{background:var(--red-l);color:var(--red)}
+
 </style>
 </head>
 <body>
@@ -485,10 +519,14 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
       <button class="ntab" onclick="showPg('mandays',this)">Man Days</button>
       <button class="ntab" onclick="showPg('saves',this)">Saves</button>
       <button class="ntab" onclick="showPg('analytics',this)">Analytics</button>
+      <button class="ntab" onclick="showPg('planning',this)" style="color:rgba(196,181,253,.85)">📋 Planning</button>
+      <button class="ntab" onclick="showPg('settings',this)">⚙ Settings</button>
+      <button class="ntab" onclick="showPg('ai',this)">🤖 AI</button>
     </div>
     <div class="hbtns">
       <span id="syncStatus" style="font-size:10px;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:4px"></span>
       <button class="hb" onclick="refreshFromCloud()" title="Pull latest data from cloud">↻ Refresh</button>
+      <button class="hb" onclick="hardReset()" title="Clear local cache and reload from Firebase" style="color:#F87171;border-color:rgba(248,113,113,.3)">⚠ Reset Cache</button>
       <button class="hb" onclick="window.print()">Print</button>
       <button class="hb" onclick="doExport()">Export TXT</button><button class="hb" onclick="exportExcel()">Export Excel</button>
       <button class="hb admin-only" onclick="openAddAccom()" style="display:none">+ Accommodation</button>
@@ -531,24 +569,6 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
       <div class="blayout">
         <div id="sections"></div>
         <div class="side">
-          <div class="panel ai-panel">
-            <div class="ai-panel-hdr"><h4>🤖 AI Assistant</h4><span class="ai-badge">Beta</span></div>
-            <div class="ai-panel-body">
-              <div class="ai-chat-msgs" id="aiMsgs">
-                <div class="ai-msg bot">Hi! Ask me anything about your team distribution or use a quick action below.</div>
-              </div>
-              <div class="ai-input-row">
-                <input class="ai-inp" id="aiInp" type="text" placeholder="e.g. Who is unassigned?" onkeydown="if(event.key==='Enter')aiSend()">
-                <button class="ai-send" onclick="aiSend()">➤</button>
-              </div>
-              <div class="ai-features">
-                <div class="ai-feat" onclick="aiQuick('Optimize shift coverage across all clusters')"><span class="af-icon">⚡</span>Shift Optimize</div>
-                <div class="ai-feat" onclick="aiQuick('Find any anomalies or staffing issues')"><span class="af-icon">🔔</span>Anomaly Alerts</div>
-                <div class="ai-feat" onclick="aiQuick('Export a summary narrative of the current team distribution')"><span class="af-icon">📄</span>Export Summary</div>
-                <div class="ai-feat" onclick="aiQuick('List all unassigned members and suggest best team placement')"><span class="af-icon">🔍</span>Smart Assign</div>
-              </div>
-            </div>
-          </div>
           <div class="panel">
             <div class="phdr" style="background:#475569"><h4>Unassigned pool</h4><span class="pc" id="pcnt">0</span></div>
             <div class="pbody">
@@ -572,6 +592,172 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px}
         <button class="tb acc" onclick="doSave()">Save current layout</button>
       </div>
       <div id="sgrid"></div>
+    </div>
+
+    <!-- PLANNING BOARD -->
+    <div class="pg" id="pg-planning">
+      <div class="btop" style="flex-wrap:wrap;gap:8px">
+        <h2 style="color:#7C3AED">📋 Planning Board <span style="font-size:11px;font-weight:400;color:var(--text3)">Sandbox — plan before going live</span></h2>
+        <input class="sinp" type="text" placeholder="Search plan..." oninput="planSearch(this.value)">
+        <button class="tb" style="background:#EDE9FE;border-color:#DDD6FE;color:#7C3AED" onclick="planCopyFromLive()">⬇ Copy from Live</button>
+        <button class="tb grn" onclick="planPromoteToLive()">⬆ Promote to Live</button>
+        <button class="tb" onclick="planSaveSnapshot()">💾 Snapshot</button>
+        <button class="tb" onclick="planClear()">🗑 Clear</button>
+        <button class="tb" id="planUbtn" onclick="doPlanUndo()" disabled>↩ Undo</button>
+      </div>
+      <div style="height:3px;background:linear-gradient(90deg,#7C3AED,#4F46E5);border-radius:2px;margin-bottom:8px"></div>
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 14px;background:linear-gradient(90deg,#EDE9FE,#F5F3FF);border:1px solid #DDD6FE;border-radius:var(--r);margin-bottom:10px;font-size:11px;color:#6D28D9">
+        <span style="font-size:18px">📋</span>
+        <span>This is your <strong>planning sandbox</strong> — changes here don't affect the live board. Use <em>⬇ Copy from Live</em> to start, then <em>⬆ Promote to Live</em> when ready.</span>
+      </div>
+      <div class="blayout">
+        <div id="planSections"></div>
+        <div class="side">
+          <div class="panel">
+            <div class="phdr" style="background:#7C3AED"><h4>📝 Plan Notes</h4></div>
+            <div class="pbody">
+              <textarea id="planNotes" placeholder="Notes, decisions, scenarios..." style="width:100%;min-height:90px;border:1px solid var(--border);border-radius:var(--r);font-family:var(--f);font-size:11px;padding:7px 9px;resize:vertical;outline:none;color:var(--text)" oninput="savePlanNotes()"></textarea>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="phdr" style="background:#6D28D9"><h4>Unassigned (Plan)</h4><span class="pc" id="planPcnt">0</span></div>
+            <div class="pbody">
+              <div class="dz" id="planPdrop">Drop here to unassign</div>
+              <div class="pchips" id="planPchips"></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="phdr" style="background:#5B21B6"><h4>Snapshots</h4><span class="pc" id="planSnapCnt">0</span></div>
+            <div class="pbody"><div class="hlist" id="planSnapList"><span class="hemp">No snapshots yet</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="pg" id="pg-settings">
+      <div class="btop">
+        <h2>⚙ Settings &amp; Configuration</h2>
+        <button class="tb acc" onclick="saveAllSettings()">💾 Save All Changes</button>
+        <button class="tb" onclick="renderSettings()">↺ Refresh</button>
+      </div>
+      <div class="set-section">
+        <div class="set-section-hdr"><h3>👤 Section Managers</h3><span class="set-badge">Names &amp; colours</span></div>
+        <div class="set-body" id="setManagersBody"></div>
+      </div>
+      <div class="set-section">
+        <div class="set-section-hdr"><h3>🏗 Cluster Names</h3><span class="set-badge">All clusters</span></div>
+        <div class="set-body" id="setClustersBody"></div>
+      </div>
+      <div class="set-section">
+        <div class="set-section-hdr"><h3>🏠 Accommodations</h3><span class="set-badge">Codes, names &amp; colours</span></div>
+        <div class="set-body">
+          <div id="setAccomList"></div>
+          <div style="margin-top:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <input class="set-inp" id="newAccomCode" placeholder="Code (e.g. DXB)" maxlength="6" style="width:90px">
+            <input class="set-inp" id="newAccomName" placeholder="Full name" style="width:200px">
+            <input type="color" id="newAccomBg" value="#DBEAFE" style="width:32px;height:28px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;padding:2px">
+            <input type="color" id="newAccomFg" value="#1D4ED8" style="width:32px;height:28px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;padding:2px">
+            <button class="set-btn ok" onclick="addAccomSetting()">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="set-section">
+        <div class="set-section-hdr"><h3>⚙ Skills List</h3><span class="set-badge">Available skills</span></div>
+        <div class="set-body">
+          <div class="set-skills-grid" id="setSkillsList"></div>
+          <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
+            <input class="set-inp" id="newSkillName" placeholder="New skill name" style="width:220px">
+            <button class="set-btn ok" onclick="addSkillSetting()">+ Add Skill</button>
+          </div>
+        </div>
+      </div>
+      <div class="set-section">
+        <div class="set-section-hdr"><h3>🎭 Role Colours</h3><span class="set-badge">Card dot colours</span></div>
+        <div class="set-body" id="setRolesBody"></div>
+      </div>
+      <div class="set-section">
+        <div class="set-section-hdr"><h3>✏ Member Names &amp; Roles</h3><span class="set-badge">Rename any member</span></div>
+        <div class="set-body">
+          <div style="margin-bottom:10px">
+            <input class="set-inp" id="memberSearch" placeholder="Search member name..." oninput="renderMemberSettings(this.value)" style="width:280px">
+          </div>
+          <div id="setMembersBody"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- AI ASSISTANT PAGE -->
+    <div class="pg" id="pg-ai">
+      <div class="btop">
+        <h2>🤖 AI Assistant <span style="font-size:11px;font-weight:400;color:var(--text3)">Natural language · Shift optimization · Anomaly alerts · Export narratives</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 310px;gap:12px;align-items:start">
+        <div>
+          <!-- Chat window -->
+          <div style="background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow)">
+            <div style="padding:10px 14px;background:linear-gradient(90deg,#0F1C2E,#1E2F45);color:#fff;display:flex;align-items:center;gap:10px">
+              <span style="font-size:20px">🤖</span>
+              <div style="flex:1">
+                <div style="font-size:13px;font-weight:700">Team AI Assistant</div>
+                <div style="font-size:10px;color:rgba(255,255,255,.45)">Powered by Claude · Knows your full team data</div>
+              </div>
+              <button onclick="clearAiChat()" style="font-size:10px;padding:3px 10px;border:1px solid rgba(255,255,255,.2);border-radius:6px;background:transparent;color:rgba(255,255,255,.6);cursor:pointer;font-family:var(--f)">Clear chat</button>
+            </div>
+            <div id="aiMessages" style="padding:12px;min-height:280px;max-height:420px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;background:#F8FAFC">
+              <div class="ai-msg ai-bot">👋 Hi! I know your full team — roles, accommodation, skills, shifts and man days.<br><br>
+                Try asking me:<br>
+                • <strong>Summarize</strong> the current team distribution<br>
+                • <strong>Who is in Sharjah</strong> accommodation?<br>
+                • <strong>Which clusters</strong> are understaffed?<br>
+                • <strong>Write a management report</strong> narrative<br>
+                • <strong>Check for anomalies</strong> in the team
+              </div>
+            </div>
+            <div style="padding:8px 10px;border-top:1px solid var(--border);background:#fff;display:flex;gap:6px">
+              <input id="aiInput" type="text" placeholder="Ask anything about your team…"
+                style="flex:1;padding:8px 11px;border:1px solid var(--border);border-radius:7px;font-size:12px;font-family:var(--f);outline:none;transition:border-color .2s"
+                onfocus="this.style.borderColor='#2563EB'" onblur="this.style.borderColor=''"
+                onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendAiMsg();}">
+              <button onclick="sendAiMsg()" style="padding:8px 16px;background:#2563EB;color:#fff;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer;font-family:var(--f);flex-shrink:0">Send ↵</button>
+            </div>
+          </div>
+          <!-- Quick prompts -->
+          <div style="margin-top:8px">
+            <div style="font-size:10px;color:var(--text3);margin-bottom:5px;font-weight:600;text-transform:uppercase;letter-spacing:.04em">Quick commands</div>
+            <div style="display:flex;flex-wrap:wrap;gap:5px">
+              <button class="tb" onclick="aiQuick('Give me a full summary of the team distribution — sections, clusters, team types and total PPM man days')">📋 Team Summary</button>
+              <button class="tb" onclick="aiQuick('Which clusters or teams are understaffed? Flag any PPM team with fewer than 2 technicians or no lead tech')">⚠ Understaffed Alert</button>
+              <button class="tb" onclick="aiQuick('List every member in Sharjah, HAZ and RAK accommodation with their cluster and role')">🏠 Accommodation List</button>
+              <button class="tb" onclick="aiQuick('Who has a driving licence across all teams? Group by cluster')">🚗 Drivers by Cluster</button>
+              <button class="tb" onclick="aiQuick('Suggest an optimized shift assignment for day/night coverage across all clusters based on current team sizes')">⚡ Optimize Shifts</button>
+              <button class="tb" onclick="aiQuick('Write a formal executive summary narrative of the current team distribution suitable for a management report')">📝 Management Report</button>
+              <button class="tb" onclick="aiQuick('Run a full anomaly check: members with no accommodation, PPM teams with no technician, clusters with no Cluster Engineer or Lead Tech, and any other issues')">🔍 Full Anomaly Check</button>
+              <button class="tb" onclick="aiQuick('List all members currently on night shift or marked as temporary across all sections')">🌙 Night / Temp Members</button>
+            </div>
+          </div>
+        </div>
+        <!-- Right panels -->
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow)">
+            <div style="padding:7px 12px;background:#1E293B;color:#fff;font-size:11px;font-weight:700">⏰ Shift Snapshot</div>
+            <div id="aiShiftPanel" style="padding:10px 12px"></div>
+          </div>
+          <div style="background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow)">
+            <div style="padding:7px 12px;background:#DC2626;color:#fff;font-size:11px;font-weight:700">🚨 Live Anomalies</div>
+            <div id="aiAlertPanel" style="padding:10px 12px;font-size:11px;max-height:200px;overflow-y:auto"></div>
+          </div>
+          <div style="background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow)">
+            <div style="padding:7px 12px;background:#0D9488;color:#fff;font-size:11px;font-weight:700">🏠 Accommodation Count</div>
+            <div id="aiAccomPanel" style="padding:10px 12px;font-size:11px"></div>
+          </div>
+          <div style="background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow)">
+            <div style="padding:7px 12px;background:#7C3AED;color:#fff;font-size:11px;font-weight:700">📊 Quick Stats</div>
+            <div id="aiStatsPanel" style="padding:10px 12px;font-size:11px"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ANALYTICS -->
@@ -838,7 +1024,7 @@ var _wasDragging=false;
 //
 // ── PASTE YOUR VALUES HERE ──
 const FB_CONFIG = {
-  apiKey:            "AIzaSyDDNazUeTa7G9sTV7fKGp7fwGTLTuDHOGI",
+  apiKey:            "PASTE_YOUR_apiKey_HERE",
   authDomain:        "team-distribution-6c2cc.firebaseapp.com",
   databaseURL:       "https://team-distribution-6c2cc-default-rtdb.firebaseio.com",
   projectId:         "team-distribution-6c2cc",
@@ -921,34 +1107,39 @@ function _startLiveListener(){
 }
 
 async function init(){
-  // 1. Load Firebase
+  // 1. Try Firebase first (shared live data)
   await _fbInit();
-
-  // 2. Fetch board state
-  var sv=null;
-  if(_fbReady){sv=await _fbGet('tdm/state');}
-  if(sv&&sv.secs){SECS=sv.secs;pool=sv.pool||[];}
-  else{
-    // Fallback: localStorage → then factory defaults
-    var lsv=localStorage.getItem('tdm3_state');
-    if(lsv){try{var d=JSON.parse(lsv);SECS=d.secs;pool=d.pool||[];}catch(e){SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}}
-    else{SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}
-  }
-
-  // 3. Load custom accommodations
-  var customAc=_fbReady?await _fbGet('tdm/accom'):null;
-  if(customAc&&Array.isArray(customAc)){
-    customAc.forEach(function(ac){
-      if(!AC[ac.code]){AC[ac.code]=ac.colors;ACNAMES[ac.code]=ac.name;}
-    });
-  }
-
-  // 4. Start live listener for real-time updates from other users
-  if(_fbReady)_startLiveListener();
-  else{
+  if(_fbReady){
+    var sv=await _fbGet('tdm/state');
+    if(sv&&sv.secs&&sv.secs.length>0){
+      SECS=sv.secs; pool=sv.pool||[];
+      // Load custom accommodations
+      var customAc=await _fbGet('tdm/accom');
+      if(customAc&&Array.isArray(customAc)){
+        customAc.forEach(function(ac){if(!AC[ac.code]){AC[ac.code]=ac.colors;ACNAMES[ac.code]=ac.name;}});
+      }
+      _startLiveListener();
+      return;
+    }
+    _startLiveListener();
+  } else {
     var ss=document.getElementById('syncStatus');
     if(ss)ss.innerHTML='⚠ Local only';
   }
+  // 2. Fallback: localStorage
+  var lsv=null;
+  try{lsv=localStorage.getItem('tdm3_state');}catch(e){}
+  if(lsv){
+    try{
+      var d=JSON.parse(lsv);
+      if(d.secs&&d.secs.length>0&&d.secs[0].clusters&&d.secs[0].clusters.length>0){
+        SECS=d.secs; pool=d.pool||[];
+        return;
+      }
+    }catch(e){}
+  }
+  // 3. Factory defaults
+  SECS=JSON.parse(JSON.stringify(INIT_SECS)); pool=[];
 }
 
 async function persist(){
@@ -956,30 +1147,30 @@ async function persist(){
   _lastSavedAt=ts;
   var state={secs:SECS,pool:pool,savedAt:ts,savedBy:CU};
   var ss=document.getElementById('syncStatus');
+  // Always save locally as backup
+  try{localStorage.setItem('tdm3_state',JSON.stringify({secs:SECS,pool:pool}));}catch(e){}
   if(_fbReady){
     if(ss)ss.innerHTML='⏳ Saving…';
     await _fbSet('tdm/state',state);
     if(ss)ss.innerHTML='🟢 Live';
   } else {
-    if(ss)ss.innerHTML='⚠ Local only';
+    if(ss)ss.innerHTML='💾 Local';
   }
-  // Always keep local backup
-  localStorage.setItem('tdm3_state',JSON.stringify({secs:SECS,pool:pool}));
 }
 
 async function refreshFromCloud(){
-  if(!_fbReady){toast('Firebase not configured — running in local-only mode');return;}
+  if(!_fbReady){toast('Firebase not connected — running in local mode');return;}
   var ss=document.getElementById('syncStatus');
   if(ss)ss.innerHTML='⏳ Refreshing…';
   var sv=await _fbGet('tdm/state');
   if(sv&&sv.secs){
-    SECS=sv.secs;pool=sv.pool||[];
+    SECS=sv.secs; pool=sv.pool||[];
     render();
     if(ss)ss.innerHTML='🟢 Live';
     toast('Board refreshed'+(sv.savedBy?' · last saved by '+sv.savedBy:''));
-  }else{
+  } else {
     if(ss)ss.innerHTML='🟢 Live';
-    toast('Already up to date');
+    toast('No cloud data found — showing local data');
   }
 }
 
@@ -1006,27 +1197,20 @@ function ppmWarningMembers(tl){return tl.members.filter(m=>!isPPMWorker(m)&&m.ro
 function doLogin(){
   const u=document.getElementById('lu').value.trim(),p=document.getElementById('lp').value;
   const rem=document.getElementById('lrem').checked;
-  if(USERS[u]===p){
+  if(USERS[u]&&USERS[u]===p){
     CU=u;
-    if(rem){localStorage.setItem('tdm3_remember',JSON.stringify({u,p}));}
-    else{localStorage.removeItem('tdm3_remember');}
+    try{if(rem){localStorage.setItem('tdm3_remember',JSON.stringify({u:u,p:p}));}else{localStorage.removeItem('tdm3_remember');}}catch(e){}
+    document.getElementById('lerr').style.display='none';
     document.getElementById('login').style.display='none';
     document.getElementById('app').style.display='flex';
-    document.getElementById('sections').innerHTML='<div style="padding:40px;text-align:center;color:#64748B;font-size:13px">⏳ Loading team data…</div>';
     document.querySelectorAll('.admin-only').forEach(function(el){el.style.display=u==='admin'?'':'none';});
-    var initDone=false;
-    var safeInit=new Promise(function(resolve){
-      var timeout=setTimeout(function(){
-        if(!initDone){console.warn('Init timed out — using local data');_fbReady=false;resolve();}
-      },4000);
-      init().then(function(){initDone=true;clearTimeout(timeout);resolve();}).catch(function(){initDone=true;clearTimeout(timeout);resolve();});
+    init().then(function(){
+      if(!SECS||SECS.length===0){SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}
+      renderAccomBar();render();toast('Welcome, '+u+'!');
     });
-    safeInit.then(function(){
-      if(!SECS||!SECS.length){SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}
-      render();toast('Welcome, '+u);
-    });
+  } else {
+    document.getElementById('lerr').style.display='block';
   }
-  else{document.getElementById('lerr').style.display='block';}
 }
 function doLogout(){CU=null;document.getElementById('login').style.display='flex';document.getElementById('app').style.display='none';}
 
@@ -1068,7 +1252,7 @@ function cardHTML(m,tlId){
 
 // Called after render() to bind all drag/click events via addEventListener
 function bindCards(){
-  // Also bind the big CE card on the left of each cluster
+  // ── CE big card (left panel) ──────────────────────────────────────
   document.querySelectorAll('.ce-big-card[data-id]').forEach(function(el){
     var mid=el.dataset.id;
     var tlId=el.dataset.tl;
@@ -1077,13 +1261,25 @@ function bindCards(){
     fresh.addEventListener('dragstart',function(e){
       drag=mid; dragFrom='slot'; _wasDragging=false;
       e.dataTransfer.effectAllowed='move';
-      setTimeout(function(){ _wasDragging=true; fresh.style.opacity='.4'; },0);
+      e.dataTransfer.setData('text/plain',mid);
+      setTimeout(function(){ _wasDragging=true; fresh.style.opacity='.35'; },0);
     });
     fresh.addEventListener('dragend',function(){
       fresh.style.opacity='';
       drag=null; dragFrom=null;
       setTimeout(function(){ _wasDragging=false; },80);
     });
+    // CE card can also be a drop target — swap with it
+    fresh.addEventListener('dragover',function(e){ e.preventDefault(); fresh.style.outline='2px dashed #2563EB'; });
+    fresh.addEventListener('dragleave',function(){ fresh.style.outline=''; });
+    fresh.addEventListener('drop',function(e){
+      e.preventDefault(); e.stopPropagation(); fresh.style.outline='';
+      var src=drag; var srcFrom=dragFrom;
+      drag=null; dragFrom=null;
+      if(!src||src===mid) return;
+      if(srcFrom==='pool') poolToSlot(src,mid);
+      else smartDrop(src,mid,tlId);
+    });
     fresh.addEventListener('click',function(e){
       if(_wasDragging) return;
       e.stopPropagation();
@@ -1091,38 +1287,63 @@ function bindCards(){
     });
   });
 
+  // ── Regular cards ─────────────────────────────────────────────────
   document.querySelectorAll('.card[data-id]').forEach(function(el){
     var mid=el.dataset.id;
     var tlId=el.dataset.tl;
-    // Remove old listeners by cloning
     var fresh=el.cloneNode(true);
     el.parentNode.replaceChild(fresh,el);
+
     fresh.addEventListener('dragstart',function(e){
       drag=mid; dragFrom='slot'; _wasDragging=false;
       e.dataTransfer.effectAllowed='move';
+      e.dataTransfer.setData('text/plain',mid);
       setTimeout(function(){ _wasDragging=true; fresh.classList.add('dragging'); },0);
     });
     fresh.addEventListener('dragend',function(){
-      fresh.classList.remove('dragging','drag-over');
+      // Clean up ALL highlights left anywhere
+      document.querySelectorAll('.drag-over,.over').forEach(function(x){
+        x.classList.remove('drag-over','over');
+        x.style.background='';
+        x.style.outline='';
+      });
+      fresh.classList.remove('dragging');
       drag=null; dragFrom=null;
       setTimeout(function(){ _wasDragging=false; },80);
     });
+
+    // KEY FIX: Do NOT stopPropagation on dragover — let it bubble to cards-row
     fresh.addEventListener('dragover',function(e){
-      e.preventDefault(); e.stopPropagation();
-      fresh.classList.add('drag-over');
+      e.preventDefault();
+      // Only highlight if it's a same-team swap (same tlId)
+      if(drag && drag!==mid){
+        var srcF=findMember(drag);
+        var dstF=findMember(mid);
+        if(srcF&&dstF&&srcF.tl.id===dstF.tl.id){
+          fresh.classList.add('drag-over'); // same team = swap highlight
+        } else {
+          fresh.classList.remove('drag-over'); // cross-team = let row handle it
+        }
+      }
     });
-    fresh.addEventListener('dragleave',function(e){
+    fresh.addEventListener('dragleave',function(){
       fresh.classList.remove('drag-over');
     });
+
     fresh.addEventListener('drop',function(e){
       e.preventDefault(); e.stopPropagation();
       fresh.classList.remove('drag-over');
       var src=drag; var srcFrom=dragFrom;
       drag=null; dragFrom=null;
       if(!src||src===mid) return;
-      if(srcFrom==='pool') poolToSlot(src,mid);
-      else swapMembers(src,mid);
+      if(srcFrom==='pool'){
+        poolToSlot(src,mid);
+      } else {
+        // Smart drop: same team = swap; different team = move to that team
+        smartDrop(src,mid,tlId);
+      }
     });
+
     fresh.addEventListener('click',function(e){
       if(_wasDragging) return;
       e.stopPropagation();
@@ -1130,7 +1351,7 @@ function bindCards(){
     });
   });
 
-  // Bind pool chips
+  // ── Pool chips ────────────────────────────────────────────────────
   document.querySelectorAll('.pchip[data-pid]').forEach(function(el){
     var pid=el.dataset.pid;
     var fresh=el.cloneNode(true);
@@ -1138,6 +1359,7 @@ function bindCards(){
     fresh.addEventListener('dragstart',function(e){
       drag=pid; dragFrom='pool'; _wasDragging=false;
       e.dataTransfer.effectAllowed='move';
+      e.dataTransfer.setData('text/plain',pid);
       setTimeout(function(){ _wasDragging=true; fresh.classList.add('dragging'); },0);
     });
     fresh.addEventListener('dragend',function(){
@@ -1155,23 +1377,72 @@ function bindCards(){
     });
   });
 
-  // Bind team row drop zones
+  // ── Team row drop zones (the main cross-team drop target) ─────────
   document.querySelectorAll('.cards-row[data-tl]').forEach(function(el){
     var tlId=el.dataset.tl;
     el.addEventListener('dragover',function(e){
       e.preventDefault();
-      el.style.background='#EFF6FF';
+      // Only highlight the row if we're dragging from a DIFFERENT team
+      if(drag){
+        var srcF=dragFrom==='pool'?null:findMember(drag);
+        if(!srcF||srcF.tl.id!==tlId){
+          el.style.background='#EFF6FF';
+          el.style.outline='2px dashed #93C5FD';
+          el.style.borderRadius='6px';
+        }
+      }
     });
-    el.addEventListener('dragleave',function(){ el.style.background=''; });
+    el.addEventListener('dragleave',function(e){
+      // Only clear if leaving the row itself (not entering a child card)
+      if(!el.contains(e.relatedTarget)){
+        el.style.background='';
+        el.style.outline='';
+      }
+    });
     el.addEventListener('drop',function(e){
-      e.preventDefault(); el.style.background='';
+      e.preventDefault();
+      el.style.background=''; el.style.outline='';
       var src=drag; var srcFrom=dragFrom;
       drag=null; dragFrom=null;
       if(!src) return;
-      if(srcFrom==='pool') poolToTeam(src,tlId);
-      else moveToTeam(src,tlId);
+      if(srcFrom==='pool'){
+        poolToTeam(src,tlId);
+      } else {
+        moveToTeam(src,tlId);
+      }
     });
   });
+}
+
+// ── SMART DROP: same team → swap; different team → move ──────────────
+function smartDrop(srcId,dstId,dstTlId){
+  var sf=findMember(srcId);
+  var df=findMember(dstId);
+  if(!sf||!df) return;
+  if(sf.tl.id===df.tl.id){
+    // Same team — swap positions
+    swapMembers(srcId,dstId);
+  } else {
+    // Different team — move src to dst's team (insert near dst position)
+    var m=Object.assign({},sf.m);
+    hist.push({lbl:m.name+' → '+df.cl.name,time:now(),user:CU,type:'move',mid:srcId,fromTl:sf.tl.id,toTl:df.tl.id,m:m,idx:sf.i});
+    sf.tl.members.splice(sf.i,1);
+    // Find dst index again after splice
+    var df2=findMember(dstId);
+    if(df2){
+      df2.tl.members.splice(df2.i,0,m);
+    } else {
+      // fallback: just push
+      var tf=findTeamLine(dstTlId);
+      if(tf) tf.tl.members.push(m);
+    }
+    persist();render();
+    setTimeout(function(){
+      var el=document.querySelector('[data-id="'+srcId+'"]');
+      if(el){el.classList.add('pop-in');setTimeout(function(){el.classList.remove('pop-in');},450);}
+    },20);
+    toast(m.name+' moved to '+df.cl.name);
+  }
 }
 
 function teamLineHTML(tl,secId,clId,ceId){
@@ -1200,10 +1471,7 @@ function teamLineHTML(tl,secId,clId,ceId){
       </div>`:`<div style="font-size:9px;color:#7C3AED;margin-top:2px">Callout / WO / Enquiry</div>`}
       ${leadMember&&leadMember.id!==ceId?`<div class="tl-name">Lead: ${leadMember.name}</div>`:''}
     </div>
-    <div class="cards-row" data-tl="${tl.id}"
-      ondragover="ev=>{ev.preventDefault();ev.currentTarget.classList.add('over')}"
-      ondragleave="ev=>ev.currentTarget.classList.remove('over')"
-      ondrop="dropToRow(event,'${tl.id}')">`;
+    <div class="cards-row" data-tl="${tl.id}">`;
 
   // Sort: Lead Tech first (CE is shown in big card), then by roleGroup — exclude CE
   const sorted=[...tl.members]
@@ -1270,14 +1538,15 @@ function clusterHTML(cl,secId){
         <div class="cstat">Members: <strong>${totalMembers}</strong></div>
         ${ppmTeamCount>0?`
         <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF">PPM Teams: <strong style="color:#2563EB">${ppmTeamCount}</strong></div>
-        <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF;font-weight:700;color:#1D4ED8">&#128197; Man Days: <strong style="color:#1D4ED8">${ppmDays}</strong></div>
+        <div class="cstat" style="border-color:#93C5FD;background:linear-gradient(90deg,#EFF6FF,#DBEAFE);font-weight:700;color:#1D4ED8;font-size:11px;padding:4px 10px">📅 <strong style="font-size:13px">${ppmDays}</strong> PPM Days</div>
         <div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF">PPM Workers: <strong style="color:#2563EB">${totalPPMWorkers}</strong> <span style="font-size:9px;color:#94A3B8">(excl. Lead/Mgr)</span></div>
         ${totalWarned>0?`<div class="cstat" style="border-color:#FDE68A;background:#FEF3C7;color:#D97706">⚠ <strong>${totalWarned}</strong> Lead/Mgr in PPM team</div>`:''}`:''}
         ${nonPPMCount>0?`<div class="cstat" style="border-color:#DDD6FE;background:#EDE9FE">Non-PPM: <strong style="color:#7C3AED">${nonPPMCount} team${nonPPMCount>1?'s':''}</strong></div>`:''}
       </div>
       <div class="cluster-btns">
         <button class="cbtn" onclick="openAddTeam('${secId}','${cl.id}')">+ Add Team</button>
-        <button class="cbtn del-cl" onclick="openDeleteCluster('${secId}','${cl.id}')">Delete Cluster</button>
+        <button class="cbtn" onclick="openRenameCluster('${secId}','${cl.id}')">✏ Rename</button>
+        <button class="cbtn del-cl" onclick="openDeleteCluster('${secId}','${cl.id}')">Delete</button>
       </div>
     </div>
     <div class="cluster-body">
@@ -1502,22 +1771,6 @@ function updateManDays(tlId,val){
 }
 
 
-// ── ACCORDION MENU HELPERS ──────────────────────────────────────────
-function _mkAcc(icon, labelTxt, badgeCount) {
-  var acc = document.createElement('div');
-  acc.className = 'cmenu-acc';
-  var hdr = document.createElement('div');
-  hdr.className = 'cmenu-acc-hdr';
-  var badge = badgeCount ? '<span class="acc-badge">'+badgeCount+'</span>' : '';
-  hdr.innerHTML = '<span class="acc-icon">'+icon+'</span><span>'+labelTxt+'</span>'+badge+'<span class="acc-arrow">▶</span>';
-  hdr.onclick = function(e){ e.stopPropagation(); acc.classList.toggle('open'); };
-  acc.appendChild(hdr);
-  var body = document.createElement('div');
-  body.className = 'cmenu-acc-body';
-  acc.appendChild(body);
-  return {acc:acc, body:body};
-}
-
 // ── CARD CLICK MENU ──────────────────────────────────────────────────
 var _menu=null;
 function _closeMenu(){if(_menu){_menu.remove();_menu=null;}}
@@ -1526,9 +1779,8 @@ document.addEventListener('click',_closeMenu);
 function _posMenu(menu,ev){
   document.body.appendChild(menu);
   var x=ev.clientX,y=ev.clientY;
-  var mh=Math.min(menu.scrollHeight+20, window.innerHeight*0.88);
-  if(y+mh>window.innerHeight) y=Math.max(4,window.innerHeight-mh-8);
-  if(x+240>window.innerWidth) x=window.innerWidth-244;
+  if(y+400>window.innerHeight) y=Math.max(4,y-400);
+  if(x+230>window.innerWidth) x=window.innerWidth-234;
   menu.style.top=y+'px';
   menu.style.left=x+'px';
   _menu=menu;
@@ -1558,145 +1810,126 @@ function _mkItem(icon,label,isOn,cls,fn){
 
 var ROLE_ICONS={'Cluster Engineer':'&#9733;','Cluster Lead':'&#9733;','Expert':'&#128269;','Lead Tech':'&#128295;','Technician':'&#9881;','Jr. Technician':'&#128308;','Helper':'&#128296;','Sub Team':'&#128101;','Driver':'&#9875;','Back Office':'&#128203;','QC':'&#128202;','Planning':'&#128197;'};
 
+function _mkAccordion(label,icon,buildBodyFn,defaultOpen){
+  var wrap=document.createElement('div');
+  var hdr=document.createElement('div');
+  hdr.className='cmacc-hdr'+(defaultOpen?' open':'');
+  hdr.innerHTML='<span class="cmacc-title">'+icon+' '+label+'</span><span class="cmacc-arrow">▾</span>';
+  var body=document.createElement('div');
+  body.className='cmacc-body'+(defaultOpen?' open':'');
+  buildBodyFn(body);
+  hdr.addEventListener('click',function(e){
+    e.stopPropagation();
+    var o=body.classList.contains('open');
+    body.classList.toggle('open',!o);
+    hdr.classList.toggle('open',!o);
+  });
+  wrap.appendChild(hdr);wrap.appendChild(body);
+  return wrap;
+}
+
 function openCardMenu(ev,mid,tlId){
-  ev.stopPropagation();
-  _closeMenu();
+  ev.stopPropagation();_closeMenu();
   var mf=findMember(mid);if(!mf)return;
   var m=mf.m;
   var menu=_mkMenu();
 
-  // Header
+  // ── Header ──
   var hdr=document.createElement('div');hdr.className='cmenu-hdr';
-  hdr.innerHTML='<div class="chn">'+m.name+'</div><div class="chr">'+m.role+' &middot; '+mf.cl.name+'</div>';
+  hdr.innerHTML='<div class="chn">'+m.name+'</div><div class="chr">'+m.role+' · '+mf.cl.name+'</div>';
   menu.appendChild(hdr);
 
-  // Scroll wrapper
-  var scroll=document.createElement('div');scroll.className='cmenu-scroll';
-  menu.appendChild(scroll);
-
-  // ── Role accordion ──
-  var roleAcc=_mkAcc('🎭','Role','');
-  ROLES.forEach(function(r){
-    roleAcc.body.appendChild(_mkItem(ROLE_ICONS[r]||'&#8226;',r,r===m.role,'',function(role){return function(){
-      var old=mf.m.role;mf.m.role=role;
-      hist.push({lbl:m.name+': '+old+' → '+role,time:now(),user:CU,type:'roleChange',mid:mid,old:old,newRole:role});
-      persist();render();toast(m.name+' → '+role);
-    };}(r)));
+  // ── Quick action row ──
+  var qrow=document.createElement('div');qrow.className='cmenu-qrow';
+  [{label:'⬇ Pool',fn:function(){_closeMenu();toPool(mid);}},
+   {label:'↗ Move',fn:function(){_closeMenu();openSwitchPanel(mid);}},
+   {label:'✕ Remove',cls:'danger',fn:function(){_closeMenu();
+     var mf2=findMember(mid);if(!mf2)return;var nm=mf2.m.name;
+     showMod('Remove member','Remove '+nm+' entirely?',function(){
+       var mf3=findMember(mid);if(!mf3)return;
+       mf3.tl.members.splice(mf3.i,1);
+       hist.push({lbl:nm+' removed',time:now(),user:CU,type:'remove',mid:mid});
+       persist();render();toast(nm+' removed');
+     });
+   }}
+  ].forEach(function(q){
+    var b=document.createElement('button');
+    b.className='cmenu-qbtn'+(q.cls?' '+q.cls:'');
+    b.textContent=q.label;b.onclick=q.fn;
+    qrow.appendChild(b);
   });
-  scroll.appendChild(roleAcc.acc);
+  menu.appendChild(qrow);
+
+  // ── Role accordion (open by default) ──
+  menu.appendChild(_mkAccordion('Role','★',function(body){
+    ROLES.forEach(function(r){
+      body.appendChild(_mkItem(ROLE_ICONS[r]||'•',r,r===m.role,'',function(role){return function(){
+        var mf2=findMember(mid);if(!mf2)return;
+        var old=mf2.m.role;mf2.m.role=role;
+        hist.push({lbl:m.name+': '+old+' → '+role,time:now(),user:CU,type:'roleChange',mid:mid,old:old,newRole:role});
+        persist();render();toast(m.name+' → '+role);_closeMenu();
+      };}(r)));
+    });
+  },true));
 
   // ── Accommodation accordion ──
-  var accomCount=(m.accom||[]).length;
-  var acAcc=_mkAcc('🏠','Accommodation',accomCount||'');
-  Object.keys(AC).forEach(function(k){
-    var has=(m.accom||[]).includes(k);
-    acAcc.body.appendChild(_mkItem(has?'✓':'○',k+' — '+(ACNAMES[k]||k),has,'',function(code){return function(){
-      var mf2=findMember(mid);if(!mf2)return;
-      if(!mf2.m.accom)mf2.m.accom=[];
-      var ix=mf2.m.accom.indexOf(code);
-      if(ix>=0)mf2.m.accom.splice(ix,1);else mf2.m.accom.push(code);
-      persist();render();toast(m.name+': '+code+' '+(ix<0?'added':'removed'));
-    };}(k)));
-  });
-  if(accomCount>0) acAcc.acc.classList.add('open');
-  scroll.appendChild(acAcc.acc);
+  menu.appendChild(_mkAccordion('Accommodation','🏠',function(body){
+    Object.keys(AC).forEach(function(k){
+      var has=(m.accom||[]).includes(k);
+      body.appendChild(_mkItem(k,k+' — '+(ACNAMES[k]||k),has,'',function(code){return function(){
+        var mf2=findMember(mid);if(!mf2)return;
+        if(!mf2.m.accom)mf2.m.accom=[];
+        var ix=mf2.m.accom.indexOf(code);
+        if(ix>=0)mf2.m.accom.splice(ix,1);else mf2.m.accom.push(code);
+        persist();render();toast(m.name+': '+code+(ix<0?' added':' removed'));
+      };}(k)));
+    });
+  },false));
 
   // ── Skills accordion ──
-  var skillList=['HVAC','Fire Alarm','BMS','Access Control','Plumbing','Electrical','CCTV','Lift/Elevator','Generator','AHU','Chiller','ELV'];
-  var skillCount=(m.skills||[]).length;
-  var skAcc=_mkAcc('⚙','Skills',skillCount||'');
-  var skGrid=document.createElement('div');skGrid.className='cmi-grid';
-  skillList.forEach(function(sk){
-    var on=(m.skills||[]).indexOf(sk)>=0;
-    var d=document.createElement('div');
-    d.className='cmi'+(on?' on':'');
-    d.innerHTML='<span class="ci">'+(on?'✓':'·')+'</span>'+sk;
-    d.onclick=function(){
-      var mf2=findMember(mid);if(!mf2)return;
-      if(!mf2.m.skills)mf2.m.skills=[];
-      var ix=mf2.m.skills.indexOf(sk);
-      if(ix>=0)mf2.m.skills.splice(ix,1);else mf2.m.skills.push(sk);
-      persist();render();toast(m.name+': '+sk+(ix<0?' ✓':' removed'));
-      _closeMenu();
-    };
-    skGrid.appendChild(d);
-  });
-  skAcc.body.appendChild(skGrid);
-  if(skillCount>0) skAcc.acc.classList.add('open');
-  scroll.appendChild(skAcc.acc);
-
-  // ── Shift accordion ──
-  var shiftAcc=_mkAcc('🌓','Shift','');
-  [['day','☀ Day'],['night','☾ Night'],['off','○ Off']].forEach(function(sv){
-    shiftAcc.body.appendChild(_mkItem('',sv[1],(m.shift||'day')===sv[0],'',
-      (function(sh){return function(){
+  menu.appendChild(_mkAccordion('Skills','⚙',function(body){
+    var skillList=(typeof SKILLS!=='undefined'?SKILLS:['HVAC','Fire Alarm','BMS','Access Control','Plumbing','Electrical','CCTV','Lift/Elevator','Generator','AHU','Chiller','ELV']);
+    skillList.forEach(function(sk){
+      body.appendChild(_mkItem('⚙',sk,(m.skills||[]).indexOf(sk)>=0,'',function(skill){return function(){
         var mf2=findMember(mid);if(!mf2)return;
-        mf2.m.shift=sh;persist();render();toast(m.name+' → '+sh+' shift');
-      };})(sv[0])
-    ));
-  });
-  scroll.appendChild(shiftAcc.acc);
-
-  // ── Licence (single item, no accordion needed) ──
-  var licSec=_mkSec('Licence');
-  licSec.appendChild(_mkItem('&#9875;','Driving licence',!!m.licDriving,'',function(){
-    var mf2=findMember(mid);if(!mf2)return;
-    mf2.m.licDriving=!mf2.m.licDriving;
-    hist.push({lbl:m.name+': driving lic '+(mf2.m.licDriving?'added':'removed'),time:now(),user:CU,type:'lic',mid:mid});
-    persist();render();toast(m.name+': driving '+(mf2.m.licDriving?'added':'removed'));
-  }));
-  scroll.appendChild(licSec);
-
-  // ── Contractor (Sub Team only) ──
-  if(m.role==='Sub Team'){
-    var ctSec=_mkSec('Contractor');
-    ctSec.appendChild(_mkItem('🏢', m.contractor?('Change: '+m.contractor):'Set contractor name', false,'', function(){openContractorModal(mid);}));
-    if(m.contractor){
-      ctSec.appendChild(_mkItem('✕','Remove contractor',false,'danger',function(){
-        var mf2=findMember(mid);if(!mf2)return;
-        mf2.m.contractor='';persist();render();toast('Contractor removed');
-      }));
-    }
-    scroll.appendChild(ctSec);
-  }
-
-  // ── Status Tags accordion ──
-  var tagAcc=_mkAcc('🏷','Status Tags','');
-  tagAcc.body.appendChild(_mkItem('&#127979;','In Training',!!m.inTraining,'',function(){
-    var mf2=findMember(mid);if(!mf2)return;
-    mf2.m.inTraining=!mf2.m.inTraining;
-    persist();render();toast(m.name+': Training '+(mf2.m.inTraining?'tagged':'removed'));
-  }));
-  tagAcc.body.appendChild(_mkItem('&#8987;','Temporary in Team',!!m.isTemp,'',function(){
-    var mf2=findMember(mid);if(!mf2)return;
-    mf2.m.isTemp=!mf2.m.isTemp;
-    persist();render();toast(m.name+': Temporary '+(mf2.m.isTemp?'tagged':'removed'));
-  }));
-  scroll.appendChild(tagAcc.acc);
-
-  // ── Bottom quick actions ──
-  var acts=document.createElement('div');acts.className='cmenu-actions';
-  var btnMove=document.createElement('button');btnMove.className='cmenu-act-btn';btnMove.textContent='↔ Move';
-  btnMove.onclick=function(){_closeMenu();openSwitchPanel(mid);};
-  var btnPool=document.createElement('button');btnPool.className='cmenu-act-btn';btnPool.textContent='↓ Unassign';
-  btnPool.onclick=function(){_closeMenu();toPool(mid);};
-  var btnDel=document.createElement('button');btnDel.className='cmenu-act-btn danger';btnDel.textContent='✕ Remove';
-  btnDel.onclick=function(){_closeMenu();
-    var mf2=findMember(mid);if(!mf2)return;
-    var nm=mf2.m.name;
-    showMod('Remove member','Remove '+nm+' entirely? Cannot be undone.',function(){
-      var mf3=findMember(mid);if(!mf3)return;
-      mf3.tl.members.splice(mf3.i,1);
-      hist.push({lbl:nm+' removed from system',time:now(),user:CU,type:'remove',mid:mid});
-      persist();render();toast(nm+' removed');
+        if(!mf2.m.skills)mf2.m.skills=[];
+        var ix=mf2.m.skills.indexOf(skill);
+        if(ix>=0)mf2.m.skills.splice(ix,1);else mf2.m.skills.push(skill);
+        persist();render();toast(m.name+': '+skill+(ix<0?' ✓':' removed'));
+      };}(sk)));
     });
-  };
-  acts.appendChild(btnMove);acts.appendChild(btnPool);acts.appendChild(btnDel);
-  menu.appendChild(acts);
+  },false));
+
+  // ── Shift + Licence + Tags (collapsed) ──
+  menu.appendChild(_mkAccordion('Shift / Licence / Tags','🔖',function(body){
+    var shLbl=document.createElement('div');shLbl.className='cmenu-lbl';shLbl.textContent='Shift';body.appendChild(shLbl);
+    [['day','☀ Day'],['night','☾ Night'],['off','○ Off']].forEach(function(sv){
+      body.appendChild(_mkItem('',sv[1],(m.shift||'day')===sv[0],'',function(sh){return function(){
+        var mf2=findMember(mid);if(!mf2)return;mf2.m.shift=sh;persist();render();toast(m.name+' → '+sh+' shift');
+      };}(sv[0])));
+    });
+    var licLbl=document.createElement('div');licLbl.className='cmenu-lbl';licLbl.textContent='Licence';body.appendChild(licLbl);
+    body.appendChild(_mkItem('🚗','Driving licence',!!m.licDriving,'',function(){
+      var mf2=findMember(mid);if(!mf2)return;
+      mf2.m.licDriving=!mf2.m.licDriving;
+      hist.push({lbl:m.name+': driving '+(mf2.m.licDriving?'added':'removed'),time:now(),user:CU,type:'lic',mid:mid});
+      persist();render();toast(m.name+': driving '+(mf2.m.licDriving?'added':'removed'));
+    }));
+    var tagLbl=document.createElement('div');tagLbl.className='cmenu-lbl';tagLbl.textContent='Status';body.appendChild(tagLbl);
+    body.appendChild(_mkItem('📚','In Training',!!m.inTraining,'',function(){
+      var mf2=findMember(mid);if(!mf2)return;mf2.m.inTraining=!mf2.m.inTraining;persist();render();toast(m.name+': Training '+(mf2.m.inTraining?'tagged':'removed'));
+    }));
+    body.appendChild(_mkItem('⏳','Temporary',!!m.isTemp,'',function(){
+      var mf2=findMember(mid);if(!mf2)return;mf2.m.isTemp=!mf2.m.isTemp;persist();render();toast(m.name+': Temp '+(mf2.m.isTemp?'tagged':'removed'));
+    }));
+    if(m.role==='Sub Team'){
+      var ctLbl=document.createElement('div');ctLbl.className='cmenu-lbl';ctLbl.textContent='Contractor';body.appendChild(ctLbl);
+      body.appendChild(_mkItem('🏢',m.contractor?('✓ '+m.contractor):'Set contractor',false,'',function(){openContractorModal(mid);}));
+    }
+  },false));
 
   _posMenu(menu,ev);
 }
-
 function openPoolMenu(ev,pid){
   ev.stopPropagation();
   _closeMenu();
@@ -2142,6 +2375,29 @@ function doExport(){
 
 // ── ACCOMMODATION MANAGEMENT (admin only) ────────────────────────────
 // ── ADD / DELETE CLUSTER ─────────────────────────────────────────────
+
+// ── RENAME CLUSTER ──────────────────────────────────────────────────
+function openRenameCluster(secId,clId){
+  var sf=SECS.find(function(s){return s.id===secId;});
+  var cl=sf&&sf.clusters.find(function(c){return c.id===clId;});
+  if(!cl)return;
+  document.getElementById('mbox').innerHTML=
+    '<h3>Rename Cluster</h3>'+
+    '<div class="mrow"><label>Cluster name</label>'+
+    '<input class="minp" id="rnClName" value="'+cl.name.replace(/"/g,"&quot;")+'"></div>'+
+    '<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button>'+
+    '<button class="mb ok" id="rnSaveBtn">Save</button></div>';
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){
+    var inp=document.getElementById('rnClName');if(inp){inp.focus();inp.select();}
+    document.getElementById('rnSaveBtn').onclick=function(){
+      var v=document.getElementById('rnClName').value.trim();
+      if(!v){toast('Enter a name');return;}
+      cl.name=v;persist();render();closeMod();toast('Cluster renamed to "'+v+'"');
+    };
+  },30);
+}
+
 function openAddCluster(secId){
   var sf=SECS.find(function(s){return s.id===secId;});if(!sf)return;
   document.getElementById('mbox').innerHTML=
@@ -2260,10 +2516,7 @@ async function confirmAddAccom(){
   if(!name){toast('Enter a location name');return;}
   AC[code]=_selAcColors;
   ACNAMES[code]=name;
-  // Save custom accommodations to Firebase
-  var customs=Object.keys(AC).filter(function(k){return !['HAZ','RAK','AKG','SHJ','PER','DIP'].includes(k);});
-  var customData=customs.map(function(k){return{code:k,colors:AC[k],name:ACNAMES[k]};});
-  if(_fbReady){await _fbSet('tdm/accom',customData);}
+  // Accommodations saved locally via persist()
   renderAccomBar();
   closeMod();
   toast('Accommodation "'+code+'" ('+name+') added!');
@@ -2272,9 +2525,7 @@ async function confirmAddAccom(){
 // ── AUTO-LOGIN (remember me) ──────────────────────────────────────────
 (function tryAutoLogin(){
   // Show Firebase banner if not yet configured
-  if(FB_CONFIG.apiKey==='PASTE_YOUR_apiKey_HERE'){
-    var b=document.getElementById('fbBanner');if(b)b.style.display='block';
-  }
+
   var saved=localStorage.getItem('tdm3_remember');
   if(saved){
     try{
@@ -2289,13 +2540,43 @@ async function confirmAddAccom(){
         document.getElementById('app').style.display='flex';
         document.getElementById('sections').innerHTML='<div style="padding:40px;text-align:center;color:#64748B;font-size:13px">⏳ Loading shared team data…</div>';
         document.querySelectorAll('.admin-only').forEach(function(el){el.style.display=d.u==='admin'?'':'none';});
-        init().then(function(){renderAccomBar();render();toast('Welcome back, '+d.u+'!');});
+        // Load locally first, then try Firebase in background
+        init().then(function(){
+          if(!SECS||SECS.length===0){SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}
+          renderAccomBar();render();toast('Welcome back, '+d.u+'!');
+        });
         return;
       }
     }catch(e){}
   }
   // Normal login page shown — still render accom bar if visible
 })();
+
+
+// ── HARD RESET — clears corrupt localStorage and reloads from Firebase ──
+async function hardReset(){
+  showMod('Reset & Reload','This will clear your local cache and reload fresh data from Firebase. Any unsaved local changes will be lost.',async function(){
+    try{localStorage.removeItem('tdm3_state');}catch(e){}
+    var ss=document.getElementById('syncStatus');
+    if(ss)ss.innerHTML='⏳ Reloading…';
+    document.getElementById('sections').innerHTML='<div style="padding:40px;text-align:center;color:#64748B;font-size:13px">⏳ Reloading from Firebase…</div>';
+    if(_fbReady){
+      var sv=await _fbGet('tdm/state');
+      if(sv&&sv.secs&&sv.secs.length>0){
+        SECS=sv.secs;pool=sv.pool||[];
+        render();
+        if(ss)ss.innerHTML='🟢 Live';
+        toast('Reloaded from Firebase!');
+        return;
+      }
+    }
+    // No Firebase data — use factory defaults
+    SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];
+    render();
+    if(ss)ss.innerHTML=_fbReady?'🟢 Live':'⚠ Local only';
+    toast('Reset to default team data');
+  });
+}
 
 // ── UTILS ─────────────────────────────────────────────────────────────
 function now(){return new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});}
@@ -2318,6 +2599,9 @@ function showPg(id,btn){
   if(id==='saves')     renderSaves();
   if(id==='schedule')  renderSchedule();
   if(id==='mandays')   renderManDays();
+  if(id==='planning')  renderPlanBoard();
+  if(id==='ai')        {renderAiPanels();}
+  if(id==='settings')  renderSettings();
 }
 
 // ── DUPLICATE PLAN ────────────────────────────────────────────────────
@@ -2854,73 +3138,7 @@ function renderManDays(){
   cont.appendChild(frag);
 }
 
-// ════════════════════════════════════════════════
-// AI ASSISTANT
-// ════════════════════════════════════════════════
-function aiAppend(text, type) {
-  var msgs = document.getElementById('aiMsgs');
-  if (!msgs) return;
-  var d = document.createElement('div');
-  d.className = 'ai-msg ' + type;
-  d.textContent = text;
-  msgs.appendChild(d);
-  msgs.scrollTop = msgs.scrollHeight;
-}
-
-function aiQuick(prompt) {
-  document.getElementById('aiInp').value = prompt;
-  aiSend();
-}
-
-function aiSend() {
-  var inp = document.getElementById('aiInp');
-  if (!inp) return;
-  var txt = inp.value.trim();
-  if (!txt) return;
-  aiAppend(txt, 'user');
-  inp.value = '';
-
-  // Build context from current state
-  var totalMembers = 0, totalClusters = 0, unassigned = pool.length;
-  SECS.forEach(function(s){ s.clusters.forEach(function(cl){ totalClusters++; cl.teams.forEach(function(tl){ totalMembers += tl.members.length; }); }); });
-
-  var nightCount = 0, offCount = 0;
-  SECS.forEach(function(s){ s.clusters.forEach(function(cl){ cl.teams.forEach(function(tl){ tl.members.forEach(function(m){ if(m.shift==='night') nightCount++; if(m.shift==='off') offCount++; }); }); }); });
-
-  var ctx = 'You are an AI assistant for a team distribution management tool. Current state: '+totalMembers+' members across '+totalClusters+' clusters, '+unassigned+' unassigned in pool, '+nightCount+' on night shift, '+offCount+' on off shift. Give a concise, helpful response in 2-3 sentences max.';
-
-  fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 200,
-      system: ctx,
-      messages: [{role: 'user', content: txt}]
-    })
-  }).then(function(r){ return r.json(); }).then(function(data){
-    var reply = data.content && data.content[0] && data.content[0].text ? data.content[0].text : 'Sorry, I could not process that request.';
-    aiAppend(reply, 'bot');
-  }).catch(function(){
-    // Fallback local responses when API unavailable
-    var lower = txt.toLowerCase();
-    var reply = '';
-    if (lower.includes('unassign') || lower.includes('pool')) {
-      reply = 'There are currently ' + pool.length + ' member(s) in the unassigned pool. Drag any card to the "Unassigned pool" panel on the right, or click a card and choose "↓ Unassign".';
-    } else if (lower.includes('shift') || lower.includes('optim')) {
-      reply = nightCount + ' members are on night shift and ' + offCount + ' are off. To balance coverage, consider rotating members with "off" status into day or night shifts via the card menu.';
-    } else if (lower.includes('anomal') || lower.includes('issue')) {
-      reply = unassigned > 0 ? '⚠ ' + unassigned + ' member(s) are unassigned. Review the pool panel and assign them to clusters as needed.' : '✓ No unassigned members detected. Review PPM team counts for clusters with fewer than 3 members.';
-    } else if (lower.includes('summary') || lower.includes('export') || lower.includes('narrative')) {
-      reply = 'Summary: ' + totalMembers + ' total members across ' + totalClusters + ' clusters. ' + unassigned + ' unassigned. Use Export Excel or Export TXT buttons in the header for a full report.';
-    } else {
-      reply = 'I can help with shift optimization, anomaly detection, team assignments and summary reports. Try one of the quick action buttons below!';
-    }
-    aiAppend(reply, 'bot');
-  });
-}
-
-
+function openMDEdit(memberId,name,planned,used){
   document.getElementById('mbox').innerHTML=
     '<h3>Man Days \u2014 '+name+'</h3>'+
     '<div class="mrow"><label>Planned days (contract)</label><input class="minp" type="number" id="mdP" min="0" value="'+planned+'"></div>'+
@@ -2936,6 +3154,1031 @@ function aiSend() {
       setMD(md);renderManDays();closeMod();toast('Man days updated');
     });
   },30);
+}
+
+
+
+// ═══════ ADDITIONS ═══════
+// ═══════════════════════════════════════════════════════════
+// LICENCE ICON
+// ═══════════════════════════════════════════════════════════
+(function(){
+  // Override licIcon
+  window.licIcon = function(m){
+    if(m.licDriving) return '<span class="lic-tag">🚗 DL</span>';
+    return '';
+  };
+})();
+
+// ═══════════════════════════════════════════════════════════
+// ACCORDION CONTEXT MENU
+// ═══════════════════════════════════════════════════════════
+function _mkAcc(icon,labelTxt,badgeCount){
+  var acc=document.createElement('div');acc.className='cmenu-acc';
+  var hdr=document.createElement('div');hdr.className='cmenu-acc-hdr';
+  var badge=badgeCount?'<span class="acc-badge">'+badgeCount+'</span>':'';
+  hdr.innerHTML='<span class="acc-icon">'+icon+'</span><span>'+labelTxt+'</span>'+badge+'<span class="acc-arrow">&#9658;</span>';
+  hdr.onclick=function(e){e.stopPropagation();acc.classList.toggle('open');};
+  acc.appendChild(hdr);
+  var body=document.createElement('div');body.className='cmenu-acc-body';acc.appendChild(body);
+  return {acc:acc,body:body};
+}
+
+var _menu=null;
+function _closeMenu(){if(_menu){_menu.remove();_menu=null;}}
+document.addEventListener('click',_closeMenu);
+
+function _posMenu(menu,ev){
+  document.body.appendChild(menu);
+  var x=ev.clientX,y=ev.clientY;
+  var mh=Math.min(500,window.innerHeight*0.9);
+  if(y+mh>window.innerHeight) y=Math.max(4,window.innerHeight-mh-8);
+  if(x+265>window.innerWidth) x=window.innerWidth-268;
+  menu.style.top=y+'px';menu.style.left=x+'px';
+  _menu=menu;
+}
+
+function _mkMenu(){
+  var m=document.createElement('div');m.className='cmenu';
+  m.onclick=function(e){e.stopPropagation();};return m;
+}
+function _mkSec(labelTxt){
+  var s=document.createElement('div');s.className='cmenu-sec';
+  if(labelTxt){var l=document.createElement('div');l.className='cmenu-lbl';l.textContent=labelTxt;s.appendChild(l);}
+  return s;
+}
+function _mkItem(icon,label,isOn,cls,fn){
+  var d=document.createElement('div');
+  d.className='cmi'+(isOn?' on':'')+(cls?' '+cls:'');
+  d.innerHTML='<span class="ci">'+icon+'</span>'+label+(isOn?'<span class="ck">&#10003;</span>':'');
+  d.onclick=function(){_closeMenu();if(fn)fn();};return d;
+}
+
+var ROLE_ICONS={'Cluster Engineer':'&#9733;','Cluster Lead':'&#9733;','Expert':'&#128269;','Lead Tech':'&#128295;','Technician':'&#9881;','Jr. Technician':'&#128308;','Helper':'&#128296;','Sub Team':'&#128101;','Driver':'&#9875;','Back Office':'&#128203;','QC':'&#128202;','Planning':'&#128197;'};
+
+function openCardMenu(ev,mid,tlId){
+  ev.stopPropagation();_closeMenu();
+  var mf=findMember(mid);if(!mf)return;
+  var m=mf.m;
+  var menu=_mkMenu();
+  var hdr=document.createElement('div');hdr.className='cmenu-hdr';
+  hdr.innerHTML='<div class="chn">'+m.name+'</div><div class="chr">'+m.role+' &middot; '+mf.cl.name+'</div>';
+  menu.appendChild(hdr);
+  var scroll=document.createElement('div');scroll.className='cmenu-scroll';menu.appendChild(scroll);
+
+  // Role
+  var ra=_mkAcc('🎭','Role','');
+  ROLES.forEach(function(r){
+    ra.body.appendChild(_mkItem(ROLE_ICONS[r]||'·',r,r===m.role,'',function(role){return function(){
+      var mf2=findMember(mid);if(!mf2)return;
+      var old=mf2.m.role;mf2.m.role=role;
+      hist.push({lbl:m.name+': '+old+' → '+role,time:now(),user:CU,type:'roleChange',mid:mid,old:old,newRole:role});
+      persist();render();toast(m.name+' → '+role);
+    };}(r)));
+  });
+  scroll.appendChild(ra.acc);
+
+  // Accommodation
+  var acCount=(m.accom||[]).length;
+  var aa=_mkAcc('🏠','Accommodation',acCount||'');
+  Object.keys(AC).forEach(function(k){
+    var has=(m.accom||[]).includes(k);
+    aa.body.appendChild(_mkItem(has?'✓':'○',k+' — '+(ACNAMES[k]||k),has,'',function(code){return function(){
+      var mf2=findMember(mid);if(!mf2)return;
+      if(!mf2.m.accom)mf2.m.accom=[];
+      var ix=mf2.m.accom.indexOf(code);
+      if(ix>=0)mf2.m.accom.splice(ix,1);else mf2.m.accom.push(code);
+      persist();render();
+    };}(k)));
+  });
+  if(acCount>0)aa.acc.classList.add('open');
+  scroll.appendChild(aa.acc);
+
+  // Skills
+  var SKLIST=['HVAC','Fire Alarm','BMS','Access Control','Plumbing','Electrical','CCTV','Lift/Elevator','Generator','AHU','Chiller','ELV'];
+  try{var sk2=localStorage.getItem('tdm_skills');if(sk2)SKLIST=JSON.parse(sk2);}catch(e){}
+  var skCount=(m.skills||[]).length;
+  var ska=_mkAcc('⚙','Skills',skCount||'');
+  var skGrid=document.createElement('div');skGrid.className='cmi-grid';
+  SKLIST.forEach(function(sk){
+    var on=(m.skills||[]).indexOf(sk)>=0;
+    var d=document.createElement('div');d.className='cmi'+(on?' on':'');
+    d.innerHTML='<span class="ci">'+(on?'✓':'·')+'</span>'+sk;
+    d.onclick=function(){
+      var mf2=findMember(mid);if(!mf2)return;
+      if(!mf2.m.skills)mf2.m.skills=[];
+      var ix=mf2.m.skills.indexOf(sk);
+      if(ix>=0)mf2.m.skills.splice(ix,1);else mf2.m.skills.push(sk);
+      persist();render();_closeMenu();
+    };skGrid.appendChild(d);
+  });
+  ska.body.appendChild(skGrid);
+  if(skCount>0)ska.acc.classList.add('open');
+  scroll.appendChild(ska.acc);
+
+  // Shift
+  var sha=_mkAcc('🌓','Shift','');
+  [['day','☀ Day'],['night','☾ Night'],['off','○ Off']].forEach(function(sv){
+    sha.body.appendChild(_mkItem('',sv[1],(m.shift||'day')===sv[0],'',
+      (function(sh){return function(){var mf2=findMember(mid);if(!mf2)return;mf2.m.shift=sh;persist();render();toast(m.name+' → '+sh);};})(sv[0])
+    ));
+  });
+  scroll.appendChild(sha.acc);
+
+  // Licence
+  var ls=_mkSec('Licence');
+  ls.appendChild(_mkItem('🚗','Driving licence',!!m.licDriving,'',function(){
+    var mf2=findMember(mid);if(!mf2)return;mf2.m.licDriving=!mf2.m.licDriving;
+    hist.push({lbl:m.name+': driving '+(mf2.m.licDriving?'added':'removed'),time:now(),user:CU,type:'lic',mid:mid});
+    persist();render();toast(m.name+': driving '+(mf2.m.licDriving?'✓':'removed'));
+  }));
+  scroll.appendChild(ls);
+
+  // Contractor
+  if(m.role==='Sub Team'){
+    var ctSec=_mkSec('Contractor');
+    ctSec.appendChild(_mkItem('🏢',m.contractor?('Change: '+m.contractor):'Set contractor',false,'',function(){openContractorModal(mid);}));
+    if(m.contractor)ctSec.appendChild(_mkItem('✕','Remove contractor',false,'danger',function(){var mf2=findMember(mid);if(!mf2)return;mf2.m.contractor='';persist();render();}));
+    scroll.appendChild(ctSec);
+  }
+
+  // Tags
+  var ta=_mkAcc('🏷','Status Tags','');
+  ta.body.appendChild(_mkItem('📚','In Training',!!m.inTraining,'',function(){var mf2=findMember(mid);if(!mf2)return;mf2.m.inTraining=!mf2.m.inTraining;persist();render();}));
+  ta.body.appendChild(_mkItem('⏳','Temporary',!!m.isTemp,'',function(){var mf2=findMember(mid);if(!mf2)return;mf2.m.isTemp=!mf2.m.isTemp;persist();render();}));
+  scroll.appendChild(ta.acc);
+
+  // Quick actions
+  var acts=document.createElement('div');acts.className='cmenu-actions';
+  var b1=document.createElement('button');b1.className='cmenu-act-btn';b1.textContent='↔ Move';b1.onclick=function(){_closeMenu();openSwitchPanel(mid);};
+  var b2=document.createElement('button');b2.className='cmenu-act-btn';b2.textContent='↓ Unassign';b2.onclick=function(){_closeMenu();toPool(mid);};
+  var b3=document.createElement('button');b3.className='cmenu-act-btn danger';b3.textContent='✕ Remove';
+  b3.onclick=function(){_closeMenu();var mf2=findMember(mid);if(!mf2)return;var nm=mf2.m.name;
+    showMod('Remove '+nm,'Remove entirely? Cannot be undone.',function(){var mf3=findMember(mid);if(!mf3)return;mf3.tl.members.splice(mf3.i,1);
+      hist.push({lbl:nm+' removed',time:now(),user:CU,type:'remove',mid:mid});persist();render();toast(nm+' removed');});
+  };
+  acts.appendChild(b1);acts.appendChild(b2);acts.appendChild(b3);menu.appendChild(acts);
+  _posMenu(menu,ev);
+}
+
+// ═══════════════════════════════════════════════════════════
+// SWITCH PANEL — scrollable with search
+// ═══════════════════════════════════════════════════════════
+function openSwitchPanel(mid){
+  var mf=findMember(mid);if(!mf)return;
+  var m=mf.m;
+  function buildGrid(filter){
+    var f=(filter||'').toLowerCase().trim();
+    var html='<div class="sw-grid">';
+    SECS.forEach(function(s){
+      var secItems='';
+      s.clusters.forEach(function(cl){
+        cl.teams.forEach(function(tl){
+          var isCur=(tl.id===mf.tl.id);
+          var wt=wtInfo(tl.type);
+          var lead=tl.members.find(function(x){return x.role==='Cluster Engineer'||x.role==='Lead Tech'||x.role==='Expert';});
+          var searchStr=(cl.name+(lead?lead.name:'')+wt.label+s.label).toLowerCase();
+          if(f&&!searchStr.includes(f)&&!isCur)return;
+          secItems+='<div class="sw-item'+(isCur?' cur':'')+'" id="swi_'+tl.id+'"'+(isCur?'':' data-sw-tl="'+tl.id+'" onclick="switchTo(\''+mid+'\',this.dataset.swTl);closeMod()"')+'>';
+          secItems+='<div class="sw-cl">'+cl.name+'</div>';
+          if(lead)secItems+='<div class="sw-ld">'+lead.name+'</div>';
+          secItems+='<div style="display:flex;align-items:center;gap:4px;margin-top:3px">';
+          secItems+='<span class="ap" style="background:'+wt.bg+';color:'+wt.color+'">'+wt.label+'</span>';
+          secItems+='<span style="font-size:9px;color:var(--text3)">'+tl.members.length+' members</span>';
+          if(isCur)secItems+='<span style="font-size:9px;color:var(--blue);margin-left:auto">✓ current</span>';
+          secItems+='</div></div>';
+        });
+      });
+      if(secItems)html+='<div class="sw-sep">'+s.label+'</div>'+secItems;
+    });
+    html+='</div>';
+    return html;
+  }
+  var box=document.getElementById('mbox');
+  box.className='mbox sw-modal';
+  box.innerHTML=
+    '<div class="sw-hdr">'+
+      '<h3>Move: <strong>'+m.name+'</strong></h3>'+
+      '<div class="sw-sub">Currently in <strong>'+mf.cl.name+'</strong></div>'+
+      '<input id="swSearch" class="sinp" type="text" placeholder="🔍 Search cluster or lead..." style="width:100%;font-size:12px;padding:7px 10px;margin-top:8px" oninput="_swFilter(this.value)">'+
+    '</div>'+
+    '<div class="sw-scroll" id="swScroll">'+buildGrid('')+'</div>'+
+    '<div class="sw-foot"><button class="mb" onclick="closeMod()">Cancel</button></div>';
+  box._swBuild=buildGrid;
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){
+    var cur=document.getElementById('swi_'+mf.tl.id);
+    var scr=document.getElementById('swScroll');
+    if(cur&&scr){scr.scrollTop=Math.max(0,cur.offsetTop-scr.clientHeight/2+cur.offsetHeight/2);}
+    var si=document.getElementById('swSearch');if(si)si.focus();
+  },80);
+}
+function _swFilter(val){
+  var scr=document.getElementById('swScroll');
+  var box=document.getElementById('mbox');
+  if(!scr||!box||!box._swBuild)return;
+  scr.innerHTML=box._swBuild(val);
+}
+
+// Reset mbox class on close
+var _origCloseMod=window.closeMod;
+window.closeMod=function(){
+  var box=document.getElementById('mbox');
+  if(box)box.className='mbox';
+  if(_origCloseMod)_origCloseMod();
+};
+
+// Assign panel — same treatment
+function openAssignPanel(pid){
+  var p=pool.find(function(x){return x.pid===pid;});if(!p)return;
+  function buildGrid(filter){
+    var f=(filter||'').toLowerCase().trim();
+    var html='<div class="sw-grid">';
+    SECS.forEach(function(s){
+      var secItems='';
+      s.clusters.forEach(function(cl){
+        cl.teams.forEach(function(tl){
+          var wt=wtInfo(tl.type);
+          var lead=tl.members.find(function(x){return x.role==='Cluster Engineer'||x.role==='Lead Tech'||x.role==='Expert';});
+          var searchStr=(cl.name+(lead?lead.name:'')+wt.label+s.label).toLowerCase();
+          if(f&&!searchStr.includes(f))return;
+          secItems+='<div class="sw-item" data-pid="'+pid+'" data-tl="'+tl.id+'" onclick="poolToTeam(this.dataset.pid,this.dataset.tl);closeMod()">';
+          secItems+='<div class="sw-cl">'+cl.name+'</div>';
+          if(lead)secItems+='<div class="sw-ld">'+lead.name+'</div>';
+          secItems+='<div style="display:flex;align-items:center;gap:4px;margin-top:3px">';
+          secItems+='<span class="ap" style="background:'+wt.bg+';color:'+wt.color+'">'+wt.label+'</span>';
+          secItems+='<span style="font-size:9px;color:var(--text3)">'+tl.members.length+' members</span>';
+          secItems+='</div></div>';
+        });
+      });
+      if(secItems)html+='<div class="sw-sep">'+s.label+'</div>'+secItems;
+    });
+    html+='</div>';
+    return html;
+  }
+  var box=document.getElementById('mbox');
+  box.className='mbox sw-modal';
+  box.innerHTML=
+    '<div class="sw-hdr">'+
+      '<h3>Assign: <strong>'+p.name+'</strong></h3>'+
+      '<div class="sw-sub">'+p.role+' — select a team</div>'+
+      '<input id="asSearch" class="sinp" type="text" placeholder="🔍 Search cluster or lead..." style="width:100%;font-size:12px;padding:7px 10px;margin-top:8px" oninput="_asFilter(this.value)">'+
+    '</div>'+
+    '<div class="sw-scroll" id="asScroll">'+buildGrid('')+'</div>'+
+    '<div class="sw-foot"><button class="mb" onclick="closeMod()">Cancel</button></div>';
+  box._asBuild=buildGrid;
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){var si=document.getElementById('asSearch');if(si)si.focus();},60);
+}
+function _asFilter(val){
+  var scr=document.getElementById('asScroll');
+  var box=document.getElementById('mbox');
+  if(!scr||!box||!box._asBuild)return;
+  scr.innerHTML=box._asBuild(val);
+}
+
+
+
+// ═══════ PLANNING ═══════
+// ═══════════════════════════════════════════════════════════
+// PLANNING BOARD
+// ═══════════════════════════════════════════════════════════
+var PLAN_SECS=[],planPool=[],planHist=[],planDrag=null,planDragFrom=null,_planWasDrag=false,planCollapsed={};
+
+function savePlan(){try{localStorage.setItem('tdm_plan',JSON.stringify({secs:PLAN_SECS,pool:planPool,notes:(document.getElementById('planNotes')||{}).value||''}));}catch(e){}}
+function loadPlan(){try{var r=localStorage.getItem('tdm_plan');if(r){var d=JSON.parse(r);PLAN_SECS=d.secs||[];planPool=d.pool||[];if(d.notes&&document.getElementById('planNotes'))document.getElementById('planNotes').value=d.notes;}}catch(e){}}
+function savePlanNotes(){savePlan();}
+function getPlanSnaps(){try{return JSON.parse(localStorage.getItem('tdm_plansnaps')||'[]');}catch(e){return[];}}
+function setPlanSnaps(a){try{localStorage.setItem('tdm_plansnaps',JSON.stringify(a));}catch(e){}}
+
+function planCopyFromLive(){
+  if(!confirm('Copy live board into planning sandbox? Current plan will be replaced.'))return;
+  PLAN_SECS=JSON.parse(JSON.stringify(SECS));planPool=JSON.parse(JSON.stringify(pool));planHist=[];
+  savePlan();renderPlanBoard();toast('Live board copied to planning');
+}
+function planPromoteToLive(){
+  if(!confirm('Promote this plan to the LIVE board?'))return;
+  SECS=JSON.parse(JSON.stringify(PLAN_SECS));pool=JSON.parse(JSON.stringify(planPool));
+  persist();render();toast('Plan promoted to live ✓');
+}
+function planClear(){
+  if(!confirm('Clear the planning board?'))return;
+  PLAN_SECS=JSON.parse(JSON.stringify(INIT_SECS));planPool=[];planHist=[];
+  savePlan();renderPlanBoard();toast('Planning board cleared');
+}
+function doPlanUndo(){
+  if(!planHist.length)return;
+  var h=planHist.pop();PLAN_SECS=JSON.parse(JSON.stringify(h.secs));planPool=JSON.parse(JSON.stringify(h.pool));
+  savePlan();renderPlanBoard();toast('Undo: '+h.lbl);
+}
+function planPushHist(lbl){
+  planHist.push({lbl:lbl,secs:JSON.parse(JSON.stringify(PLAN_SECS)),pool:JSON.parse(JSON.stringify(planPool))});
+  if(planHist.length>40)planHist.shift();
+  var ub=document.getElementById('planUbtn');if(ub)ub.disabled=false;
+}
+function planSaveSnapshot(){
+  var name=prompt('Snapshot name:','Plan '+new Date().toLocaleString());if(!name)return;
+  var snaps=getPlanSnaps();
+  snaps.unshift({name:name,date:new Date().toLocaleString(),secs:JSON.parse(JSON.stringify(PLAN_SECS)),pool:JSON.parse(JSON.stringify(planPool))});
+  if(snaps.length>20)snaps=snaps.slice(0,20);setPlanSnaps(snaps);renderPlanSnaps();toast('Snapshot saved');
+}
+function planLoadSnapshot(idx){
+  var s=getPlanSnaps()[idx];if(!s||!confirm('Load "'+s.name+'"?'))return;
+  PLAN_SECS=JSON.parse(JSON.stringify(s.secs));planPool=JSON.parse(JSON.stringify(s.pool));
+  savePlan();renderPlanBoard();toast('Snapshot loaded: '+s.name);
+}
+function planDeleteSnapshot(idx){var snaps=getPlanSnaps();snaps.splice(idx,1);setPlanSnaps(snaps);renderPlanSnaps();toast('Deleted');}
+
+function planSearch(q){
+  q=q.toLowerCase();
+  document.querySelectorAll('#planSections .plan-card[data-id]').forEach(function(el){
+    if(!q){el.classList.remove('lit','dim');return;}
+    var mf=planFindMember(el.dataset.id);
+    var hit=mf&&(mf.m.name.toLowerCase().includes(q)||mf.m.role.toLowerCase().includes(q));
+    el.classList.toggle('lit',!!hit);el.classList.toggle('dim',!hit);
+  });
+}
+
+function planFindMember(id){
+  for(var si=0;si<PLAN_SECS.length;si++){var s=PLAN_SECS[si];
+    for(var ci=0;ci<s.clusters.length;ci++){var cl=s.clusters[ci];
+      for(var ti=0;ti<cl.teams.length;ti++){var tl=cl.teams[ti];
+        var i=tl.members.findIndex(function(m){return m.id===id;});
+        if(i>=0)return{s:s,cl:cl,tl:tl,i:i,m:tl.members[i]};
+      }}}return null;
+}
+function planFindTeam(tlId){
+  for(var si=0;si<PLAN_SECS.length;si++){var s=PLAN_SECS[si];
+    for(var ci=0;ci<s.clusters.length;ci++){var cl=s.clusters[ci];
+      for(var ti=0;ti<cl.teams.length;ti++){if(cl.teams[ti].id===tlId)return{s:s,cl:cl,tl:cl.teams[ti]};}
+    }}return null;
+}
+
+function planSwap(aid,bid){var af=planFindMember(aid),bf=planFindMember(bid);if(!af||!bf)return;planPushHist('Swap '+af.m.name+' ↔ '+bf.m.name);var tmp=af.tl.members[af.i];af.tl.members[af.i]=bf.tl.members[bf.i];bf.tl.members[bf.i]=tmp;savePlan();renderPlanBoard();}
+function planMoveToTeam(mid,tlId){var mf=planFindMember(mid),tf=planFindTeam(tlId);if(!mf||!tf||mf.tl.id===tlId)return;planPushHist(mf.m.name+' → '+tf.cl.name);var m=mf.tl.members.splice(mf.i,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard();}
+function planToPool(mid){var mf=planFindMember(mid);if(!mf)return;planPushHist(mf.m.name+' → pool');var m=mf.tl.members.splice(mf.i,1)[0];m.pid=m.id;planPool.push(m);savePlan();renderPlanBoard();}
+function planPoolToTeam(pid,tlId){var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi<0)return;var tf=planFindTeam(tlId);if(!tf)return;planPushHist(planPool[pi].name+' → '+tf.cl.name);var m=planPool.splice(pi,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard();}
+function planPoolToSlot(pid,tid){var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi<0)return;var tf=planFindMember(tid);if(!tf)return;var m=planPool.splice(pi,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard();}
+
+function planCardHTML(m,tlId){
+  var col=RC[m.role]||'#888';
+  var cls='card plan-card';
+  var isCE=m.role==='Cluster Engineer'||m.role==='Cluster Lead';
+  var isLT=m.role==='Lead Tech';
+  if(isCE)cls+=' is-cluster-eng';else if(isLT)cls+=' is-lead-tech';
+  if(m.inTraining)cls+=' has-training';if(m.isTemp)cls+=' has-temp';
+  var crownBadge='';
+  if(isCE)crownBadge='<div class="role-crown ce">&#9733; Cluster Engineer</div>';
+  else if(isLT)crownBadge='<div class="role-crown lt">&#9670; Lead Tech</div>';
+  var extras='';
+  if(m.skills&&m.skills.length)extras+='<div class="card-skills">'+m.skills.map(function(s){return '<span class="skill-tag">'+s+'</span>';}).join('')+'</div>';
+  if(m.role==='Sub Team'&&m.contractor)extras+='<span class="contractor-tag">&#127970; '+m.contractor+'</span>';
+  if(m.shift==='night')extras+='<span class="shift-night">&#9790; Night</span>';
+  else if(m.shift==='off')extras+='<span class="shift-off">Day off</span>';
+  if(m.inTraining)extras+='<span class="tag-training">&#127979; Training</span>';
+  if(m.isTemp)extras+='<span class="tag-temp">&#8987; Temporary</span>';
+  if(m.licDriving)extras+='<span class="lic-tag">🚗 DL</span>';
+  return '<div class="'+cls+'" data-id="'+m.id+'" data-tl="'+tlId+'" draggable="true">'+
+    '<div class="rdot" style="background:'+col+'"></div>'+crownBadge+
+    '<div class="crole">'+m.role+'</div>'+
+    '<div class="cname2" style="font-weight:'+(isCE?'700':isLT?'600':'500')+'">'+m.name+'</div>'+
+    (m.accom&&m.accom.length?'<div class="caccom">'+acHTML(m.accom)+'</div>':'')+
+    extras+'</div>';
+}
+
+function planClusterHTML(cl,secId){
+  var ceM=null,ceTeamId=null;
+  for(var ti=0;ti<cl.teams.length;ti++){var ce=cl.teams[ti].members.find(function(m){return m.role==='Cluster Engineer'||m.role==='Cluster Lead';});if(ce){ceM=ce;ceTeamId=cl.teams[ti].id;break;}}
+  var ppmDays=cl.teams.filter(function(t){return t.type==='PPM';}).reduce(function(a,t){return a+(parseInt(t.manDays)||0);},0);
+  var totalM=cl.teams.reduce(function(a,t){return a+t.members.length;},0);
+  var ceHTML=ceM?'<div class="ce-big-card plan-card" data-id="'+ceM.id+'" data-tl="'+ceTeamId+'" draggable="true">'+
+    '<div class="ce-big-badge">&#9733; CE</div><div class="ce-big-name">'+ceM.name+'</div>'+
+    (ceM.accom&&ceM.accom.length?'<div class="caccom" style="justify-content:center;margin-top:4px">'+acHTML(ceM.accom)+'</div>':'')+
+    (ppmDays>0?'<div class="ce-big-teams">'+ppmDays+' PPM Days</div>':'')+
+    '</div>':'';
+  var teamsHTML='';
+  cl.teams.forEach(function(tl){
+    var wt=wtInfo(tl.type);var isPPM=tl.type==='PPM';
+    var nonCE=tl.members.filter(function(m){return m.role!=='Cluster Engineer'&&m.role!=='Cluster Lead';});
+    var cards=nonCE.map(function(m){return planCardHTML(m,tl.id);}).join('');
+    teamsHTML+='<div class="team-line" data-tl="'+tl.id+'" style="border-left:3px solid '+(isPPM?'#2563EB':wt.color)+'">'+
+      '<div class="tl-meta">'+
+        '<div class="tl-type" style="background:'+wt.bg+';color:'+wt.color+'">'+wt.label+'</div>'+
+        (isPPM?'<div class="tl-days-highlight"><span class="md-label">MAN DAYS</span><input type="number" value="'+(tl.manDays||75)+'" min="0" onclick="event.stopPropagation()" onchange="setPlanManDays(\''+tl.id+'\',this.value)"></div>':'<div style="font-size:9px;color:var(--text3);margin-top:2px">Non-PPM</div>')+
+      '</div>'+
+      '<div class="cards-row plan-row" data-tl="'+tl.id+'">'+cards+
+        '<button class="add-member-btn" onclick="openPlanAddMember(\''+tl.id+'\')"><span class="plus">+</span>Add</button>'+
+      '</div>'+
+      '<button class="tl-del" onclick="deletePlanTeamLine(\''+tl.id+'\')" title="Remove">✕</button>'+
+    '</div>';
+  });
+  return '<div class="cluster" id="plcl-'+cl.id+'">'+
+    '<div class="cluster-hdr">'+
+      '<h4>'+cl.name+(ppmDays>0?'<span style="font-size:10px;font-weight:500;color:#2563EB;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:5px;padding:1px 8px;margin-left:6px">'+ppmDays+' PPM Days</span>':'')+'</h4>'+
+      '<div class="cluster-stats"><div class="cstat">Members: <strong>'+totalM+'</strong></div></div>'+
+      '<div class="cluster-btns">'+
+        '<button class="cbtn" onclick="openPlanAddTeam(\''+secId+'\',\''+cl.id+'\')">+ Team</button>'+
+        '<button class="cbtn del-cl" onclick="deletePlanCluster(\''+secId+'\',\''+cl.id+'\')">✕</button>'+
+      '</div>'+
+    '</div>'+
+    '<div class="cluster-body">'+ceHTML+'<div class="cluster-teams">'+teamsHTML+'</div></div>'+
+  '</div>';
+}
+
+function renderPlanBoard(){
+  loadPlan();
+  var sc=document.getElementById('planSections');if(!sc)return;
+  if(!PLAN_SECS||!PLAN_SECS.length){
+    sc.innerHTML='<div style="padding:50px;text-align:center;color:var(--text3)">'+
+      '<div style="font-size:40px;margin-bottom:12px">📋</div>'+
+      '<div style="font-weight:600;font-size:14px;margin-bottom:8px">Planning board is empty</div>'+
+      '<div style="font-size:12px;margin-bottom:16px">Click <strong style="color:#7C3AED">⬇ Copy from Live</strong> to start planning from the current board.</div>'+
+      '<button onclick="planCopyFromLive()" style="padding:9px 22px;background:#7C3AED;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--f)">⬇ Copy from Live Board</button>'+
+    '</div>';
+    renderPlanPool();renderPlanSnaps();return;
+  }
+  sc.innerHTML='';
+  PLAN_SECS.forEach(function(s){
+    var open=!planCollapsed[s.id];
+    var totalM=s.clusters.reduce(function(a,c){return a+c.teams.reduce(function(b,t){return b+t.members.length;},0);},0);
+    var body='';s.clusters.forEach(function(cl){body+=planClusterHTML(cl,s.id);});
+    var div=document.createElement('div');div.className='section';
+    div.innerHTML='<div class="shdr" style="background:'+s.color+'">'+
+      '<span onclick="togglePlanSec(\''+s.id+'\')" style="display:flex;align-items:center;gap:8px;flex:1;cursor:pointer">'+
+        '<h3 style="flex:1">'+s.label+'</h3><span class="sc">'+totalM+' members</span><span class="sa">'+(open?'▲':'▼')+'</span>'+
+      '</span>'+
+      '<button onclick="openPlanAddCluster(\''+s.id+'\')" style="font-size:10px;padding:3px 11px;border:1px solid rgba(255,255,255,.35);border-radius:6px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;margin-left:6px">+ Cluster</button>'+
+    '</div><div class="sbody" style="'+(open?'':'display:none')+'">'+body+'</div>';
+    sc.appendChild(div);
+  });
+  renderPlanPool();renderPlanSnaps();
+  var ub=document.getElementById('planUbtn');if(ub)ub.disabled=planHist.length===0;
+  setTimeout(bindPlanCards,0);
+}
+function togglePlanSec(id){planCollapsed[id]=!planCollapsed[id];renderPlanBoard();}
+
+function renderPlanPool(){
+  var ch=document.getElementById('planPchips');if(!ch)return;
+  var cnt=document.getElementById('planPcnt');if(cnt)cnt.textContent=planPool.length;
+  ch.innerHTML=planPool.map(function(p){
+    return '<div class="pchip plan-chip" data-pid="'+p.pid+'" draggable="true">'+
+      '<div class="pn">'+p.name+(p.licDriving?'<span class="lic-tag" style="margin-left:4px">🚗</span>':'')+'</div>'+
+      '<div class="pm">'+p.role+(p.accom&&p.accom.length?' · '+p.accom.join(' '):'')+' </div></div>';
+  }).join('');
+}
+function renderPlanSnaps(){
+  var list=document.getElementById('planSnapList');if(!list)return;
+  var snaps=getPlanSnaps();
+  var cnt=document.getElementById('planSnapCnt');if(cnt)cnt.textContent=snaps.length;
+  if(!snaps.length){list.innerHTML='<span class="hemp">No snapshots yet</span>';return;}
+  list.innerHTML=snaps.map(function(s,i){
+    return '<div class="hitem" style="display:flex;align-items:center;gap:5px">'+
+      '<div style="flex:1"><strong style="font-size:10px">'+s.name+'</strong><span class="ht">'+s.date+'</span></div>'+
+      '<button onclick="planLoadSnapshot('+i+')" style="font-size:9px;padding:2px 6px;border:1px solid var(--blue-m);border-radius:4px;background:var(--blue-l);color:var(--blue);cursor:pointer;font-family:var(--f)">Load</button>'+
+      '<button onclick="planDeleteSnapshot('+i+')" style="font-size:9px;padding:2px 5px;border:1px solid #FECACA;border-radius:4px;background:var(--red-l);color:var(--red);cursor:pointer;font-family:var(--f)">✕</button>'+
+    '</div>';
+  }).join('');
+}
+
+function bindPlanCards(){
+  document.querySelectorAll('#planSections .plan-card[data-id]').forEach(function(el){
+    var mid=el.dataset.id,tlId=el.dataset.tl;
+    var fresh=el.cloneNode(true);el.parentNode.replaceChild(fresh,el);
+    fresh.addEventListener('dragstart',function(e){planDrag=mid;planDragFrom='slot';_planWasDrag=false;e.dataTransfer.effectAllowed='move';setTimeout(function(){_planWasDrag=true;fresh.style.opacity='.3';},0);});
+    fresh.addEventListener('dragend',function(){fresh.style.opacity='';planDrag=null;planDragFrom=null;setTimeout(function(){_planWasDrag=false;},80);});
+    fresh.addEventListener('dragover',function(e){e.preventDefault();fresh.classList.add('over');});
+    fresh.addEventListener('dragleave',function(){fresh.classList.remove('over');});
+    fresh.addEventListener('drop',function(e){e.preventDefault();fresh.classList.remove('over');var src=planDrag,sf=planDragFrom;planDrag=null;planDragFrom=null;if(!src||src===mid)return;if(sf==='pool')planPoolToSlot(src,mid);else planSwap(src,mid);});
+    fresh.addEventListener('click',function(e){if(_planWasDrag)return;e.stopPropagation();openPlanCardMenu(e,mid,tlId);});
+  });
+  document.querySelectorAll('#planPchips .plan-chip[data-pid]').forEach(function(el){
+    var pid=el.dataset.pid;var fresh=el.cloneNode(true);el.parentNode.replaceChild(fresh,el);
+    fresh.addEventListener('dragstart',function(e){planDrag=pid;planDragFrom='pool';_planWasDrag=false;e.dataTransfer.effectAllowed='move';setTimeout(function(){_planWasDrag=true;fresh.classList.add('dragging');},0);});
+    fresh.addEventListener('dragend',function(){fresh.classList.remove('dragging');planDrag=null;planDragFrom=null;setTimeout(function(){_planWasDrag=false;},80);});
+    fresh.addEventListener('click',function(e){if(_planWasDrag)return;e.stopPropagation();openPlanPoolMenu(e,pid);});
+  });
+  document.querySelectorAll('.plan-row[data-tl]').forEach(function(el){
+    var tlId=el.dataset.tl;
+    el.addEventListener('dragover',function(e){e.preventDefault();el.style.background='#EEF2FF';});
+    el.addEventListener('dragleave',function(){el.style.background='';});
+    el.addEventListener('drop',function(e){e.preventDefault();el.style.background='';var src=planDrag,sf=planDragFrom;planDrag=null;planDragFrom=null;if(!src)return;if(sf==='pool')planPoolToTeam(src,tlId);else planMoveToTeam(src,tlId);});
+  });
+  var pd=document.getElementById('planPdrop');
+  if(pd){
+    pd.addEventListener('dragover',function(e){e.preventDefault();pd.classList.add('over');});
+    pd.addEventListener('dragleave',function(){pd.classList.remove('over');});
+    pd.addEventListener('drop',function(e){e.preventDefault();pd.classList.remove('over');var src=planDrag,sf=planDragFrom;planDrag=null;planDragFrom=null;if(!src||sf==='pool')return;planToPool(src);});
+  }
+}
+
+var _planMenu=null;
+function _closePlanMenu(){if(_planMenu){_planMenu.remove();_planMenu=null;}}
+document.addEventListener('click',_closePlanMenu);
+
+function openPlanCardMenu(ev,mid,tlId){
+  ev.stopPropagation();_closePlanMenu();
+  var mf=planFindMember(mid);if(!mf)return;var m=mf.m;
+  var menu=document.createElement('div');menu.className='cmenu';menu.onclick=function(e){e.stopPropagation();};
+  var hdr=document.createElement('div');hdr.className='cmenu-hdr';
+  hdr.innerHTML='<div class="chn">'+m.name+' <span style="font-size:9px;background:rgba(124,58,237,.4);border-radius:3px;padding:1px 4px">PLAN</span></div><div class="chr">'+m.role+'</div>';
+  menu.appendChild(hdr);
+  var scroll=document.createElement('div');scroll.className='cmenu-scroll';menu.appendChild(scroll);
+  var ra=_mkAcc('🎭','Role','');
+  ROLES.forEach(function(r){ra.body.appendChild(_mkItem(ROLE_ICONS[r]||'·',r,r===m.role,'',function(role){return function(){var mf2=planFindMember(mid);if(!mf2)return;planPushHist(m.name+' role → '+role);mf2.m.role=role;savePlan();renderPlanBoard();};}(r)));});
+  scroll.appendChild(ra.acc);
+  var sha=_mkAcc('🌓','Shift','');
+  [['day','☀ Day'],['night','☾ Night'],['off','○ Off']].forEach(function(sv){sha.body.appendChild(_mkItem('',sv[1],(m.shift||'day')===sv[0],'',function(sh){return function(){var mf2=planFindMember(mid);if(!mf2)return;mf2.m.shift=sh;savePlan();renderPlanBoard();};}(sv[0])));});
+  scroll.appendChild(sha.acc);
+  var ta=_mkAcc('🏷','Tags','');
+  ta.body.appendChild(_mkItem('📚','In Training',!!m.inTraining,'',function(){var mf2=planFindMember(mid);if(mf2){mf2.m.inTraining=!mf2.m.inTraining;savePlan();renderPlanBoard();}}));
+  ta.body.appendChild(_mkItem('⏳','Temporary',!!m.isTemp,'',function(){var mf2=planFindMember(mid);if(mf2){mf2.m.isTemp=!mf2.m.isTemp;savePlan();renderPlanBoard();}}));
+  scroll.appendChild(ta.acc);
+  var acts=document.createElement('div');acts.className='cmenu-actions';
+  var b1=document.createElement('button');b1.className='cmenu-act-btn';b1.textContent='↔ Move';b1.onclick=function(){_closePlanMenu();openPlanSwitchPanel(mid);};
+  var b2=document.createElement('button');b2.className='cmenu-act-btn';b2.textContent='↓ Unassign';b2.onclick=function(){_closePlanMenu();planToPool(mid);};
+  var b3=document.createElement('button');b3.className='cmenu-act-btn danger';b3.textContent='✕ Remove';b3.onclick=function(){_closePlanMenu();var mf2=planFindMember(mid);if(!mf2)return;planPushHist(mf2.m.name+' removed');mf2.tl.members.splice(mf2.i,1);savePlan();renderPlanBoard();};
+  acts.appendChild(b1);acts.appendChild(b2);acts.appendChild(b3);menu.appendChild(acts);
+  document.body.appendChild(menu);
+  var x=ev.clientX,y=ev.clientY;
+  if(y+400>window.innerHeight)y=Math.max(4,window.innerHeight-404);
+  if(x+265>window.innerWidth)x=window.innerWidth-268;
+  menu.style.top=y+'px';menu.style.left=x+'px';_planMenu=menu;
+}
+
+function openPlanPoolMenu(ev,pid){
+  ev.stopPropagation();_closePlanMenu();
+  var p=planPool.find(function(x){return x.pid===pid;});if(!p)return;
+  var menu=document.createElement('div');menu.className='cmenu';menu.onclick=function(e){e.stopPropagation();};
+  var hdr=document.createElement('div');hdr.className='cmenu-hdr';
+  hdr.innerHTML='<div class="chn">'+p.name+' <span style="font-size:9px;background:rgba(124,58,237,.4);border-radius:3px;padding:1px 4px">PLAN</span></div><div class="chr">'+p.role+' · Unassigned</div>';
+  menu.appendChild(hdr);
+  var sec=document.createElement('div');sec.className='cmenu-sec';
+  sec.appendChild(_mkItem('⬆','Assign to a team',false,'',function(){_closePlanMenu();openPlanAssignPanel(pid);}));
+  sec.appendChild(_mkItem('✕','Remove from plan',false,'danger',function(){_closePlanMenu();var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi>=0){planPool.splice(pi,1);savePlan();renderPlanBoard();}}));
+  menu.appendChild(sec);
+  document.body.appendChild(menu);
+  var x=ev.clientX,y=ev.clientY;
+  if(x+265>window.innerWidth)x=window.innerWidth-268;
+  menu.style.top=y+'px';menu.style.left=x+'px';_planMenu=menu;
+}
+
+function openPlanSwitchPanel(mid){
+  var mf=planFindMember(mid);if(!mf)return;var m=mf.m;
+  function buildGrid(filter){
+    var f=(filter||'').toLowerCase().trim();var html='<div class="sw-grid">';
+    PLAN_SECS.forEach(function(s){
+      var secItems='';
+      s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+        var isCur=tl.id===mf.tl.id;var wt=wtInfo(tl.type);
+        var lead=tl.members.find(function(x){return x.role==='Cluster Engineer'||x.role==='Lead Tech';});
+        var searchStr=(cl.name+(lead?lead.name:'')+s.label).toLowerCase();
+        if(f&&!searchStr.includes(f)&&!isCur)return;
+        secItems+='<div class="sw-item'+(isCur?' cur':'')+'"'+(isCur?'':' data-mid="'+mid+'" data-tl="'+tl.id+'" onclick="planMoveToTeam(this.dataset.mid,this.dataset.tl);closeMod()"')+' id="pswi_'+tl.id+'">'+
+          '<div class="sw-cl">'+cl.name+'</div>'+(lead?'<div class="sw-ld">'+lead.name+'</div>':'')+
+          '<div style="display:flex;align-items:center;gap:4px;margin-top:3px">'+
+          '<span class="ap" style="background:'+wt.bg+';color:'+wt.color+'">'+wt.label+'</span>'+
+          '<span style="font-size:9px;color:var(--text3)">'+tl.members.length+' mbr</span>'+
+          (isCur?'<span style="font-size:9px;color:var(--blue);margin-left:auto">✓</span>':'')+
+          '</div></div>';
+      });});
+      if(secItems)html+='<div class="sw-sep">'+s.label+'</div>'+secItems;
+    });
+    return html+'</div>';
+  }
+  var box=document.getElementById('mbox');box.className='mbox sw-modal';
+  box.innerHTML='<div class="sw-hdr"><h3>Plan Move: <strong>'+m.name+'</strong></h3><div class="sw-sub">in '+mf.cl.name+'</div>'+
+    '<input class="sinp" type="text" placeholder="🔍 Search..." style="width:100%;font-size:12px;padding:7px 10px;margin-top:8px" oninput="_pswFilter(this.value)"></div>'+
+    '<div class="sw-scroll" id="pswScroll">'+buildGrid('')+'</div>'+
+    '<div class="sw-foot"><button class="mb" onclick="closeMod()">Cancel</button></div>';
+  box._pswBuild=buildGrid;document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){var cur=document.getElementById('pswi_'+mf.tl.id);var scr=document.getElementById('pswScroll');if(cur&&scr)scr.scrollTop=Math.max(0,cur.offsetTop-scr.clientHeight/2);},80);
+}
+function _pswFilter(val){var scr=document.getElementById('pswScroll'),box=document.getElementById('mbox');if(scr&&box&&box._pswBuild)scr.innerHTML=box._pswBuild(val);}
+
+function openPlanAssignPanel(pid){
+  var p=planPool.find(function(x){return x.pid===pid;});if(!p)return;
+  function buildGrid(filter){
+    var f=(filter||'').toLowerCase().trim();var html='<div class="sw-grid">';
+    PLAN_SECS.forEach(function(s){
+      var secItems='';
+      s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+        var wt=wtInfo(tl.type);var lead=tl.members.find(function(x){return x.role==='Cluster Engineer'||x.role==='Lead Tech';});
+        var searchStr=(cl.name+(lead?lead.name:'')+s.label).toLowerCase();
+        if(f&&!searchStr.includes(f))return;
+        secItems+='<div class="sw-item" data-pid="'+pid+'" data-tl="'+tl.id+'" onclick="planPoolToTeam(this.dataset.pid,this.dataset.tl);closeMod()">'+
+          '<div class="sw-cl">'+cl.name+'</div>'+(lead?'<div class="sw-ld">'+lead.name+'</div>':'')+
+          '<div style="display:flex;align-items:center;gap:4px;margin-top:3px">'+
+          '<span class="ap" style="background:'+wt.bg+';color:'+wt.color+'">'+wt.label+'</span>'+
+          '<span style="font-size:9px;color:var(--text3)">'+tl.members.length+' mbr</span></div></div>';
+      });});
+      if(secItems)html+='<div class="sw-sep">'+s.label+'</div>'+secItems;
+    });
+    return html+'</div>';
+  }
+  var box=document.getElementById('mbox');box.className='mbox sw-modal';
+  box.innerHTML='<div class="sw-hdr"><h3>Plan Assign: <strong>'+p.name+'</strong></h3><div class="sw-sub">'+p.role+'</div>'+
+    '<input class="sinp" type="text" placeholder="🔍 Search..." style="width:100%;font-size:12px;padding:7px 10px;margin-top:8px" oninput="_pasFilter(this.value)"></div>'+
+    '<div class="sw-scroll" id="pasScroll">'+buildGrid('')+'</div>'+
+    '<div class="sw-foot"><button class="mb" onclick="closeMod()">Cancel</button></div>';
+  box._pasBuild=buildGrid;document.getElementById('mbd').classList.add('on');
+}
+function _pasFilter(val){var scr=document.getElementById('pasScroll'),box=document.getElementById('mbox');if(scr&&box&&box._pasBuild)scr.innerHTML=box._pasBuild(val);}
+
+function openPlanAddMember(tlId){
+  document.getElementById('mbox').className='mbox';
+  document.getElementById('mbox').innerHTML='<h3 style="margin-bottom:14px">Add member to plan</h3>'+
+    '<div class="mrow"><label>Name</label><input class="minp" id="pam_name" type="text" placeholder="Full name"></div>'+
+    '<div class="mrow"><label>Role</label><select class="msel" id="pam_role">'+ROLES.map(function(r){return '<option>'+r+'</option>';}).join('')+'</select></div>'+
+    '<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button><button class="mb ok" id="pam_ok">Add</button></div>';
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){document.getElementById('pam_name').focus();
+    document.getElementById('pam_ok').onclick=function(){
+      var name=document.getElementById('pam_name').value.trim(),role=document.getElementById('pam_role').value;
+      if(!name)return;var tf=planFindTeam(tlId);if(!tf)return;
+      planPushHist('Add '+name);tf.tl.members.push({id:'pm'+Date.now(),role:role,name:name,accom:[],skills:[]});
+      savePlan();renderPlanBoard();closeMod();toast(name+' added to plan');
+    };
+  },30);
+}
+function openPlanAddCluster(secId){
+  document.getElementById('mbox').className='mbox';
+  document.getElementById('mbox').innerHTML='<h3 style="margin-bottom:14px">Add cluster to plan</h3>'+
+    '<div class="mrow"><label>Cluster name</label><input class="minp" id="pac_name" placeholder="e.g. Marina Cluster"></div>'+
+    '<div class="mrow"><label>Cluster Engineer</label><input class="minp" id="pac_ce" placeholder="Name (optional)"></div>'+
+    '<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button><button class="mb ok" id="pac_ok">Add</button></div>';
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){document.getElementById('pac_name').focus();
+    document.getElementById('pac_ok').onclick=function(){
+      var name=document.getElementById('pac_name').value.trim(),ceName=document.getElementById('pac_ce').value.trim();
+      if(!name)return;var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;
+      planPushHist('Add cluster '+name);
+      sec.clusters.push({id:'plcl'+Date.now(),name:name,manDays:75,teams:[{id:'pltl'+Date.now(),type:'PPM',manDays:75,members:ceName?[{id:'pm'+Date.now(),role:'Cluster Engineer',name:ceName,accom:[],skills:[]}]:[]}]});
+      savePlan();renderPlanBoard();closeMod();toast('Cluster added');
+    };
+  },30);
+}
+function openPlanAddTeam(secId,clId){
+  document.getElementById('mbox').className='mbox';
+  document.getElementById('mbox').innerHTML='<h3 style="margin-bottom:14px">Add team line to plan</h3>'+
+    '<div class="mrow"><label>Team type</label><select class="msel" id="pat_type">'+WORK_TYPES.map(function(w){return '<option value="'+w.key+'">'+w.label+'</option>';}).join('')+'</select></div>'+
+    '<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button><button class="mb ok" id="pat_ok">Add</button></div>';
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){
+    document.getElementById('pat_ok').onclick=function(){
+      var type=document.getElementById('pat_type').value;
+      var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;
+      var cl=sec.clusters.find(function(c){return c.id===clId;});if(!cl)return;
+      planPushHist('Add team');cl.teams.push({id:'pltl'+Date.now(),type:type,manDays:75,members:[]});
+      savePlan();renderPlanBoard();closeMod();toast('Team line added');
+    };
+  },30);
+}
+function deletePlanCluster(secId,clId){if(!confirm('Remove this cluster from plan?'))return;var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;var ci=sec.clusters.findIndex(function(c){return c.id===clId;});if(ci<0)return;planPushHist('Delete cluster');sec.clusters.splice(ci,1);savePlan();renderPlanBoard();}
+function deletePlanTeamLine(tlId){var tf=planFindTeam(tlId);if(!tf||!confirm('Remove this team line?'))return;var ci=tf.cl.teams.findIndex(function(t){return t.id===tlId;});planPushHist('Delete team');tf.cl.teams.splice(ci,1);savePlan();renderPlanBoard();}
+function setPlanManDays(tlId,val){var tf=planFindTeam(tlId);if(tf){tf.tl.manDays=parseInt(val)||0;savePlan();}}
+
+
+// ═══════ SETTINGS ═══════
+// ═══════════════════════════════════════════════════════════
+// SETTINGS PAGE
+// ═══════════════════════════════════════════════════════════
+var SKILLS_LIST=['HVAC','Fire Alarm','BMS','Access Control','Plumbing','Electrical','CCTV','Lift/Elevator','Generator','AHU','Chiller','ELV'];
+function loadSkills(){try{var s=localStorage.getItem('tdm_skills');if(s)SKILLS_LIST=JSON.parse(s);}catch(e){}}
+function saveSkills(){try{localStorage.setItem('tdm_skills',JSON.stringify(SKILLS_LIST));}catch(e){}}
+
+function escH(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function renderSettings(){
+  loadSkills();
+  renderManagerSettings();
+  renderClusterSettings();
+  renderAccomSettings();
+  renderSkillsSettings();
+  renderRoleSettings();
+  renderMemberSettings('');
+}
+
+function renderManagerSettings(){
+  var body=document.getElementById('setManagersBody');if(!body)return;
+  body.innerHTML=SECS.map(function(s,si){
+    return '<div class="set-row">'+
+      '<div class="set-lbl">'+escH(s.label)+'<span class="set-sub">ID: '+escH(s.id)+'</span></div>'+
+      '<input class="set-inp" id="sec_lbl_'+si+'" value="'+escH(s.label)+'" style="width:200px">'+
+      '<input type="color" id="sec_col_'+si+'" value="'+s.color+'" style="width:32px;height:28px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;padding:2px">'+
+    '</div>';
+  }).join('');
+}
+
+function renderClusterSettings(){
+  var body=document.getElementById('setClustersBody');if(!body)return;
+  var html='';
+  SECS.forEach(function(s,si){
+    html+='<div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;padding:10px 0 4px;border-bottom:1px solid var(--border);margin-bottom:2px">'+escH(s.label)+'</div>';
+    s.clusters.forEach(function(cl,ci){
+      html+='<div class="set-row"><div class="set-lbl">'+escH(cl.name)+'</div>'+
+        '<input class="set-inp" id="cl_name_'+si+'_'+ci+'" value="'+escH(cl.name)+'" style="width:280px"></div>';
+    });
+  });
+  body.innerHTML=html;
+}
+
+function renderAccomSettings(){
+  var list=document.getElementById('setAccomList');if(!list)return;
+  list.innerHTML=Object.keys(AC).map(function(code){
+    var bg=AC[code][0],fg=AC[code][1];
+    return '<div class="set-row">'+
+      '<div class="set-lbl"><span style="font-size:10px;padding:2px 7px;border-radius:5px;font-weight:700;background:'+bg+';color:'+fg+'">'+escH(code)+'</span></div>'+
+      '<input class="set-inp" id="ac_code_'+code+'" value="'+escH(code)+'" style="width:80px" maxlength="6">'+
+      '<input class="set-inp" id="ac_name_'+code+'" value="'+escH(ACNAMES[code]||'')+'" style="width:180px" placeholder="Full name">'+
+      '<input type="color" id="ac_bg_'+code+'" value="'+(bg.startsWith('#')?bg:'#DBEAFE')+'" style="width:32px;height:28px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;padding:2px" title="Background">'+
+      '<input type="color" id="ac_fg_'+code+'" value="'+(fg.startsWith('#')?fg:'#1D4ED8')+'" style="width:32px;height:28px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;padding:2px" title="Text">'+
+      '<button class="set-btn danger" data-code="'+escH(code)+'" onclick="deleteAccomSetting(this.dataset.code)">✕</button>'+
+    '</div>';
+  }).join('');
+}
+function addAccomSetting(){
+  var code=document.getElementById('newAccomCode').value.trim().toUpperCase();
+  var name=document.getElementById('newAccomName').value.trim();
+  var bg=document.getElementById('newAccomBg').value;
+  var fg=document.getElementById('newAccomFg').value;
+  if(!code||!name){toast('Enter code and name');return;}
+  if(AC[code]){toast('Code already exists');return;}
+  AC[code]=[bg,fg];ACNAMES[code]=name;
+  persist();renderAccomSettings();renderAccomBar();render();
+  document.getElementById('newAccomCode').value='';document.getElementById('newAccomName').value='';
+  toast('Accommodation "'+code+'" added');
+}
+function deleteAccomSetting(code){
+  if(!confirm('Remove "'+code+'"? It will be removed from all member cards.'))return;
+  delete AC[code];delete ACNAMES[code];
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){if(m.accom){var ix=m.accom.indexOf(code);if(ix>=0)m.accom.splice(ix,1);}});});});});
+  persist();renderAccomSettings();renderAccomBar();render();toast('"'+code+'" removed');
+}
+
+function renderSkillsSettings(){
+  var list=document.getElementById('setSkillsList');if(!list)return;
+  list.innerHTML=SKILLS_LIST.map(function(sk,i){
+    return '<div class="set-skill-chip"><input id="sk_'+i+'" value="'+escH(sk)+'"><button class="del-sk" data-idx="'+i+'" onclick="deleteSkillSetting(parseInt(this.dataset.idx))">✕</button></div>';
+  }).join('');
+}
+function addSkillSetting(){
+  var name=document.getElementById('newSkillName').value.trim();
+  if(!name)return;if(SKILLS_LIST.includes(name)){toast('Already exists');return;}
+  SKILLS_LIST.push(name);saveSkills();renderSkillsSettings();
+  document.getElementById('newSkillName').value='';toast('"'+name+'" added');
+}
+function deleteSkillSetting(idx){
+  var sk=SKILLS_LIST[idx];if(!confirm('Remove "'+sk+'"?'))return;
+  SKILLS_LIST.splice(idx,1);saveSkills();renderSkillsSettings();toast('"'+sk+'" removed');
+}
+
+function renderRoleSettings(){
+  var body=document.getElementById('setRolesBody');if(!body)return;
+  body.innerHTML='<div class="set-skills-grid">'+Object.keys(RC).map(function(role){
+    var safeId='rc_'+role.replace(/[^a-zA-Z0-9]/g,'_');
+    return '<div class="set-row" style="gap:8px">'+
+      '<div class="set-lbl" style="font-size:11px"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:'+RC[role]+';margin-right:5px;vertical-align:middle"></span>'+escH(role)+'</div>'+
+      '<input type="color" id="'+safeId+'" value="'+RC[role]+'" style="width:32px;height:28px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;padding:2px">'+
+    '</div>';
+  }).join('')+'</div>';
+}
+
+function renderMemberSettings(query){
+  var body=document.getElementById('setMembersBody');if(!body)return;
+  query=(query||'').toLowerCase().trim();
+  var rows='';
+  SECS.forEach(function(s,si){
+    s.clusters.forEach(function(cl,ci){
+      cl.teams.forEach(function(tl,ti){
+        tl.members.forEach(function(m,mi){
+          if(query&&!m.name.toLowerCase().includes(query)&&!m.role.toLowerCase().includes(query)&&!cl.name.toLowerCase().includes(query))return;
+          rows+='<div class="set-row">'+
+            '<div class="set-lbl"><span style="font-size:9px;color:var(--text3)">'+escH(s.label)+' › '+escH(cl.name)+'</span><span class="set-sub">'+escH(m.role)+'</span></div>'+
+            '<input class="set-inp" id="mb_'+si+'_'+ci+'_'+ti+'_'+mi+'" value="'+escH(m.name)+'" style="width:180px">'+
+            '<select class="msel" id="mr_'+si+'_'+ci+'_'+ti+'_'+mi+'" style="width:140px;font-size:11px;padding:5px 8px">'+
+              ROLES.map(function(r){return '<option'+(r===m.role?' selected':'')+'>'+r+'</option>';}).join('')+
+            '</select></div>';
+        });
+      });
+    });
+  });
+  pool.forEach(function(m,mi){
+    if(query&&!m.name.toLowerCase().includes(query))return;
+    rows+='<div class="set-row" style="background:#F5F3FF">'+
+      '<div class="set-lbl"><span style="font-size:9px;color:#7C3AED">Unassigned Pool</span><span class="set-sub">'+escH(m.role)+'</span></div>'+
+      '<input class="set-inp" id="pool_nm_'+mi+'" value="'+escH(m.name)+'" style="width:180px">'+
+      '<select class="msel" id="pool_rl_'+mi+'" style="width:140px;font-size:11px;padding:5px 8px">'+
+        ROLES.map(function(r){return '<option'+(r===m.role?' selected':'')+'>'+r+'</option>';}).join('')+
+      '</select></div>';
+  });
+  body.innerHTML=rows||'<div style="color:var(--text3);font-size:12px;padding:10px 0">No members found'+(query?' for "'+escH(query)+'"':'')+'.</div>';
+}
+
+function saveAllSettings(){
+  var changed=0;
+  SECS.forEach(function(s,si){
+    var lbl=document.getElementById('sec_lbl_'+si),col=document.getElementById('sec_col_'+si);
+    if(lbl&&lbl.value.trim()&&lbl.value.trim()!==s.label){s.label=lbl.value.trim();changed++;}
+    if(col&&col.value!==s.color){s.color=col.value;changed++;}
+  });
+  SECS.forEach(function(s,si){
+    s.clusters.forEach(function(cl,ci){
+      var inp=document.getElementById('cl_name_'+si+'_'+ci);
+      if(inp&&inp.value.trim()&&inp.value.trim()!==cl.name){cl.name=inp.value.trim();changed++;}
+    });
+  });
+  Object.keys(AC).slice().forEach(function(code){
+    var ci=document.getElementById('ac_code_'+code),ni=document.getElementById('ac_name_'+code),bi=document.getElementById('ac_bg_'+code),fi=document.getElementById('ac_fg_'+code);
+    if(!ci)return;
+    var newCode=ci.value.trim().toUpperCase(),newName=ni?ni.value.trim():'',newBg=bi?bi.value:AC[code][0],newFg=fi?fi.value:AC[code][1];
+    if(newCode&&newCode!==code){
+      AC[newCode]=[newBg,newFg];ACNAMES[newCode]=newName||ACNAMES[code];delete AC[code];delete ACNAMES[code];
+      SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){if(m.accom){var ix=m.accom.indexOf(code);if(ix>=0)m.accom[ix]=newCode;}});});});});changed++;
+    } else {
+      if(newName)ACNAMES[code]=newName;AC[code]=[newBg,newFg];changed++;
+    }
+  });
+  SKILLS_LIST.forEach(function(sk,i){var inp=document.getElementById('sk_'+i);if(inp&&inp.value.trim()&&inp.value.trim()!==sk){SKILLS_LIST[i]=inp.value.trim();changed++;}});
+  saveSkills();
+  Object.keys(RC).forEach(function(role){
+    var safeId='rc_'+role.replace(/[^a-zA-Z0-9]/g,'_');
+    var inp=document.getElementById(safeId);if(inp&&inp.value&&inp.value!==RC[role]){RC[role]=inp.value;changed++;}
+  });
+  SECS.forEach(function(s,si){s.clusters.forEach(function(cl,ci){cl.teams.forEach(function(tl,ti){tl.members.forEach(function(m,mi){
+    var ni=document.getElementById('mb_'+si+'_'+ci+'_'+ti+'_'+mi),ri=document.getElementById('mr_'+si+'_'+ci+'_'+ti+'_'+mi);
+    if(ni&&ni.value.trim()&&ni.value.trim()!==m.name){m.name=ni.value.trim();changed++;}
+    if(ri&&ri.value!==m.role){m.role=ri.value;changed++;}
+  });});});});
+  pool.forEach(function(m,mi){
+    var ni=document.getElementById('pool_nm_'+mi),ri=document.getElementById('pool_rl_'+mi);
+    if(ni&&ni.value.trim()&&ni.value.trim()!==m.name){m.name=ni.value.trim();changed++;}
+    if(ri&&ri.value!==m.role){m.role=ri.value;changed++;}
+  });
+  if(changed>0){persist();render();renderAccomBar();renderSettings();toast(changed+' change'+(changed>1?'s':'')+' saved ✓');}
+  else toast('No changes to save');
+}
+
+// hardReset consolidated above
+
+
+
+
+// ════════════════════════════════════════════════════════════════
+// AI ASSISTANT
+// ════════════════════════════════════════════════════════════════
+var _aiHist=[];
+
+function _buildTeamCtx(){
+  var lines=['=== TEAM DISTRIBUTION — CURRENT STATE ===',''];
+  var total=0;
+  SECS.forEach(function(s){
+    lines.push('SECTION: '+s.label);
+    s.clusters.forEach(function(cl){
+      var ppmD=cl.teams.filter(function(t){return t.type==='PPM';}).reduce(function(a,t){return a+(parseInt(t.manDays)||0);},0);
+      lines.push('  Cluster: '+cl.name+(ppmD?' ['+ppmD+' PPM Days]':''));
+      cl.teams.forEach(function(tl){
+        lines.push('    ['+tl.type+(tl.manDays?'/'+tl.manDays+'d':'')+']');
+        tl.members.forEach(function(m){
+          total++;
+          var x=[];
+          if(m.accom&&m.accom.length)x.push('Accom:'+m.accom.map(function(a){return a+'('+ACNAMES[a]+')';}).join(','));
+          if(m.licDriving)x.push('DrivingLic');
+          if(m.skills&&m.skills.length)x.push('Skills:'+m.skills.join(','));
+          if(m.shift&&m.shift!=='day')x.push(m.shift+'Shift');
+          if(m.inTraining)x.push('InTraining');
+          if(m.isTemp)x.push('Temporary');
+          lines.push('      '+m.name+' ('+m.role+')'+(x.length?' | '+x.join(' | '):''));
+        });
+      });
+    });
+    lines.push('');
+  });
+  if(pool&&pool.length){
+    lines.push('UNASSIGNED POOL ('+pool.length+'):');
+    pool.forEach(function(p){lines.push('  '+p.name+' ('+p.role+')');});
+  }
+  lines.push('Total assigned: '+total+' | Unassigned: '+(pool?pool.length:0));
+  return lines.join('\n');
+}
+
+function _aiAppend(text,role){
+  var box=document.getElementById('aiMessages');if(!box)return null;
+  var d=document.createElement('div');
+  d.className='ai-msg '+(role==='user'?'ai-user':role==='thinking'?'ai-thinking':'ai-bot');
+  d.innerHTML=text.replace(/\n/g,'<br>').replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  box.appendChild(d);box.scrollTop=box.scrollHeight;
+  return d;
+}
+
+async function sendAiMsg(){
+  var inp=document.getElementById('aiInput');if(!inp)return;
+  var msg=inp.value.trim();if(!msg)return;
+  inp.value='';
+  _aiAppend(msg,'user');
+  _aiHist.push({role:'user',content:msg});
+  var thinking=_aiAppend('Thinking…','thinking');
+  try{
+    var ctx=_buildTeamCtx();
+    var sys='You are an AI assistant embedded in a Team Distribution Manager used by a facility management company in Dubai. '+
+      'You have access to the complete current team data below. Be precise, concise and actionable. '+
+      'Use bullet points and **bold** for key information. Never invent data not present in the team context.\n\n'+ctx;
+    var msgs=_aiHist.slice(-10);
+    var resp=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:msgs})
+    });
+    var data=await resp.json();
+    var reply=(data.content&&data.content[0]&&data.content[0].text)||'Sorry, no response received.';
+    if(thinking)thinking.remove();
+    _aiAppend(reply,'bot');
+    _aiHist.push({role:'assistant',content:reply});
+  }catch(e){
+    if(thinking)thinking.remove();
+    _aiAppend('⚠ Error: '+e.message,'bot');
+  }
+}
+
+function aiQuick(prompt){
+  document.getElementById('aiInput').value=prompt;
+  if(!document.getElementById('pg-ai').classList.contains('on'))showPg('ai',null);
+  sendAiMsg();
+}
+
+function clearAiChat(){
+  _aiHist=[];
+  var box=document.getElementById('aiMessages');
+  if(box)box.innerHTML='<div class="ai-msg ai-bot">Chat cleared. Ask me anything about your team.</div>';
+}
+
+function renderAiPanels(){
+  // Shift snapshot
+  var sp=document.getElementById('aiShiftPanel');
+  if(sp){
+    var sh={day:0,night:0,off:0};
+    SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){sh[m.shift||'day']++;});});});});
+    sp.innerHTML=
+      '<div style="display:flex;gap:6px">'+
+      '<div style="flex:1;text-align:center;padding:8px;background:#DCFCE7;border-radius:6px"><div style="font-size:20px;font-weight:800;color:#15803D">'+sh.day+'</div><div style="font-size:9px;color:#166534;font-weight:600">☀ DAY</div></div>'+
+      '<div style="flex:1;text-align:center;padding:8px;background:#1E293B;border-radius:6px"><div style="font-size:20px;font-weight:800;color:#fff">'+sh.night+'</div><div style="font-size:9px;color:#94A3B8;font-weight:600">☾ NIGHT</div></div>'+
+      '<div style="flex:1;text-align:center;padding:8px;background:#F1F5F9;border-radius:6px"><div style="font-size:20px;font-weight:800;color:#475569">'+sh.off+'</div><div style="font-size:9px;color:#64748B;font-weight:600">○ OFF</div></div>'+
+      '</div>';
+  }
+  // Anomaly alerts
+  var ap=document.getElementById('aiAlertPanel');
+  if(ap){
+    var alerts=[];
+    SECS.forEach(function(s){s.clusters.forEach(function(cl){
+      var hasLead=false,hasTech=false,hasCE=false;
+      cl.teams.forEach(function(tl){tl.members.forEach(function(m){
+        if(m.role==='Cluster Engineer'||m.role==='Cluster Lead')hasCE=true;
+        if(m.role==='Lead Tech')hasLead=true;
+        if(m.role==='Technician'||m.role==='Jr. Technician')hasTech=true;
+        if(!m.accom||!m.accom.length)alerts.push({t:'warn',msg:m.name+' — no accommodation set'});
+      });});
+      if(!hasCE)alerts.push({t:'err',msg:cl.name+': No Cluster Engineer'});
+      if(!hasLead&&!hasCE)alerts.push({t:'warn',msg:cl.name+': No Lead Tech'});
+      if(!hasTech)alerts.push({t:'warn',msg:cl.name+': No Technician assigned'});
+    });});
+    if(pool&&pool.length>5)alerts.push({t:'warn',msg:pool.length+' members unassigned in pool'});
+    if(!alerts.length){
+      ap.innerHTML='<div style="color:#16A34A;font-weight:600;font-size:11px">✓ No anomalies detected</div>';
+    } else {
+      ap.innerHTML=alerts.slice(0,8).map(function(a){
+        return '<div style="padding:3px 7px;margin-bottom:3px;border-radius:4px;background:'+(a.t==='err'?'#FEF2F2':'#FEF9C3')+';color:'+(a.t==='err'?'#DC2626':'#92400E')+';font-size:10px">'+(a.t==='err'?'🔴 ':'⚠ ')+a.msg+'</div>';
+      }).join('')+(alerts.length>8?'<div style="font-size:10px;color:var(--text3);margin-top:4px">+'+(alerts.length-8)+' more…</div>':'');
+    }
+  }
+  // Accommodation count
+  var acp=document.getElementById('aiAccomPanel');
+  if(acp){
+    var acCnt={};
+    SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){(m.accom||[]).forEach(function(a){acCnt[a]=(acCnt[a]||0)+1;});});});});});
+    acp.innerHTML=Object.keys(AC).map(function(k){
+      var c=acCnt[k]||0;
+      return '<div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">'+
+        '<span class="ap" style="background:'+AC[k][0]+';color:'+AC[k][1]+'">'+k+'</span>'+
+        '<span style="flex:1;font-size:10px;color:var(--text2)">'+ACNAMES[k]+'</span>'+
+        '<span style="font-size:12px;font-weight:700;color:var(--text)">'+c+'</span>'+
+        '</div>';
+    }).join('');
+  }
+  // Quick stats
+  var qsp=document.getElementById('aiStatsPanel');
+  if(qsp){
+    var total=0,ppmDaysTotal=0,ppmWorkers=0;
+    SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+      total+=tl.members.length;
+      if(tl.type==='PPM'){ppmDaysTotal+=(parseInt(tl.manDays)||0);ppmWorkers+=tl.members.filter(isPPMWorker).length;}
+    });});});
+    qsp.innerHTML=
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">'+
+      '<div style="text-align:center;padding:8px;background:var(--blue-l);border-radius:6px"><div style="font-size:18px;font-weight:800;color:var(--blue)">'+total+'</div><div style="font-size:9px;color:#1D4ED8">Assigned</div></div>'+
+      '<div style="text-align:center;padding:8px;background:'+(pool&&pool.length>0?'#FEF9C3':'#DCFCE7')+';border-radius:6px"><div style="font-size:18px;font-weight:800;color:'+(pool&&pool.length>0?'#92400E':'#15803D')+'">'+(pool?pool.length:0)+'</div><div style="font-size:9px;color:'+(pool&&pool.length>0?'#92400E':'#166534')+'">Unassigned</div></div>'+
+      '<div style="text-align:center;padding:8px;background:#EFF6FF;border-radius:6px"><div style="font-size:18px;font-weight:800;color:#2563EB">'+ppmDaysTotal+'</div><div style="font-size:9px;color:#1D4ED8">PPM Days</div></div>'+
+      '<div style="text-align:center;padding:8px;background:#F0FDFA;border-radius:6px"><div style="font-size:18px;font-weight:800;color:#0D9488">'+ppmWorkers+'</div><div style="font-size:9px;color:#0F766E">PPM Workers</div></div>'+
+      '</div>';
+  }
 }
 
 </script>
