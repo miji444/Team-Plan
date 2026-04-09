@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Team Distribution</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+  // 1. Paste your Firebase Config here
+  const firebaseConfig = {
+    apiKey: "AIzaSyAjiMYp99806JFZ2nGw0mfHY6_W0-NxelI",
+    authDomain: "team-plan-16f52.firebaseapp.com",
+    projectId: "team-plan-16f52",
+    storageBucket: "team-plan-16f52.firebasestorage.app",
+    messagingSenderId: "235482315074",
+    appId: "1:235482315074:web:508f4d7ee61b24a621b0db",
+    measurementId: "G-J1Q6JNRHLR"
+  };
+
+  // 2. Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
 <style>
 :root{
   --navy:#0F1C2E;--navy2:#162338;--navy3:#1E2F45;
