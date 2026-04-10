@@ -26,6 +26,127 @@
   --f:'Inter',sans-serif;
   --shadow:0 1px 3px rgba(0,0,0,.08);
 }
+/* ══ DARK / NIGHT MODE ══════════════════════════════ */
+[data-theme="dark"]{
+  --navy:#0D1117;--navy2:#161B22;--navy3:#21262D;
+  --bg:#0D1117;--bg2:#161B22;
+  --surf:#161B22;--surf2:#21262D;--surf3:#2D333B;
+  --border:#30363D;--border2:#444C56;
+  --text:#E6EDF3;--text2:#8B949E;--text3:#484F58;
+  --white:#E6EDF3;
+  --blue:#58A6FF;--blue-l:rgba(88,166,255,.1);--blue-m:rgba(88,166,255,.25);
+  --teal:#39D353;--teal-l:rgba(57,211,83,.1);
+  --purple:#BC8CFF;--purple-l:rgba(188,140,255,.1);
+  --amber:#E3B341;--amber-l:rgba(227,179,65,.1);
+  --green:#3FB950;--green-l:rgba(63,185,80,.1);
+  --red:#F85149;--red-l:rgba(248,81,73,.1);
+  --slate:#8B949E;--slate-l:#21262D;
+  --shadow:0 1px 4px rgba(0,0,0,.4);
+}
+/* Dark mode surface overrides */
+[data-theme="dark"] .section,
+[data-theme="dark"] .cluster,
+[data-theme="dark"] .team-line,
+[data-theme="dark"] .card,
+[data-theme="dark"] .panel,
+[data-theme="dark"] .leg,
+[data-theme="dark"] .mbox,
+[data-theme="dark"] .acard,
+[data-theme="dark"] .ablk,
+[data-theme="dark"] .scard,
+[data-theme="dark"] .sform,
+[data-theme="dark"] .md-cluster-card,
+[data-theme="dark"] .set-section,
+[data-theme="dark"] .cal-wrap,
+[data-theme="dark"] .upcoming-list{
+  background:var(--surf)!important;
+  border-color:var(--border)!important;
+  color:var(--text)!important;
+}
+[data-theme="dark"] .sbody{background:var(--bg2)!important}
+[data-theme="dark"] .cluster-hdr,
+[data-theme="dark"] .tl-meta,
+[data-theme="dark"] .md-cl-hdr,
+[data-theme="dark"] .set-body,
+[data-theme="dark"] .phdr{background:var(--surf2)!important;border-color:var(--border)!important}
+[data-theme="dark"] .team-line:hover{background:var(--surf2)!important}
+[data-theme="dark"] .card:hover{background:var(--surf3)!important;border-color:var(--blue)!important}
+[data-theme="dark"] .card{background:var(--surf)!important;border-color:var(--border)!important}
+[data-theme="dark"] .cname2,[data-theme="dark"] .pn,[data-theme="dark"] .md-name{color:var(--text)!important}
+[data-theme="dark"] .crole,[data-theme="dark"] .cluster-hdr h4,[data-theme="dark"] .btop h2{color:var(--text)!important}
+[data-theme="dark"] .cstat{background:var(--surf3)!important;border-color:var(--border)!important;color:var(--text2)!important}
+[data-theme="dark"] .tb{background:var(--surf)!important;border-color:var(--border)!important;color:var(--text2)!important}
+[data-theme="dark"] .tb:hover{background:var(--surf3)!important;color:var(--text)!important}
+[data-theme="dark"] .tb.acc{background:var(--blue)!important;color:#fff!important;border-color:var(--blue)!important}
+[data-theme="dark"] .sinp,[data-theme="dark"] .minp,[data-theme="dark"] .msel,[data-theme="dark"] .set-inp{background:var(--surf2)!important;border-color:var(--border2)!important;color:var(--text)!important}
+[data-theme="dark"] .topt{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text2)!important}
+[data-theme="dark"] .mb{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text)!important}
+[data-theme="dark"] .mb.ok{background:var(--blue)!important;color:#fff!important}
+[data-theme="dark"] .pchip{background:var(--surf2)!important;border-color:var(--border)!important}
+[data-theme="dark"] .hitem{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text)!important}
+[data-theme="dark"] .abar{background:rgba(88,166,255,.08)!important;border-color:rgba(88,166,255,.2)!important}
+[data-theme="dark"] .cal-cell{background:var(--surf)!important;border-color:var(--border)!important}
+[data-theme="dark"] .cal-cell.today{background:rgba(88,166,255,.12)!important;border-color:var(--blue)!important}
+[data-theme="dark"] .cal-cell.other{background:transparent!important;opacity:.35}
+[data-theme="dark"] .wg-hdr,[data-theme="dark"] .wg-member{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text)!important}
+[data-theme="dark"] .wg-cell{border-color:var(--border)!important}
+[data-theme="dark"] .wg-cell:hover{background:rgba(88,166,255,.08)!important}
+[data-theme="dark"] .set-section-hdr{background:var(--surf3)!important;border-color:var(--border)!important}
+[data-theme="dark"] .set-section-hdr h3{color:var(--text)!important}
+[data-theme="dark"] .set-row{border-color:var(--border)!important}
+[data-theme="dark"] .set-lbl{color:var(--text)!important}
+[data-theme="dark"] .set-btn{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text2)!important}
+[data-theme="dark"] .scb{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text)!important}
+[data-theme="dark"] .cmenu{background:var(--surf2)!important;border-color:var(--border2)!important}
+[data-theme="dark"] .cmenu-hdr{background:var(--surf3)!important}
+[data-theme="dark"] .cmenu-hdr .chn{color:var(--text)!important}
+[data-theme="dark"] .cmi{color:var(--text)!important}
+[data-theme="dark"] .cmi:hover{background:var(--surf3)!important}
+[data-theme="dark"] .cmenu-acc-hdr{color:var(--text2)!important}
+[data-theme="dark"] .cmenu-acc-hdr:hover{background:var(--surf3)!important}
+[data-theme="dark"] .cmenu-actions{background:var(--bg)!important;border-color:var(--border)!important}
+[data-theme="dark"] .cmenu-act-btn{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text2)!important}
+[data-theme="dark"] .toast{background:var(--surf3)!important;color:var(--text)!important;border-color:var(--border2)!important}
+[data-theme="dark"] .mbd{background:rgba(0,0,0,.7)!important}
+[data-theme="dark"] .atable th{background:var(--surf2)!important;color:var(--text2)!important}
+[data-theme="dark"] .atable td{border-color:var(--border)!important;color:var(--text)!important}
+[data-theme="dark"] .atable tr:hover td{background:var(--surf2)!important}
+[data-theme="dark"] .ce-big-card{background:linear-gradient(160deg,#1C2128,#21262D)!important}
+[data-theme="dark"] .ce-big-name{color:#E6EDF3!important}
+[data-theme="dark"] .focus-wrap{background:var(--surf)!important}
+[data-theme="dark"] .focus-hdr{background:var(--surf3)!important}
+[data-theme="dark"] .focus-zoom-bar{background:var(--surf2)!important;border-color:var(--border)!important}
+[data-theme="dark"] .focus-body{background:var(--bg)!important}
+[data-theme="dark"] #login{background:linear-gradient(135deg,#010409,#0D1117,#010409)}
+[data-theme="dark"] .lbox{background:rgba(22,27,34,.9)!important}
+[data-theme="dark"] .sw-item{background:var(--surf2)!important;border-color:var(--border)!important}
+[data-theme="dark"] .sw-item:hover{background:var(--surf3)!important;border-color:var(--blue)!important}
+[data-theme="dark"] .sw-cl,[data-theme="dark"] .sw-ld{color:var(--text)!important}
+[data-theme="dark"] textarea{background:var(--surf2)!important;border-color:var(--border)!important;color:var(--text)!important}
+[data-theme="dark"] .dup-warn{border-color:#F85149!important}
+[data-theme="dark"] .dup-warn-body{background:#1C1010!important}
+[data-theme="dark"] .set-skill-chip{background:var(--surf2)!important;border-color:var(--border)!important}
+[data-theme="dark"] .set-skill-chip input{color:var(--text)!important}
+[data-theme="dark"] .md-row:hover{background:var(--surf2)!important}
+[data-theme="dark"] .md-bar-wrap{background:var(--border2)!important}
+/* smooth transition */
+body,#app,.card,.section,.cluster,.team-line,.panel,.mbox,.leg,.abar,.tb,.hitem,.cmenu{
+  transition:background .2s,border-color .2s,color .2s;
+}
+
+/* ══ THEME TOGGLE BUTTON ══ */
+.theme-toggle{
+  display:flex;align-items:center;gap:5px;
+  padding:4px 10px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.08);
+  color:rgba(255,255,255,.8);cursor:pointer;
+  font-family:var(--f);font-size:11px;font-weight:600;
+  transition:all .2s;white-space:nowrap;user-select:none;
+}
+.theme-toggle:hover{background:rgba(255,255,255,.14);color:#fff}
+.theme-toggle .ti{font-size:14px;line-height:1}
+
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;margin:0;padding:0}
 body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;height:100%;overflow:hidden}
@@ -63,6 +184,7 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .pg{display:none}
 .pg.on{display:block;height:100%;overflow-y:auto;overflow-x:hidden;padding:14px 18px;flex:1}
 .pg.on#pg-board{display:flex;flex-direction:column;overflow:hidden;padding:10px 16px}
+.pg.on#pg-planning{display:flex;flex-direction:column;overflow:hidden;padding:10px 14px}
 
 /* ── TOP BAR ── */
 .btop{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap;flex-shrink:0}
@@ -309,6 +431,203 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .toast{background:var(--navy);color:#fff;font-size:12px;padding:8px 18px;border-radius:8px;opacity:0;transition:opacity .25s,transform .25s;white-space:nowrap;font-weight:500;transform:translateX(20px);box-shadow:0 4px 12px rgba(0,0,0,.25)}
 .toast.on{opacity:1;transform:translateX(0)}
 
+
+/* ── FOCUS VIEW OVERLAY ── */
+.focus-overlay{
+  display:none;position:fixed;inset:0;z-index:800;
+  background:rgba(0,0,0,.55);backdrop-filter:blur(3px);
+  align-items:center;justify-content:center;padding:16px;
+  animation:foIn .22s ease;
+}
+.focus-overlay.on{display:flex}
+@keyframes foIn{from{opacity:0}to{opacity:1}}
+
+.focus-wrap{
+  background:#fff;border-radius:16px;
+  box-shadow:0 24px 80px rgba(0,0,0,.35);
+  overflow:hidden;
+  width:100%;max-width:min(98vw,1400px);
+  max-height:calc(100vh - 32px);
+  display:flex;flex-direction:column;
+  animation:foSlide .25s cubic-bezier(.34,1.3,.64,1);
+}
+@keyframes foSlide{from{transform:scale(.94) translateY(10px);opacity:.5}to{transform:scale(1) translateY(0);opacity:1}}
+
+.focus-hdr{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 16px;flex-shrink:0;
+  background:var(--navy);
+}
+.focus-hdr-info{flex:1}
+.focus-hdr-name{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px}
+.focus-hdr-meta{font-size:11px;color:rgba(255,255,255,.45);margin-top:1px}
+.focus-close{
+  width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);
+  font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all .15s;font-family:var(--f);flex-shrink:0;
+}
+.focus-close:hover{background:rgba(255,255,255,.2);color:#fff}
+
+.focus-zoom-bar{
+  display:flex;align-items:center;gap:8px;
+  padding:6px 16px;background:var(--slate-l);border-bottom:1px solid var(--border);flex-shrink:0;
+}
+.focus-zoom-bar label{font-size:11px;color:var(--text2);font-weight:500;white-space:nowrap}
+.focus-zoom-slider{flex:1;max-width:200px;accent-color:var(--blue);cursor:pointer}
+.focus-zoom-val{font-size:11px;color:var(--blue);font-weight:700;min-width:38px;text-align:right;font-family:monospace}
+.focus-fit-btn{font-size:10px;padding:3px 10px;border:1px solid var(--blue-m);border-radius:5px;background:var(--blue-l);color:var(--blue);cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;transition:all .12s}
+.focus-fit-btn:hover{background:var(--blue);color:#fff}
+
+.focus-body{
+  flex:1;overflow:auto;padding:12px;
+  background:var(--bg);
+  display:flex;align-items:flex-start;justify-content:flex-start;
+}
+.focus-body::-webkit-scrollbar{width:6px;height:6px}
+.focus-body::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+
+.focus-cluster-wrap{
+  transform-origin:top left;
+  transition:transform .2s ease;
+  /* width is set dynamically */
+}
+
+/* Focus button on cluster header */
+.cbtn.focus-btn{
+  background:var(--blue-l);border-color:var(--blue-m);color:var(--blue);font-weight:600;
+}
+.cbtn.focus-btn:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* ── DUPLICATE MEMBER WARNING ── */
+.dup-warn{
+  display:none;margin-bottom:12px;
+  border-radius:8px;overflow:hidden;
+  border:1.5px solid #FCA5A5;
+  animation:dupPop .25s cubic-bezier(.34,1.4,.64,1);
+}
+@keyframes dupPop{from{transform:scale(.97);opacity:0}to{transform:scale(1);opacity:1}}
+.dup-warn-hdr{
+  display:flex;align-items:center;gap:8px;
+  padding:8px 12px;
+  background:#EF4444;color:#fff;
+  font-size:12px;font-weight:700;
+}
+.dup-warn-hdr .dw-icon{font-size:16px}
+.dup-warn-body{
+  padding:10px 13px;background:#FEF2F2;
+}
+.dup-warn-row{
+  display:flex;align-items:center;gap:8px;
+  padding:5px 0;border-bottom:1px solid #FECACA;font-size:11.5px;
+}
+.dup-warn-row:last-child{border-bottom:none}
+.dup-warn-name{font-weight:700;color:#991B1B;flex:1}
+.dup-warn-loc{color:#B91C1C;font-size:11px}
+.dup-warn-badge{
+  font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;
+  background:#EF4444;color:#fff;white-space:nowrap;
+}
+
+/* ════════════════════════════════════════════════
+   ROTATION SYSTEM
+════════════════════════════════════════════════ */
+/* Rotation badge on cards */
+.tag-rotation{
+  font-size:8px;padding:1px 6px;border-radius:3px;
+  background:linear-gradient(135deg,#7C3AED,#2563EB);
+  color:#fff;margin-top:2px;display:inline-block;
+  font-weight:700;letter-spacing:.03em;
+}
+.card.is-rotational{
+  border-top:3px solid #7C3AED!important;
+  border-style:dashed!important;
+}
+.card.is-rotational .cname2::after{
+  content:' ⟳';font-size:9px;color:#7C3AED;font-weight:700;
+}
+
+/* Rotation indicator dot on CE big card */
+.ce-rotation-dot{
+  position:absolute;top:5px;right:5px;
+  width:8px;height:8px;border-radius:50%;
+  background:linear-gradient(135deg,#7C3AED,#2563EB);
+  box-shadow:0 0 0 2px rgba(124,58,237,.3);
+}
+
+/* Rotation Manager page */
+.rot-page-wrap{padding:0}
+.rot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin-bottom:16px}
+.rot-card{
+  background:#fff;border:1.5px solid var(--border);border-radius:var(--rl);
+  overflow:hidden;box-shadow:var(--shadow);
+  transition:border-color .2s;
+}
+.rot-card:hover{border-color:var(--purple)}
+.rot-card-hdr{
+  padding:10px 14px;
+  background:linear-gradient(135deg,#7C3AED,#4F46E5);
+  display:flex;align-items:center;gap:8px;
+}
+.rot-card-hdr .rot-name{font-size:13px;font-weight:700;color:#fff;flex:1;letter-spacing:-.2px}
+.rot-card-hdr .rot-role{font-size:10px;color:rgba(255,255,255,.6);background:rgba(255,255,255,.12);border-radius:4px;padding:1px 7px}
+.rot-card-body{padding:12px 14px}
+.rot-slot{
+  display:flex;align-items:center;gap:10px;
+  padding:7px 10px;border-radius:8px;
+  border:1.5px solid var(--border);
+  background:var(--bg);margin-bottom:6px;
+  cursor:pointer;transition:all .15s;
+}
+.rot-slot:last-child{margin-bottom:0}
+.rot-slot:hover{border-color:var(--blue);background:var(--blue-l)}
+.rot-slot.active-slot{
+  border-color:var(--green)!important;
+  background:#DCFCE7!important;
+}
+.rot-slot.inactive-slot{
+  border-color:var(--border);background:#fff;opacity:.7;
+}
+.rot-week-badge{
+  font-size:9px;font-weight:700;padding:2px 8px;border-radius:20px;
+  background:#7C3AED;color:#fff;white-space:nowrap;flex-shrink:0;
+}
+.rot-slot.active-slot .rot-week-badge{background:var(--green)}
+.rot-cluster-name{font-size:12px;font-weight:600;color:var(--text);flex:1}
+.rot-cluster-sub{font-size:10px;color:var(--text3)}
+.rot-active-tag{font-size:9px;font-weight:700;color:var(--green);background:#DCFCE7;border-radius:4px;padding:1px 6px}
+
+.rot-empty{text-align:center;padding:40px;color:var(--text3)}
+.rot-empty .rot-empty-icon{font-size:40px;margin-bottom:10px}
+
+/* Rotation modal */
+.rot-modal-slots{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.rot-modal-slot{
+  display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;
+  padding:8px 10px;border:1.5px solid var(--border);border-radius:8px;background:var(--bg);
+}
+.rot-modal-slot label{font-size:11px;font-weight:600;color:var(--text2);white-space:nowrap}
+.rot-modal-slot select{font-size:11px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;font-family:var(--f);color:var(--text);background:#fff;outline:none;flex:1}
+.rot-modal-slot input[type=number]{width:48px;padding:4px 6px;border:1px solid var(--border);border-radius:6px;font-size:11px;font-family:var(--f);text-align:center;outline:none}
+.rot-modal-slot .rm-slot{cursor:pointer;color:var(--text3);font-size:14px;background:none;border:none;font-family:var(--f);padding:0 2px;transition:color .12s}
+.rot-modal-slot .rm-slot:hover{color:var(--red)}
+.rot-add-slot{
+  width:100%;padding:7px;border:1.5px dashed var(--border2);border-radius:8px;
+  background:transparent;color:var(--text3);cursor:pointer;font-family:var(--f);font-size:11px;
+  transition:all .15s;text-align:center;
+}
+.rot-add-slot:hover{border-color:var(--purple);color:var(--purple);background:var(--purple-l)}
+
+/* Current rotation indicator in board header area */
+.rot-indicator{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:10px;font-weight:600;
+  padding:3px 10px;border-radius:20px;
+  background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(37,99,235,.08));
+  border:1px solid rgba(124,58,237,.25);color:#7C3AED;
+  white-space:nowrap;
+}
+
 @media print{.hdr,.btop,.leg,.abar,.side,#login,.nav,.hbtns,.cluster-btns,.tl-del,.cbtn,.add-member-btn{display:none!important}body{background:#fff}.blayout{grid-template-columns:1fr}}
 
 /* ── CLUSTER BODY: CE big card left + teams stacked right ── */
@@ -509,6 +828,12 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
     <button class="lbtn" onclick="doLogin()">Sign in</button>
     <div class="lerr" id="lerr">Invalid credentials</div>
     <div class="lhint">admin / team2024 &nbsp;·&nbsp; manager / dist2024</div>
+    <div style="display:flex;justify-content:center;margin-top:14px">
+      <button class="theme-toggle" onclick="toggleTheme()" style="font-size:11px">
+        <span class="ti" id="loginThemeIcon">🌙</span>
+        <span id="loginThemeLabel">Dark Mode</span>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -523,9 +848,14 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
       <button class="ntab" onclick="showPg('saves',this)">Saves</button>
       <button class="ntab" onclick="showPg('analytics',this)">Analytics</button>
       <button class="ntab" onclick="showPg('planning',this)" style="color:rgba(196,181,253,.85)">📋 Planning</button>
+      <button class="ntab" onclick="showPg('rotation',this)" style="color:rgba(34,211,238,.85)">⟳ Rotation</button>
       <button class="ntab" onclick="showPg('settings',this)">⚙ Settings</button>
     </div>
     <div class="hbtns">
+      <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()" title="Toggle dark/light mode">
+        <span class="ti" id="themeIcon">🌙</span>
+        <span id="themeLabel">Dark</span>
+      </button>
       <span id="syncStatus" style="font-size:10px;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:4px">⏳ Connecting…</span>
       <button class="hb" onclick="refreshFromCloud()" title="Pull latest from cloud">↻ Refresh</button>
       <button class="hb" onclick="openLeaveModal('')" style="color:#FDA4AF" title="Add leave for a team member">✈ Leave</button>
@@ -615,8 +945,8 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
         <span style="font-size:18px">📋</span>
         <span>This is your <strong>planning sandbox</strong> — changes here don't affect the live board. Use <em>⬇ Copy from Live</em> to start, then <em>⬆ Promote to Live</em> when ready.</span>
       </div>
-      <div class="blayout">
-        <div id="planSections"></div>
+      <div class="blayout" style="flex:1;min-height:0;overflow:hidden">
+        <div id="planSections" style="overflow-y:auto;overflow-x:hidden;height:100%"></div>
         <div class="side">
           <div class="panel">
             <div class="phdr" style="background:#7C3AED"><h4>📝 Plan Notes</h4></div>
@@ -637,6 +967,22 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- ROTATION MANAGER -->
+    <div class="pg" id="pg-rotation">
+      <div class="btop">
+        <h2>⟳ Rotation Manager</h2>
+        <div class="rot-indicator" id="rotWeekIndicator"></div>
+        <button class="tb" onclick="openAddRotationModal()" style="background:linear-gradient(135deg,#7C3AED,#4F46E5);color:#fff;border:none">+ Add Rotation</button>
+        <button class="tb" onclick="applyCurrentRotation()" title="Move rotational members to their active cluster for this week">⟳ Apply This Week</button>
+        <button class="tb" onclick="renderRotation()">↺ Refresh</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 14px;background:linear-gradient(90deg,#F5F3FF,#EEF2FF);border:1px solid #DDD6FE;border-radius:var(--r);margin-bottom:12px;font-size:11px;color:#5B21B6;flex-shrink:0">
+        <span style="font-size:18px">⟳</span>
+        <span>Define members who rotate between clusters on a schedule. Use <strong>⟳ Apply This Week</strong> to automatically move them to the correct cluster based on today's date.</span>
+      </div>
+      <div id="rotGrid" class="rot-grid"></div>
     </div>
 
     <!-- SETTINGS -->
@@ -720,6 +1066,32 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
     <div class="pg" id="pg-analytics">
       <div class="btop"><h2>Analytics</h2><button class="tb" onclick="renderAnalytics()">Refresh</button></div>
       <div id="acontent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOCUS VIEW OVERLAY -->
+<div class="focus-overlay" id="focusOverlay" onclick="_closeFocusIfBg(event)">
+  <div class="focus-wrap" id="focusWrap">
+    <div class="focus-hdr">
+      <div class="focus-hdr-info">
+        <div class="focus-hdr-name" id="focusTitle">Cluster View</div>
+        <div class="focus-hdr-meta" id="focusMeta"></div>
+      </div>
+      <button class="focus-fit-btn" onclick="focusFit()" style="margin-right:8px">⊡ Fit to screen</button>
+      <button class="focus-close" onclick="closeFocusView()" title="Close (Esc)">✕</button>
+    </div>
+    <div class="focus-zoom-bar">
+      <label>Zoom:</label>
+      <input type="range" class="focus-zoom-slider" id="focusZoomSlider"
+        min="30" max="150" value="100" oninput="setFocusZoom(this.value)">
+      <span class="focus-zoom-val" id="focusZoomVal">100%</span>
+      <button class="focus-fit-btn" onclick="setFocusZoom(100)">100%</button>
+      <button class="focus-fit-btn" onclick="setFocusZoom(75)">75%</button>
+      <button class="focus-fit-btn" onclick="setFocusZoom(50)">50%</button>
+    </div>
+    <div class="focus-body" id="focusBody">
+      <div class="focus-cluster-wrap" id="focusClusterWrap"></div>
     </div>
   </div>
 </div>
@@ -1121,7 +1493,7 @@ function doLogin(){
     document.querySelectorAll('.admin-only').forEach(function(el){el.style.display=u==='admin'?'':'none';});
     init().then(function(){
       if(!SECS||SECS.length===0){SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}
-      renderAccomBar();render();toast('Welcome, '+u+'!');
+      _rotLoadAndTag();renderAccomBar();render();toast('Welcome, '+u+'!');
     });
   } else {
     document.getElementById('lerr').style.display='block';
@@ -1147,6 +1519,7 @@ function cardHTML(m,tlId){
   if(m.inTraining) cls+=' has-training';
   if(m.isTemp) cls+=' has-temp';
   if(m.onLeave) cls+=' has-leave';
+  if(m.isRotational) cls+=' is-rotational';
   var isBO=m.role==='Back Office';
   var crownBadge='';
   if(isCE) crownBadge='<div class="role-crown ce">&#9733; Cluster Engineer</div>';
@@ -1377,8 +1750,9 @@ function clusterHTML(cl,secId){
         ${nonPPMCount>0?`<div class="cstat" style="border-color:#DDD6FE;background:#EDE9FE">Non-PPM: <strong style="color:#7C3AED">${nonPPMCount} team${nonPPMCount>1?'s':''}</strong></div>`:''}
       </div>
       <div class="cluster-btns">
-        <button class="cbtn" onclick="openAddTeam('${secId}','${cl.id}')">+ Add Team</button>
-        <button class="cbtn del-cl" onclick="openDeleteCluster('${secId}','${cl.id}')">Delete Cluster</button>
+        <button class="cbtn focus-btn" onclick="openFocusView('${cl.id}')" title="Focus: fit this cluster to screen">⊡ Focus</button>
+        <button class="cbtn" onclick="openAddTeam('${secId}','${cl.id}')">+ Team</button>
+        <button class="cbtn del-cl" onclick="openDeleteCluster('${secId}','${cl.id}')">✕</button>
       </div>
     </div>
     <div class="cluster-body">
@@ -1407,7 +1781,8 @@ function render(){
       <span onclick="toggleSec('${s.id}')" style="display:flex;align-items:center;gap:8px;flex:1;cursor:pointer">
         <h3 style="flex:1">${s.label}</h3><span class="sc">${totalM} members</span><span class="sa">${open?'▲':'▼'}</span>
       </span>
-      <button onclick="openAddCluster('${s.id}')" style="font-size:10px;padding:3px 11px;border:1px solid rgba(255,255,255,.35);border-radius:6px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;margin-left:6px;flex-shrink:0">+ Add Cluster</button>
+      <button onclick="openFocusSection('${s.id}')" style="font-size:10px;padding:3px 11px;border:1px solid rgba(255,255,255,.35);border-radius:6px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;margin-left:6px;flex-shrink:0" title="Focus view: fit all clusters to screen">⊡</button>
+      <button onclick="openAddCluster('${s.id}')" style="font-size:10px;padding:3px 11px;border:1px solid rgba(255,255,255,.35);border-radius:6px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;margin-left:4px;flex-shrink:0">+ Add Cluster</button>
     </div><div class="sbody" style="${open?'':'display:none'}">${body}</div>`;
     sc.appendChild(div);
   });
@@ -2015,38 +2390,98 @@ function confirmAddTeam(secId,clId){
 }
 
 // ── ADD MEMBER MODAL ──────────────────────────────────────────────────
-function openAddMember(secId,clId,tlId){
-  const tf=findTeamLine(tlId);if(!tf)return;
-  const acRows=Object.entries(AC).map(function(e){
-    return '<label style="display:flex;align-items:center;gap:4px;cursor:pointer;font-size:11px">'
-      +'<input type="checkbox" id="nac_'+e[0]+'">'
-      +'<span class="ap" style="background:'+e[1][0]+';color:'+e[1][1]+'">'+e[0]+'</span></label>';
-  }).join('');
-  const roleOpts=ROLES.map(function(r){return '<option>'+r+'</option>';}).join('');
-  const poolOpts=pool.map(function(p){return '<option value="'+p.name+'">';}).join('');
-  document.getElementById('mbox').innerHTML=
-    '<h3>Add Team Member</h3>'
-    +'<div class="mrow"><label>Name</label>'
-    +'<input class="minp" id="nName" placeholder="Type name or pick from pool" list="nList" autocomplete="off">'
-    +'<datalist id="nList">'+poolOpts+'</datalist></div>'
-    +'<div class="mrow"><label>Role</label><select class="msel" id="nRole">'+roleOpts+'</select></div>'
-    +'<div class="mrow"><label>Accommodation</label>'
-    +'<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">'+acRows+'</div></div>'
-    +'<div class="mrow"><label>Licence</label>'
-    +'<div style="display:flex;gap:16px;margin-top:6px">'
-    +'<label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:12px"><input type="checkbox" id="nLicD"> <span style="color:#2563EB">&#9875;</span> Driving</label>'
-
-    +'</div></div>'    +'<div class="mrow"><label>Skills</label><div id="skillChks" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">'    +['HVAC','Fire Alarm','BMS','Access Control','Plumbing','Electrical','CCTV','Lift/Elevator','Generator','AHU','Chiller','ELV'].map(function(sk){return '<label style="display:flex;align-items:center;gap:3px;cursor:pointer;font-size:11px;background:var(--bg);padding:2px 6px;border:1px solid var(--border);border-radius:4px"><input type="checkbox" class="sk-cb" value="'+sk+'"> '+sk+'</label>';}).join('')    +'</div></div>'    +'<div class="mrow"><label>Contractor <span style="font-weight:400;color:var(--text3)">(Sub Team only)</span></label><input class="minp" id="nContractor" placeholder="e.g. Al Fara Group"></div>'    +'<div class="mbtns">'    +'<button class="mb" onclick="closeMod()">Cancel</button>'    +'<button class="mb ok" onclick="confirmAddMember(\''+tlId+'\')">Add Member</button>'    +'</div>';
-  document.getElementById('nName').addEventListener('input',function(){
-    var p=pool.find(function(x){return x.name.toLowerCase()===this.value.toLowerCase();},this);
-    if(p){
-      document.getElementById('nRole').value=p.role;
-      Object.keys(AC).forEach(function(k){var cb=document.getElementById('nac_'+k);if(cb)cb.checked=(p.accom||[]).includes(k);});
-      var ld=document.getElementById('nLicD');if(ld)ld.checked=!!p.licDriving;
+function _findMemberInBoard(name){
+  var results=[];
+  var q=name.trim().toLowerCase();
+  if(!q) return results;
+  SECS.forEach(function(s){
+    s.clusters.forEach(function(cl){
+      cl.teams.forEach(function(tl){
+        tl.members.forEach(function(m){
+          if(m.name.trim().toLowerCase()===q){
+            var wt=wtInfo(tl.type);
+            results.push({name:m.name,role:m.role,section:s.label,cluster:cl.name,team:wt.label,teamColor:wt.color,sColor:s.color});
+          }
+        });
+      });
+    });
+  });
+  pool.forEach(function(p){
+    if(p.name.trim().toLowerCase()===q){
+      results.push({name:p.name,role:p.role,section:'Unassigned Pool',cluster:'',team:'Pool',teamColor:'#64748B',sColor:'#64748B'});
     }
   });
-  document.getElementById('mbd').classList.add('on');
+  return results;
 }
+
+function _showDupWarning(name){
+  var warn=document.getElementById('dupWarn');
+  if(!warn) return;
+  var matches=_findMemberInBoard(name);
+  if(!matches.length){warn.style.display='none';return;}
+  var rows=matches.map(function(m){
+    return '<div class="dup-warn-row">'
+      +'<span class="dup-warn-badge" style="background:'+m.teamColor+'">'+m.team+'</span>'
+      +'<div style="flex:1">'
+        +'<div class="dup-warn-name">'+m.name+'</div>'
+        +'<div class="dup-warn-loc">'+(m.cluster?'<strong>'+m.cluster+'</strong> &rsaquo; ':'')+m.section+'</div>'
+      +'</div>'
+      +'<span style="font-size:10px;color:#B91C1C;font-weight:600">'+m.role+'</span>'
+    +'</div>';
+  }).join('');
+  warn.style.display='block';
+  warn.innerHTML='<div class="dup-warn-hdr"><span class="dw-icon">&#9888;</span><span>Already in the board! ('+matches.length+' match'+(matches.length>1?'es':'')+')</span></div><div class="dup-warn-body">'+rows+'</div>';
+}
+
+function openAddMember(secId,clId,tlId){
+  var tf=findTeamLine(tlId);if(!tf)return;
+  var acRows=Object.entries(AC).map(function(e){
+    return '<label style="display:flex;align-items:center;gap:4px;cursor:pointer;font-size:11px"><input type="checkbox" id="nac_'+e[0]+'"><span class="ap" style="background:'+e[1][0]+';color:'+e[1][1]+'">'+e[0]+'</span></label>';
+  }).join('');
+  var roleOpts=ROLES.map(function(r){return '<option>'+r+'</option>';}).join('');
+  var allNames=[];
+  pool.forEach(function(p){allNames.push(p.name);});
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){if(allNames.indexOf(m.name)<0)allNames.push(m.name);});});});});
+  var nameOpts=allNames.map(function(n){return '<option value="'+n+'">';}).join('');
+  var skills=loadSkills();
+  var skillChks=skills.map(function(sk){
+    return '<label style="display:flex;align-items:center;gap:3px;cursor:pointer;font-size:11px;background:var(--bg);padding:2px 6px;border:1px solid var(--border);border-radius:4px"><input type="checkbox" class="sk-cb" value="'+sk+'"> '+sk+'</label>';
+  }).join('');
+  document.getElementById('mbox').innerHTML=
+    '<h3>Add Team Member</h3>'
+    +'<div id="dupWarn" class="dup-warn"></div>'
+    +'<div class="mrow"><label>Name</label><input class="minp" id="nName" placeholder="Type name or pick from pool" list="nList" autocomplete="off"><datalist id="nList">'+nameOpts+'</datalist></div>'
+    +'<div class="mrow"><label>Role</label><select class="msel" id="nRole">'+roleOpts+'</select></div>'
+    +'<div class="mrow"><label>Accommodation</label><div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">'+acRows+'</div></div>'
+    +'<div class="mrow"><label>Licence</label><div style="display:flex;gap:16px;margin-top:6px"><label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:12px"><input type="checkbox" id="nLicD"> <span style="color:#2563EB">&#9875;</span> Driving</label></div></div>'
+    +'<div class="mrow"><label>Skills</label><div id="skillChks" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">'+skillChks+'</div></div>'
+    +'<div class="mrow"><label>Contractor <span style="font-weight:400;color:var(--text3)">(Sub Team only)</span></label><input class="minp" id="nContractor" placeholder="e.g. Al Fara Group"></div>'
+    +'<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button><button class="mb ok" onclick="confirmAddMember(\''+tlId+'\')">Add Member</button></div>';
+  var nameEl=document.getElementById('nName');
+  var _dupTimer=null;
+  nameEl.addEventListener('input',function(){
+    var val=nameEl.value;
+    var pMatch=pool.find(function(x){return x.name.toLowerCase()===val.toLowerCase();});
+    if(pMatch){
+      document.getElementById('nRole').value=pMatch.role;
+      Object.keys(AC).forEach(function(k){var cb=document.getElementById('nac_'+k);if(cb)cb.checked=(pMatch.accom||[]).indexOf(k)>=0;});
+      var ld=document.getElementById('nLicD');if(ld)ld.checked=!!pMatch.licDriving;
+    } else {
+      var bMatch=null;
+      SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){if(!bMatch&&m.name.toLowerCase()===val.toLowerCase())bMatch=m;});});});});
+      if(bMatch){
+        document.getElementById('nRole').value=bMatch.role;
+        Object.keys(AC).forEach(function(k){var cb=document.getElementById('nac_'+k);if(cb)cb.checked=(bMatch.accom||[]).indexOf(k)>=0;});
+        var ld2=document.getElementById('nLicD');if(ld2)ld2.checked=!!bMatch.licDriving;
+      }
+    }
+    clearTimeout(_dupTimer);
+    _dupTimer=setTimeout(function(){_showDupWarning(val);},250);
+  });
+  document.getElementById('mbd').classList.add('on');
+  setTimeout(function(){nameEl.focus();},60);
+}
+
 
 function confirmAddMember(tlId){
   var name=document.getElementById('nName').value.trim();
@@ -2055,6 +2490,24 @@ function confirmAddMember(tlId){
   var accom=Object.keys(AC).filter(function(k){var cb=document.getElementById('nac_'+k);return cb&&cb.checked;});
   var licDriving=!!(document.getElementById('nLicD')&&document.getElementById('nLicD').checked);
   var tf=findTeamLine(tlId);if(!tf)return;
+
+  // Check for duplicates on board (not pool — pool members are expected to be re-assigned)
+  var boardMatches=[];
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+    tl.members.forEach(function(m){
+      if(m.name.trim().toLowerCase()===name.toLowerCase()){
+        var wt=wtInfo(tl.type);
+        boardMatches.push(cl.name+' › '+wt.label);
+      }
+    });
+  });});});
+
+  if(boardMatches.length>0){
+    if(!confirm(name+' is already in the board: '+boardMatches.join(', ')+'. Add again anyway?')){
+      return;
+    }
+  }
+
   var mid='s'+Date.now();
   var pi=pool.find(function(p){return p.name.toLowerCase()===name.toLowerCase();});
   if(pi)pool=pool.filter(function(p){return p.pid!==pi.pid;});
@@ -2359,7 +2812,7 @@ async function confirmAddAccom(){
         
         init().then(function(){
           if(!SECS||SECS.length===0){SECS=JSON.parse(JSON.stringify(INIT_SECS));pool=[];}
-          renderAccomBar();render();toast('Welcome back, '+d.u+'!');
+          _rotLoadAndTag();renderAccomBar();render();toast('Welcome back, '+d.u+'!');
         });
         return;
       }
@@ -2381,7 +2834,7 @@ let tT;
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('on');clearTimeout(tT);tT=setTimeout(()=>t.classList.remove('on'),2400);}
 function closeMod(){document.getElementById('mbd').classList.remove('on');}
 function showPg(id,btn){
-  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.pg').forEach(p=>{p.classList.remove('on');p.style.display='';});
   document.querySelectorAll('.ntab').forEach(b=>b.classList.remove('on'));
   document.getElementById('pg-'+id).classList.add('on');
   document.querySelectorAll('.ntab').forEach(b=>{if(b.textContent.toLowerCase().includes(id.slice(0,4)))b.classList.add('on');});
@@ -2389,8 +2842,9 @@ function showPg(id,btn){
   if(id==='saves')     renderSaves();
   if(id==='schedule')  renderSchedule();
   if(id==='mandays')   renderManDays();
-  if(id==='planning')  renderPlanBoard();
+  if(id==='planning')  renderPlanBoard(true);
   if(id==='settings')  renderSettings();
+  if(id==='rotation')  {_rotLoadAndTag();renderRotation();}
 }
 
 // ── DUPLICATE PLAN ────────────────────────────────────────────────────
@@ -2413,97 +2867,256 @@ function duplicatePlan(){
 
 // ── EXCEL EXPORT ──────────────────────────────────────────────────────
 function exportExcel(){
-  // Build CSV-compatible tab-separated content, then wrap as XLS
-  var rows=[];
-  rows.push(['Section','Cluster','Man Days','Team Type','#','Role','Name','Accommodation','Driving Lic','PPM Worker']);
-  SECS.forEach(function(s){
-    s.clusters.forEach(function(cl){
-      var ppmD=cl.teams.filter(function(t){return t.type==='PPM';}).reduce(function(a,t){return a+(parseInt(t.manDays)||0);},0);
-      cl.teams.forEach(function(tl,ti){
-        var wt=wtInfo(tl.type);
-        tl.members.forEach(function(m,mi){
-          var isPPMW=isPPMWorker(m);
-          rows.push([
-            s.label,
-            cl.name,
-            (tl.type==='PPM'?(ppmD+' days (PPM)'):'—'),
-            wt.label+(tl.type==='PPM'?' [PPM]':'[Non-PPM]'),
-            mi+1,
-            m.role,
-            m.name,
-            (m.accom&&m.accom.length?m.accom.join(', '):''),
-            m.licDriving?'Yes':'',
-            (tl.type==='PPM'?(isPPMW?'Yes':'Excluded'):'—')
-          ]);
-        });
-        if(tl.members.length>0) rows.push(['','','','','','','','','','']);
-      });
-    });
-  });
-  if(pool.length){
-    rows.push(['UNASSIGNED POOL','','','','','','','','','']);
-    pool.forEach(function(p){
-      rows.push(['',p.name,'','','','',p.role,(p.accom&&p.accom.length?p.accom.join(', '):''),p.licDriving?'Yes':'','']);
-    });
+  // ── Role colour map matching board cards ──
+  var roleColours={
+    'Cluster Engineer':'#2563EB','Cluster Lead':'#2563EB',
+    'Expert':'#7C3AED',
+    'Back Office':'#B45309',
+    'Lead Tech':'#0D9488',
+    'Technician':'#0EA5E9','Jr. Technician':'#22C55E','Helper':'#0EA5E9',
+    'Sub Team':'#D97706','Driver':'#D97706',
+    'QC':'#64748B','Planning':'#64748B'
+  };
+
+  // ── Accommodation badge colours matching board ──
+  var acColours={
+    HAZ:'#3B82F6',RAK:'#10B981',AKG:'#F59E0B',
+    SHJ:'#8B5CF6',PER:'#EC4899',DIP:'#F97316'
+  };
+
+  function acBadge(code){
+    var c=acColours[code]||'#64748B';
+    return '<span style="display:inline-block;background:'+c+';color:#fff;font-size:8pt;font-weight:700;'+
+           'padding:1px 6px;border-radius:4px;margin:1px">'+code+'</span>';
   }
 
-  // Build HTML table for Excel (opens natively in Excel)
-  var html='<html><head><meta charset="UTF-8"><style>';
-  html+='body{font-family:Arial,sans-serif;font-size:11pt}';
-  html+='table{border-collapse:collapse;width:100%}';
-  html+='th{background:#0F1C2E;color:#fff;padding:6px 10px;text-align:left;font-size:10pt;border:1px solid #0F1C2E}';
-  html+='td{padding:5px 10px;border:1px solid #E2E8F0;font-size:10pt;vertical-align:top}';
-  html+='.sec{background:#EFF6FF;font-weight:bold;color:#1E3A5F}';
-  html+='.cluster{background:#F1F5F9;font-weight:bold}';
-  html+='.ppm{background:#DBEAFE;color:#1D4ED8;font-weight:bold}';
-  html+='.nonppm{background:#EDE9FE;color:#6D28D9}';
-  html+='.excl{color:#D97706;font-style:italic}';
-  html+='.lic{color:#2563EB;font-weight:bold}';
-  html+='</style></head><body>';
-  html+='<h2 style="font-family:Arial;color:#0F1C2E">Team Distribution Plan</h2>';
-  html+='<p style="font-family:Arial;font-size:10pt;color:#475569">Generated: '+new Date().toLocaleString()+' by '+CU+'</p><br>';
+  var html='<html xmlns:o="urn:schemas-microsoft-com:office:office" '+
+    'xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">'+
+    '<head><meta charset="UTF-8"><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets>'+
+    '<x:ExcelWorksheet><x:Name>Team Distribution</x:Name><x:WorksheetOptions>'+
+    '<x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets>'+
+    '</x:ExcelWorkbook></xml><![endif]--><style>';
 
+  // ── Styles matching the board template ──
+  html+='body{font-family:Calibri,Arial,sans-serif;font-size:10pt;color:#0F172A}';
+  html+='table{border-collapse:collapse;width:100%;margin-bottom:18px}';
+  html+='td,th{border:1px solid #CBD5E1;padding:5px 9px;font-size:9.5pt;vertical-align:middle}';
+
+  // Section row (dark navy like section headers)
+  html+='.sec-row td{background:#0F1C2E;color:#FFFFFF;font-size:11pt;font-weight:700;'+
+    'padding:8px 12px;letter-spacing:0.03em;border:1px solid #0F1C2E}';
+
+  // Cluster row (slate background like cluster-hdr)
+  html+='.cl-row td{background:#1E3A5F;color:#FFFFFF;font-size:10pt;font-weight:700;'+
+    'padding:6px 12px;border:1px solid #1E3A5F}';
+
+  // PPM team meta row (blue tint)
+  html+='.ppm-row td{background:#EFF6FF;color:#1D4ED8;font-weight:700;font-size:9pt;'+
+    'padding:4px 10px;border:1px solid #BFDBFE}';
+
+  // Non-PPM team meta row (purple tint)
+  html+='.nppm-row td{background:#F5F3FF;color:#5B21B6;font-weight:700;font-size:9pt;'+
+    'padding:4px 10px;border:1px solid #DDD6FE}';
+
+  // Column headers
+  html+='.col-hdr th{background:#334155;color:#fff;font-size:9pt;font-weight:700;'+
+    'text-align:center;padding:5px 8px;letter-spacing:0.04em;white-space:nowrap}';
+
+  // CE row (special blue)
+  html+='.row-ce td{background:#EFF6FF;border-bottom:2px solid #2563EB}';
+  // Expert row (purple)
+  html+='.row-exp td{background:#F5F3FF}';
+  // Back Office row (amber)
+  html+='.row-bo td{background:#FFFBEB}';
+  // Lead Tech row (teal)
+  html+='.row-lt td{background:#F0FDFA}';
+  // Regular row
+  html+='.row-reg td{background:#FFFFFF}';
+  // Alternating row
+  html+='.row-alt td{background:#F8FAFC}';
+
+  html+='.role-cell{font-weight:600;font-size:9pt}';
+  html+='.name-cell{font-weight:500;font-size:10pt}';
+  html+='.num-cell{color:#94A3B8;text-align:center;font-size:9pt;font-family:monospace}';
+  html+='.accom-cell{font-size:9pt}';
+  html+='.lic-cell{text-align:center;color:#2563EB;font-weight:700;font-size:11pt}';
+  html+='.ppm-yes{color:#16A34A;font-weight:700;text-align:center}';
+  html+='.ppm-excl{color:#D97706;font-style:italic;text-align:center;font-size:9pt}';
+  html+='.ppm-na{color:#CBD5E1;text-align:center}';
+  html+='.mandays-cell{background:#DBEAFE;color:#1D4ED8;font-weight:700;text-align:center}';
+  html+='.leave-cell{color:#DC2626;font-style:italic;font-size:9pt;text-align:center}';
+
+  html+='</style></head><body>';
+
+  // ── Title ──
+  html+='<div style="margin-bottom:20px;padding:16px 20px;background:#0F1C2E;border-radius:8px">'+
+    '<div style="font-size:18pt;font-weight:700;color:#FFFFFF;letter-spacing:-0.03em">Team Distribution Plan</div>'+
+    '<div style="font-size:10pt;color:rgba(255,255,255,.5);margin-top:4px">'+
+      'Generated: '+new Date().toLocaleString()+
+      ' &nbsp;·&nbsp; By: <strong style="color:rgba(255,255,255,.8)">'+CU+'</strong>'+
+      ' &nbsp;·&nbsp; Total: <strong style="color:rgba(255,255,255,.8)">'+
+        SECS.reduce(function(a,s){return a+s.clusters.reduce(function(b,cl){
+          return b+cl.teams.reduce(function(c,t){return c+t.members.length;},0);
+        },0);},0)+' members</strong>'+
+    '</div>'+
+  '</div>';
+
+  // ── Per section ──
   SECS.forEach(function(s){
-    html+='<h3 style="font-family:Arial;color:'+s.color+';margin:16px 0 6px">'+s.label+'</h3>';
+    var secTotal=s.clusters.reduce(function(a,cl){
+      return a+cl.teams.reduce(function(b,t){return b+t.members.length;},0);
+    },0);
+    var secPPMDays=s.clusters.reduce(function(a,cl){
+      return a+cl.teams.filter(function(t){return t.type==='PPM';})
+        .reduce(function(b,t){return b+(parseInt(t.manDays)||0);},0);
+    },0);
+
+    html+='<table>';
+    // Section header spanning all columns
+    html+='<tr class="sec-row"><td colspan="9">'+
+      s.label+
+      ' &nbsp;<span style="font-size:9pt;font-weight:400;opacity:.7">'+secTotal+' members'+
+      (secPPMDays>0?' &nbsp;·&nbsp; '+secPPMDays+' PPM Days total':'')+
+      '</span></td></tr>';
+
     s.clusters.forEach(function(cl){
-      var ppmD=cl.teams.filter(function(t){return t.type==='PPM';}).reduce(function(a,t){return a+(parseInt(t.manDays)||0);},0);
-      html+='<p style="font-family:Arial;font-size:10pt;font-weight:bold;color:#1E293B;margin:10px 0 4px">'+cl.name+(ppmD>0?' &nbsp;<span style="font-size:9pt;color:#2563EB;background:#DBEAFE;padding:1px 6px;border-radius:4px">'+ppmD+' PPM Days</span>':'')+'</p>';
-      html+='<table><tr><th>Team</th><th>#</th><th>Role</th><th>Name</th><th>Accommodation</th><th>Driving</th><th>PPM Worker</th></tr>';
-      cl.teams.forEach(function(tl){
+      var ppmDays=cl.teams.filter(function(t){return t.type==='PPM';})
+        .reduce(function(a,t){return a+(parseInt(t.manDays)||0);},0);
+      var clTotal=cl.teams.reduce(function(a,t){return a+t.members.length;},0);
+      var ppmWorkers=cl.teams.filter(function(t){return t.type==='PPM';})
+        .reduce(function(a,t){return a+t.members.filter(function(m){return isPPMWorker(m);}).length;},0);
+
+      // Cluster header row
+      html+='<tr class="cl-row"><td colspan="9">'+
+        cl.name+
+        ' &nbsp;<span style="font-size:8.5pt;font-weight:400;opacity:.7">'+
+          clTotal+' members'+
+          (ppmDays>0?' &nbsp;·&nbsp; '+ppmDays+' PPM Days &nbsp;·&nbsp; '+ppmWorkers+' PPM workers':'')+
+        '</span></td></tr>';
+
+      // Column headers
+      html+='<tr class="col-hdr"><th>No.</th><th>Name</th><th>Role</th>'+
+        '<th>Accommodation</th><th>Team Type</th>'+
+        '<th>Man Days</th><th>Driving Lic</th><th>PPM Worker</th><th>On Leave</th></tr>';
+
+      // Sort teams: CE first, then by type
+      var teamOrder2=function(r){if(r==='CALLOUT')return 0;if(r==='WORKORDER')return 1;if(r==='ENQUIRY')return 2;if(r==='NIGHT')return 3;if(r==='DAY')return 4;if(r==='PPM')return 5;return 6;};
+      var sortedTeams=[].concat(cl.teams).sort(function(a,b){return teamOrder2(a.type)-teamOrder2(b.type);});
+
+      var rowIdx=0;
+      sortedTeams.forEach(function(tl){
         var wt=wtInfo(tl.type);
-        tl.members.forEach(function(m,mi){
+        var isPPM=tl.type==='PPM';
+
+        // Team separator row
+        if(tl.members.length>0){
+          html+='<tr class="'+(isPPM?'ppm-row':'nppm-row')+'">'+
+            '<td colspan="4" style="font-size:9pt">'+
+              '<strong>'+wt.label+'</strong>'+
+              (isPPM?' &nbsp;·&nbsp; <span style="color:#1D4ED8">'+
+                (tl.manDays||0)+' Man Days</span>':'')+
+              (tl.members.length?' &nbsp;·&nbsp; '+tl.members.length+' member'+(tl.members.length>1?'s':''):'')+
+            '</td>'+
+            '<td colspan="5" style="font-size:9pt;color:'+(isPPM?'#1D4ED8':'#5B21B6')+'">'+
+              (isPPM?'PPM Team — Preventive Maintenance':'Non-PPM Team — Reactive / Callout')+
+            '</td></tr>';
+        }
+
+        // Sort members by hierarchy: CE → BO → Expert → LT → Tech → Helper → SubTeam → Driver → QC
+        var roleRank=function(r){
+          if(r==='Cluster Engineer'||r==='Cluster Lead')return 0;
+          if(r==='Back Office')return 1;
+          if(r==='Expert')return 2;
+          if(r==='Lead Tech')return 3;
+          if(r==='Technician'||r==='Jr. Technician'||r==='Helper')return 4;
+          if(r==='Sub Team'||r==='Driver')return 5;
+          return 6;
+        };
+        var sortedMembers=[].concat(tl.members).sort(function(a,b){return roleRank(a.role)-roleRank(b.role);});
+
+        sortedMembers.forEach(function(m,mi){
           var isPPMW=isPPMWorker(m);
-          var rowCls=tl.type==='PPM'?'ppm':'nonppm';
-          html+='<tr>';
-          if(mi===0) html+='<td rowspan="'+tl.members.length+'" class="'+rowCls+'" style="vertical-align:middle;text-align:center">'+wt.label+(tl.type==='PPM'?'<br><small>'+tl.manDays+' days</small>':'')+'</td>';
-          html+='<td style="color:#94A3B8;text-align:center">'+(mi+1)+'</td>';
-          html+='<td style="color:'+( RC[m.role]||'#475569')+'">'+m.role+'</td>';
-          html+='<td style="font-weight:500">'+m.name+'</td>';
-          html+='<td style="font-size:9pt">'+(m.accom&&m.accom.length?m.accom.join(' '):'')+'</td>';
-          html+='<td class="lic" style="text-align:center">'+(m.licDriving?'&#9881;':'')+'</td>';
-          html+='<td style="text-align:center;font-size:9pt">'+(tl.type==='PPM'?(isPPMW?'<span style=color:#16A34A>Yes</span>':'<span class=excl>Excl.</span>'):'—')+'</td>';
+          var rc=roleColours[m.role]||'#475569';
+          var isCE=m.role==='Cluster Engineer'||m.role==='Cluster Lead';
+          var isBO=m.role==='Back Office';
+          var isExp=m.role==='Expert';
+          var isLT=m.role==='Lead Tech';
+          var rowCls=isCE?'row-ce':isBO?'row-bo':isExp?'row-exp':isLT?'row-lt':(rowIdx%2===0?'row-reg':'row-alt');
+          rowIdx++;
+
+          html+='<tr class="'+rowCls+'">';
+          // No.
+          html+='<td class="num-cell">'+(mi+1)+'</td>';
+          // Name — bold for CE/LT/Expert
+          html+='<td class="name-cell" style="font-weight:'+(isCE||isLT||isBO||isExp?'700':'500')+'">'+
+            (isCE?'⭐ ':isBO?'● ':isExp?'◆ ':isLT?'◆ ':'')+m.name+
+          '</td>';
+          // Role with colour dot
+          html+='<td class="role-cell">'+
+            '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+rc+';margin-right:5px;vertical-align:middle"></span>'+
+            '<span style="color:'+rc+'">'+m.role+'</span>'+
+          '</td>';
+          // Accommodation badges
+          html+='<td class="accom-cell">'+(m.accom&&m.accom.length?m.accom.map(acBadge).join(' '):'')+'</td>';
+          // Team type
+          html+='<td style="text-align:center;font-size:9pt;color:'+(isPPM?'#1D4ED8':'#5B21B6');
+          html+='">'+wt.label+'</td>';
+          // Man days (only for PPM)
+          html+='<td class="'+(isPPM?'mandays-cell':'ppm-na')+'">';
+          html+=isPPM?(tl.manDays||0)+' d':'—';
+          html+='</td>';
+          // Driving licence
+          html+='<td class="lic-cell">'+(m.licDriving?'🚗':'')+'</td>';
+          // PPM Worker
+          html+='<td '+(isPPM?(isPPMW?'class="ppm-yes"':'class="ppm-excl"'):'class="ppm-na"')+'>';
+          html+=isPPM?(isPPMW?'✓ Yes':'Excl.'):'—';
+          html+='</td>';
+          // On Leave
+          html+='<td class="'+(m.onLeave?'leave-cell':'ppm-na')+'">'+(m.onLeave?'✈ On Leave':'')+'</td>';
           html+='</tr>';
         });
       });
-      html+='</table><br>';
+
+      // Spacer row between clusters
+      html+='<tr><td colspan="9" style="padding:4px;background:#F8FAFC;border:none"></td></tr>';
     });
+
+    html+='</table>';
   });
 
+  // ── Unassigned pool ──
   if(pool.length){
-    html+='<h3 style="font-family:Arial;color:#475569;margin:16px 0 6px">Unassigned Pool</h3>';
-    html+='<table><tr><th>Name</th><th>Role</th><th>Accommodation</th><th>Driving</th></tr>';
-    pool.forEach(function(p){
-      html+='<tr><td style="font-weight:500">'+p.name+'</td><td>'+p.role+'</td><td>'+(p.accom&&p.accom.length?p.accom.join(' '):'')+'</td><td>'+(p.licDriving?'&#9881;':'')+'</td></tr>';
+    html+='<table>';
+    html+='<tr class="sec-row"><td colspan="9">Unassigned Pool &nbsp;'+
+      '<span style="font-size:9pt;font-weight:400;opacity:.7">'+pool.length+' members</span></td></tr>';
+    html+='<tr class="col-hdr"><th>No.</th><th>Name</th><th>Role</th>'+
+      '<th>Accommodation</th><th colspan="4"></th><th>Driving Lic</th></tr>';
+    pool.forEach(function(p,i){
+      var rc=roleColours[p.role]||'#475569';
+      html+='<tr class="'+(i%2===0?'row-reg':'row-alt')+'">';
+      html+='<td class="num-cell">'+(i+1)+'</td>';
+      html+='<td class="name-cell">'+p.name+'</td>';
+      html+='<td class="role-cell">'+
+        '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+rc+';margin-right:5px;vertical-align:middle"></span>'+
+        '<span style="color:'+rc+'">'+p.role+'</span></td>';
+      html+='<td class="accom-cell">'+(p.accom&&p.accom.length?p.accom.map(acBadge).join(' '):'')+'</td>';
+      html+='<td colspan="4"></td>';
+      html+='<td class="lic-cell">'+(p.licDriving?'🚗':'')+'</td>';
+      html+='</tr>';
     });
     html+='</table>';
   }
 
   html+='</body></html>';
+
+  var blob=new Blob([html],{type:'application/vnd.ms-excel;charset=utf-8'});
+  var url=URL.createObjectURL(blob);
   var a=document.createElement('a');
-  a.href='data:application/vnd.ms-excel;charset=utf-8,'+encodeURIComponent(html);
+  a.href=url;
   a.download='Team_Distribution_'+new Date().toISOString().slice(0,10)+'.xls';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);
-  toast('Excel downloaded!');
+  document.body.appendChild(a);a.click();
+  setTimeout(function(){URL.revokeObjectURL(url);document.body.removeChild(a);},200);
+  toast('Excel exported ✓');
 }
 
 
@@ -3396,9 +4009,17 @@ function getPlanSnaps(){try{return JSON.parse(localStorage.getItem('tdm_plansnap
 function setPlanSnaps(a){try{localStorage.setItem('tdm_plansnaps',JSON.stringify(a));}catch(e){}}
 
 function planCopyFromLive(){
-  if(!confirm('Copy live board into planning sandbox? Current plan will be replaced.'))return;
-  PLAN_SECS=JSON.parse(JSON.stringify(SECS));planPool=JSON.parse(JSON.stringify(pool));planHist=[];
-  savePlan();renderPlanBoard();toast('Live board copied to planning');
+  if(PLAN_SECS&&PLAN_SECS.length){
+    if(!confirm('Replace current plan with live board data?'))return;
+  }
+  try{
+    PLAN_SECS=JSON.parse(JSON.stringify(SECS));
+    planPool=JSON.parse(JSON.stringify(pool));
+    planHist=[];
+  }catch(e){toast('Error copying: '+e.message);return;}
+  savePlan();
+  renderPlanBoard(true);
+  toast('Live board copied to planning ✓');
 }
 function planPromoteToLive(){
   if(!confirm('Promote this plan to the LIVE board?'))return;
@@ -3408,12 +4029,12 @@ function planPromoteToLive(){
 function planClear(){
   if(!confirm('Clear the planning board?'))return;
   PLAN_SECS=JSON.parse(JSON.stringify(INIT_SECS));planPool=[];planHist=[];
-  savePlan();renderPlanBoard();toast('Planning board cleared');
+  savePlan();renderPlanBoard(true);toast('Planning board cleared');
 }
 function doPlanUndo(){
   if(!planHist.length)return;
   var h=planHist.pop();PLAN_SECS=JSON.parse(JSON.stringify(h.secs));planPool=JSON.parse(JSON.stringify(h.pool));
-  savePlan();renderPlanBoard();toast('Undo: '+h.lbl);
+  savePlan();renderPlanBoard(true);toast('Undo: '+h.lbl);
 }
 function planPushHist(lbl){
   planHist.push({lbl:lbl,secs:JSON.parse(JSON.stringify(PLAN_SECS)),pool:JSON.parse(JSON.stringify(planPool))});
@@ -3429,7 +4050,7 @@ function planSaveSnapshot(){
 function planLoadSnapshot(idx){
   var s=getPlanSnaps()[idx];if(!s||!confirm('Load "'+s.name+'"?'))return;
   PLAN_SECS=JSON.parse(JSON.stringify(s.secs));planPool=JSON.parse(JSON.stringify(s.pool));
-  savePlan();renderPlanBoard();toast('Snapshot loaded: '+s.name);
+  savePlan();renderPlanBoard(true);toast('Snapshot loaded: '+s.name);
 }
 function planDeleteSnapshot(idx){var snaps=getPlanSnaps();snaps.splice(idx,1);setPlanSnaps(snaps);renderPlanSnaps();toast('Deleted');}
 
@@ -3458,36 +4079,51 @@ function planFindTeam(tlId){
     }}return null;
 }
 
-function planSwap(aid,bid){var af=planFindMember(aid),bf=planFindMember(bid);if(!af||!bf)return;planPushHist('Swap '+af.m.name+' ↔ '+bf.m.name);var tmp=af.tl.members[af.i];af.tl.members[af.i]=bf.tl.members[bf.i];bf.tl.members[bf.i]=tmp;savePlan();renderPlanBoard();}
-function planMoveToTeam(mid,tlId){var mf=planFindMember(mid),tf=planFindTeam(tlId);if(!mf||!tf||mf.tl.id===tlId)return;planPushHist(mf.m.name+' → '+tf.cl.name);var m=mf.tl.members.splice(mf.i,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard();}
-function planToPool(mid){var mf=planFindMember(mid);if(!mf)return;planPushHist(mf.m.name+' → pool');var m=mf.tl.members.splice(mf.i,1)[0];m.pid=m.id;planPool.push(m);savePlan();renderPlanBoard();}
-function planPoolToTeam(pid,tlId){var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi<0)return;var tf=planFindTeam(tlId);if(!tf)return;planPushHist(planPool[pi].name+' → '+tf.cl.name);var m=planPool.splice(pi,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard();}
-function planPoolToSlot(pid,tid){var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi<0)return;var tf=planFindMember(tid);if(!tf)return;var m=planPool.splice(pi,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard();}
+function planSwap(aid,bid){var af=planFindMember(aid),bf=planFindMember(bid);if(!af||!bf)return;planPushHist('Swap '+af.m.name+' ↔ '+bf.m.name);var tmp=af.tl.members[af.i];af.tl.members[af.i]=bf.tl.members[bf.i];bf.tl.members[bf.i]=tmp;savePlan();renderPlanBoard(true);}
+function planMoveToTeam(mid,tlId){var mf=planFindMember(mid),tf=planFindTeam(tlId);if(!mf||!tf||mf.tl.id===tlId)return;planPushHist(mf.m.name+' → '+tf.cl.name);var m=mf.tl.members.splice(mf.i,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard(true);}
+function planToPool(mid){var mf=planFindMember(mid);if(!mf)return;planPushHist(mf.m.name+' → pool');var m=mf.tl.members.splice(mf.i,1)[0];m.pid=m.id;planPool.push(m);savePlan();renderPlanBoard(true);}
+function planPoolToTeam(pid,tlId){var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi<0)return;var tf=planFindTeam(tlId);if(!tf)return;planPushHist(planPool[pi].name+' → '+tf.cl.name);var m=planPool.splice(pi,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard(true);}
+function planPoolToSlot(pid,tid){var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi<0)return;var tf=planFindMember(tid);if(!tf)return;var m=planPool.splice(pi,1)[0];tf.tl.members.push(m);savePlan();renderPlanBoard(true);}
 
 function planCardHTML(m,tlId){
   var col=RC[m.role]||'#888';
   var cls='card plan-card';
   var isCE=m.role==='Cluster Engineer'||m.role==='Cluster Lead';
+  var isBO=m.role==='Back Office';
+  var isExp=m.role==='Expert';
   var isLT=m.role==='Lead Tech';
-  if(isCE)cls+=' is-cluster-eng';else if(isLT)cls+=' is-lead-tech';
-  if(m.inTraining)cls+=' has-training';if(m.isTemp)cls+=' has-temp';if(m.onLeave)cls+=' has-leave';
+  if(isCE) cls+=' is-cluster-eng';
+  else if(isBO) cls+=' is-back-office';
+  else if(isExp) cls+=' is-expert';
+  else if(isLT) cls+=' is-lead-tech';
+  if(m.inTraining) cls+=' has-training';
+  if(m.isTemp) cls+=' has-temp';
+  if(m.onLeave) cls+=' has-leave';
+  if(m.isRotational) cls+=' is-rotational';
   var crownBadge='';
-  if(isCE)crownBadge='<div class="role-crown ce">&#9733; Cluster Engineer</div>';
-  else if(isLT)crownBadge='<div class="role-crown lt">&#9670; Lead Tech</div>';
+  if(isCE) crownBadge='<div class="role-crown ce">&#9733; CE</div>';
+  else if(isBO) crownBadge='<div class="role-crown bo">&#9679; Back Office</div>';
+  else if(isExp) crownBadge='<div class="role-crown exp">&#128269; Expert</div>';
+  else if(isLT) crownBadge='<div class="role-crown lt">&#9670; Lead Tech</div>';
   var extras='';
-  if(m.skills&&m.skills.length)extras+='<div class="card-skills">'+m.skills.map(function(s){return '<span class="skill-tag">'+s+'</span>';}).join('')+'</div>';
-  if(m.role==='Sub Team'&&m.contractor)extras+='<span class="contractor-tag">&#127970; '+m.contractor+'</span>';
-  if(m.shift==='night')extras+='<span class="shift-night">&#9790; Night</span>';
-  else if(m.shift==='off')extras+='<span class="shift-off">Day off</span>';
-  if(m.inTraining)extras+='<span class="tag-training">&#127979; Training</span>';
-  if(m.isTemp)extras+='<span class="tag-temp">&#8987; Temporary</span>';
-  if(m.licDriving)extras+='<span class="lic-tag">🚗 DL</span>';
+  if(m.skills&&m.skills.length) extras+='<div class="card-skills">'+m.skills.map(function(sk){return '<span class="skill-tag">'+sk+'</span>';}).join('')+'</div>';
+  if(m.role==='Sub Team'&&m.contractor) extras+='<span class="contractor-tag">&#127970; '+m.contractor+'</span>';
+  if(m.shift==='night') extras+='<span class="shift-night">&#9790; Night</span>';
+  else if(m.shift==='off') extras+='<span class="shift-off">Day off</span>';
+  if(m.inTraining) extras+='<span class="tag-training">&#127979; Training</span>';
+  if(m.isTemp) extras+='<span class="tag-temp">&#8987; Temporary</span>';
+  if(m.onLeave) extras+='<span class="tag-leave">&#9992; On Leave</span>';
+  if(m.licDriving) extras+='<span class="lic-tag">🚗 DL</span>';
+  if(m.isRotational) extras+='<span class="tag-rotation">⟳ Rotational</span>';
+  var fw=isCE||isBO||isExp?'700':isLT?'600':'500';
   return '<div class="'+cls+'" data-id="'+m.id+'" data-tl="'+tlId+'" draggable="true">'+
-    '<div class="rdot" style="background:'+col+'"></div>'+crownBadge+
+    '<div class="rdot" style="background:'+col+'"></div>'+
+    crownBadge+
     '<div class="crole">'+m.role+'</div>'+
-    '<div class="cname2" style="font-weight:'+(isCE?'700':isBO||m.role==='Expert'?'700':isLT?'600':'500')+'">'+m.name+'</div>'+
+    '<div class="cname2" style="font-weight:'+fw+'">'+m.name+'</div>'+
     (m.accom&&m.accom.length?'<div class="caccom">'+acHTML(m.accom)+'</div>':'')+
-    extras+'</div>';
+    extras+
+  '</div>';
 }
 
 function planClusterHTML(cl,secId){
@@ -3501,9 +4137,28 @@ function planClusterHTML(cl,secId){
     (ppmDays>0?'<div class="ce-big-teams">'+ppmDays+' PPM Days</div>':'')+
     '</div>':'';
   var teamsHTML='';
-  cl.teams.forEach(function(tl){
+  var planTeamOrder=function(t){
+    if(t==='CALLOUT')return 0;
+    if(t==='WORKORDER')return 1;
+    if(t==='ENQUIRY')return 2;
+    if(t==='NIGHT')return 3;
+    if(t==='DAY')return 4;
+    if(t==='PPM')return 5;
+    return 6;
+  };
+  var sortedPlanTeams=[].concat(cl.teams).sort(function(a,b){return planTeamOrder(a.type)-planTeamOrder(b.type);});
+  sortedPlanTeams.forEach(function(tl){
     var wt=wtInfo(tl.type);var isPPM=tl.type==='PPM';
     var nonCE=tl.members.filter(function(m){return m.role!=='Cluster Engineer'&&m.role!=='Cluster Lead';});
+    var planRoleRank=function(r){
+      if(r==='Back Office')return 0;
+      if(r==='Expert')return 1;
+      if(r==='Lead Tech')return 2;
+      if(r==='Technician'||r==='Jr. Technician'||r==='Helper')return 3;
+      if(r==='Sub Team'||r==='Driver')return 4;
+      return 5;
+    };
+    nonCE=nonCE.slice().sort(function(a,b){return planRoleRank(a.role)-planRoleRank(b.role);});
     var cards=nonCE.map(function(m){return planCardHTML(m,tl.id);}).join('');
     teamsHTML+='<div class="team-line" data-tl="'+tl.id+'" style="border-left:3px solid '+(isPPM?'#2563EB':wt.color)+'">'+
       '<div class="tl-meta">'+
@@ -3529,37 +4184,43 @@ function planClusterHTML(cl,secId){
   '</div>';
 }
 
-function renderPlanBoard(){
-  loadPlan();
-  var sc=document.getElementById('planSections');if(!sc)return;
+function renderPlanBoard(_skipLoad){
+  if(!_skipLoad) loadPlan();
+  var sc=document.getElementById('planSections');
+  if(!sc){console.warn('planSections not found');return;}
   if(!PLAN_SECS||!PLAN_SECS.length){
-    sc.innerHTML='<div style="padding:50px;text-align:center;color:var(--text3)">'+
-      '<div style="font-size:40px;margin-bottom:12px">📋</div>'+
-      '<div style="font-weight:600;font-size:14px;margin-bottom:8px">Planning board is empty</div>'+
-      '<div style="font-size:12px;margin-bottom:16px">Click <strong style="color:#7C3AED">⬇ Copy from Live</strong> to start planning from the current board.</div>'+
-      '<button onclick="planCopyFromLive()" style="padding:9px 22px;background:#7C3AED;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--f)">⬇ Copy from Live Board</button>'+
-    '</div>';
+    sc.innerHTML='<div style="padding:50px;text-align:center;color:var(--text3)"><div style="font-size:40px;margin-bottom:12px">&#128203;</div><div style="font-weight:600;font-size:14px;margin-bottom:8px">Planning board is empty</div><div style="font-size:12px;margin-bottom:16px">Click <strong style="color:#7C3AED">Copy from Live</strong> to start.</div><button onclick="planCopyFromLive()" style="padding:9px 22px;background:#7C3AED;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--f)">Copy from Live Board</button></div>';
     renderPlanPool();renderPlanSnaps();return;
   }
   sc.innerHTML='';
   PLAN_SECS.forEach(function(s){
     var open=!planCollapsed[s.id];
+    var sid=s.id;
     var totalM=s.clusters.reduce(function(a,c){return a+c.teams.reduce(function(b,t){return b+t.members.length;},0);},0);
-    var body='';s.clusters.forEach(function(cl){body+=planClusterHTML(cl,s.id);});
+    var body='';
+    s.clusters.forEach(function(cl){
+      try{body+=planClusterHTML(cl,sid);}
+      catch(e){console.error('planClusterHTML error',cl.name,e);}
+    });
     var div=document.createElement('div');div.className='section';
-    div.innerHTML='<div class="shdr" style="background:'+s.color+'">'+
-      '<span onclick="togglePlanSec(\''+s.id+'\')" style="display:flex;align-items:center;gap:8px;flex:1;cursor:pointer">'+
-        '<h3 style="flex:1">'+s.label+'</h3><span class="sc">'+totalM+' members</span><span class="sa">'+(open?'▲':'▼')+'</span>'+
-      '</span>'+
-      '<button onclick="openPlanAddCluster(\''+s.id+'\')" style="font-size:10px;padding:3px 11px;border:1px solid rgba(255,255,255,.35);border-radius:6px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;margin-left:6px">+ Cluster</button>'+
-    '</div><div class="sbody" style="'+(open?'':'display:none')+'">'+body+'</div>';
+    var btnStyle='font-size:10px;padding:3px 11px;border:1px solid rgba(255,255,255,.35);border-radius:6px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600;white-space:nowrap;margin-left:6px';
+    div.innerHTML=
+      '<div class="shdr" style="background:'+s.color+'">'
+      +'<span onclick="togglePlanSec(\''+sid+'\')" style="display:flex;align-items:center;gap:8px;flex:1;cursor:pointer">'
+        +'<h3 style="flex:1">'+s.label+'</h3>'
+        +'<span class="sc">'+totalM+' members</span>'
+        +'<span class="sa">'+(open?'&#9650;':'&#9660;')+'</span>'
+      +'</span>'
+      +'<button onclick="openPlanAddCluster(\''+sid+'\')" style="'+btnStyle+'">+ Cluster</button>'
+      +'</div>'
+      +'<div class="sbody" style="'+(open?'':'display:none')+'">'+body+'</div>';
     sc.appendChild(div);
   });
   renderPlanPool();renderPlanSnaps();
   var ub=document.getElementById('planUbtn');if(ub)ub.disabled=planHist.length===0;
   setTimeout(bindPlanCards,0);
 }
-function togglePlanSec(id){planCollapsed[id]=!planCollapsed[id];renderPlanBoard();}
+function togglePlanSec(id){planCollapsed[id]=!planCollapsed[id];renderPlanBoard(true);}
 
 function renderPlanPool(){
   var ch=document.getElementById('planPchips');if(!ch)return;
@@ -3628,19 +4289,19 @@ function openPlanCardMenu(ev,mid,tlId){
   menu.appendChild(hdr);
   var scroll=document.createElement('div');scroll.className='cmenu-scroll';menu.appendChild(scroll);
   var ra=_mkAcc('🎭','Role','');
-  ROLES.forEach(function(r){ra.body.appendChild(_mkItem(ROLE_ICONS[r]||'·',r,r===m.role,'',function(role){return function(){var mf2=planFindMember(mid);if(!mf2)return;planPushHist(m.name+' role → '+role);mf2.m.role=role;savePlan();renderPlanBoard();};}(r)));});
+  ROLES.forEach(function(r){ra.body.appendChild(_mkItem(ROLE_ICONS[r]||'·',r,r===m.role,'',function(role){return function(){var mf2=planFindMember(mid);if(!mf2)return;planPushHist(m.name+' role → '+role);mf2.m.role=role;savePlan();renderPlanBoard(true);};}(r)));});
   scroll.appendChild(ra.acc);
   var sha=_mkAcc('🌓','Shift','');
-  [['day','☀ Day'],['night','☾ Night'],['off','○ Off']].forEach(function(sv){sha.body.appendChild(_mkItem('',sv[1],(m.shift||'day')===sv[0],'',function(sh){return function(){var mf2=planFindMember(mid);if(!mf2)return;mf2.m.shift=sh;savePlan();renderPlanBoard();};}(sv[0])));});
+  [['day','☀ Day'],['night','☾ Night'],['off','○ Off']].forEach(function(sv){sha.body.appendChild(_mkItem('',sv[1],(m.shift||'day')===sv[0],'',function(sh){return function(){var mf2=planFindMember(mid);if(!mf2)return;mf2.m.shift=sh;savePlan();renderPlanBoard(true);};}(sv[0])));});
   scroll.appendChild(sha.acc);
   var ta=_mkAcc('🏷','Tags','');
-  ta.body.appendChild(_mkItem('📚','In Training',!!m.inTraining,'',function(){var mf2=planFindMember(mid);if(mf2){mf2.m.inTraining=!mf2.m.inTraining;savePlan();renderPlanBoard();}}));
-  ta.body.appendChild(_mkItem('⏳','Temporary',!!m.isTemp,'',function(){var mf2=planFindMember(mid);if(mf2){mf2.m.isTemp=!mf2.m.isTemp;savePlan();renderPlanBoard();}}));
+  ta.body.appendChild(_mkItem('📚','In Training',!!m.inTraining,'',function(){var mf2=planFindMember(mid);if(mf2){mf2.m.inTraining=!mf2.m.inTraining;savePlan();renderPlanBoard(true);}}));
+  ta.body.appendChild(_mkItem('⏳','Temporary',!!m.isTemp,'',function(){var mf2=planFindMember(mid);if(mf2){mf2.m.isTemp=!mf2.m.isTemp;savePlan();renderPlanBoard(true);}}));
   scroll.appendChild(ta.acc);
   var acts=document.createElement('div');acts.className='cmenu-actions';
   var b1=document.createElement('button');b1.className='cmenu-act-btn';b1.textContent='↔ Move';b1.onclick=function(){_closePlanMenu();openPlanSwitchPanel(mid);};
   var b2=document.createElement('button');b2.className='cmenu-act-btn';b2.textContent='↓ Unassign';b2.onclick=function(){_closePlanMenu();planToPool(mid);};
-  var b3=document.createElement('button');b3.className='cmenu-act-btn danger';b3.textContent='✕ Remove';b3.onclick=function(){_closePlanMenu();var mf2=planFindMember(mid);if(!mf2)return;planPushHist(mf2.m.name+' removed');mf2.tl.members.splice(mf2.i,1);savePlan();renderPlanBoard();};
+  var b3=document.createElement('button');b3.className='cmenu-act-btn danger';b3.textContent='✕ Remove';b3.onclick=function(){_closePlanMenu();var mf2=planFindMember(mid);if(!mf2)return;planPushHist(mf2.m.name+' removed');mf2.tl.members.splice(mf2.i,1);savePlan();renderPlanBoard(true);};
   acts.appendChild(b1);acts.appendChild(b2);acts.appendChild(b3);menu.appendChild(acts);
   document.body.appendChild(menu);
   var x=ev.clientX,y=ev.clientY;
@@ -3658,7 +4319,7 @@ function openPlanPoolMenu(ev,pid){
   menu.appendChild(hdr);
   var sec=document.createElement('div');sec.className='cmenu-sec';
   sec.appendChild(_mkItem('⬆','Assign to a team',false,'',function(){_closePlanMenu();openPlanAssignPanel(pid);}));
-  sec.appendChild(_mkItem('✕','Remove from plan',false,'danger',function(){_closePlanMenu();var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi>=0){planPool.splice(pi,1);savePlan();renderPlanBoard();}}));
+  sec.appendChild(_mkItem('✕','Remove from plan',false,'danger',function(){_closePlanMenu();var pi=planPool.findIndex(function(x){return x.pid===pid;});if(pi>=0){planPool.splice(pi,1);savePlan();renderPlanBoard(true);}}));
   menu.appendChild(sec);
   document.body.appendChild(menu);
   var x=ev.clientX,y=ev.clientY;
@@ -3740,7 +4401,7 @@ function openPlanAddMember(tlId){
       var name=document.getElementById('pam_name').value.trim(),role=document.getElementById('pam_role').value;
       if(!name)return;var tf=planFindTeam(tlId);if(!tf)return;
       planPushHist('Add '+name);tf.tl.members.push({id:'pm'+Date.now(),role:role,name:name,accom:[],skills:[]});
-      savePlan();renderPlanBoard();closeMod();toast(name+' added to plan');
+      savePlan();renderPlanBoard(true);closeMod();toast(name+' added to plan');
     };
   },30);
 }
@@ -3757,7 +4418,7 @@ function openPlanAddCluster(secId){
       if(!name)return;var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;
       planPushHist('Add cluster '+name);
       sec.clusters.push({id:'plcl'+Date.now(),name:name,manDays:75,teams:[{id:'pltl'+Date.now(),type:'PPM',manDays:75,members:ceName?[{id:'pm'+Date.now(),role:'Cluster Engineer',name:ceName,accom:[],skills:[]}]:[]}]});
-      savePlan();renderPlanBoard();closeMod();toast('Cluster added');
+      savePlan();renderPlanBoard(true);closeMod();toast('Cluster added');
     };
   },30);
 }
@@ -3773,12 +4434,12 @@ function openPlanAddTeam(secId,clId){
       var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;
       var cl=sec.clusters.find(function(c){return c.id===clId;});if(!cl)return;
       planPushHist('Add team');cl.teams.push({id:'pltl'+Date.now(),type:type,manDays:75,members:[]});
-      savePlan();renderPlanBoard();closeMod();toast('Team line added');
+      savePlan();renderPlanBoard(true);closeMod();toast('Team line added');
     };
   },30);
 }
-function deletePlanCluster(secId,clId){if(!confirm('Remove this cluster from plan?'))return;var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;var ci=sec.clusters.findIndex(function(c){return c.id===clId;});if(ci<0)return;planPushHist('Delete cluster');sec.clusters.splice(ci,1);savePlan();renderPlanBoard();}
-function deletePlanTeamLine(tlId){var tf=planFindTeam(tlId);if(!tf||!confirm('Remove this team line?'))return;var ci=tf.cl.teams.findIndex(function(t){return t.id===tlId;});planPushHist('Delete team');tf.cl.teams.splice(ci,1);savePlan();renderPlanBoard();}
+function deletePlanCluster(secId,clId){if(!confirm('Remove this cluster from plan?'))return;var sec=PLAN_SECS.find(function(s){return s.id===secId;});if(!sec)return;var ci=sec.clusters.findIndex(function(c){return c.id===clId;});if(ci<0)return;planPushHist('Delete cluster');sec.clusters.splice(ci,1);savePlan();renderPlanBoard(true);}
+function deletePlanTeamLine(tlId){var tf=planFindTeam(tlId);if(!tf||!confirm('Remove this team line?'))return;var ci=tf.cl.teams.findIndex(function(t){return t.id===tlId;});planPushHist('Delete team');tf.cl.teams.splice(ci,1);savePlan();renderPlanBoard(true);}
 function setPlanManDays(tlId,val){var tf=planFindTeam(tlId);if(tf){tf.tl.manDays=parseInt(val)||0;savePlan();}}
 
 
@@ -3787,7 +4448,7 @@ function setPlanManDays(tlId,val){var tf=planFindTeam(tlId);if(tf){tf.tl.manDays
 // SETTINGS PAGE
 // ═══════════════════════════════════════════════════════════
 var SKILLS_LIST=['HVAC','Fire Alarm','BMS','Access Control','Plumbing','Electrical','CCTV','Lift/Elevator','Generator','AHU','Chiller','ELV'];
-function loadSkills(){try{var s=localStorage.getItem('tdm_skills');if(s)SKILLS_LIST=JSON.parse(s);}catch(e){}}
+function loadSkills(){try{var s=localStorage.getItem('tdm_skills');if(s)SKILLS_LIST=JSON.parse(s);}catch(e){}return SKILLS_LIST;}
 function saveSkills(){try{localStorage.setItem('tdm_skills',JSON.stringify(SKILLS_LIST));}catch(e){}}
 
 function escH(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -4059,6 +4720,594 @@ function hardReset(){
   pool=[];hist=[];collapsed={};
   persist();render();renderAccomBar();
   toast('Board reset to defaults');
+}
+
+
+// ════════════════════════════════════════════════════
+// FOCUS VIEW — fit a cluster or section to the screen
+// ════════════════════════════════════════════════════
+
+var _focusOpen = false;
+
+function openFocusView(clId) {
+  // Find cluster data for title
+  var clData = null;
+  SECS.forEach(function(s){ s.clusters.forEach(function(cl){ if(cl.id===clId) clData=cl; }); });
+  if(!clData) return;
+
+  var members = clData.teams.reduce(function(a,t){return a+t.members.length;},0);
+  var ppmDays = clData.teams.filter(function(t){return t.type==='PPM';}).reduce(function(a,t){return a+(parseInt(t.manDays)||0);},0);
+  document.getElementById('focusTitle').textContent = clData.name;
+  document.getElementById('focusMeta').textContent =
+    members + ' members' + (ppmDays>0?' · '+ppmDays+' PPM days':'') +
+    ' · ' + clData.teams.length + ' team' + (clData.teams.length!==1?'s':'');
+
+  // Clone the live cluster DOM into the focus wrap
+  var srcEl = document.getElementById('cl-'+clId);
+  if(!srcEl){ toast('Board not rendered yet');return; }
+
+  var wrap = document.getElementById('focusClusterWrap');
+  // Deep clone — but strip draggable so it doesn't interfere
+  var clone = srcEl.cloneNode(true);
+  // Make all buttons inside non-functional (read-only view)
+  clone.querySelectorAll('button.focus-btn').forEach(function(b){b.remove();});
+  clone.querySelectorAll('.tl-del').forEach(function(b){b.style.display='none';});
+  clone.style.width = 'max-content';
+  clone.style.minWidth = '100%';
+  clone.style.borderRadius = '0';
+  clone.style.boxShadow = 'none';
+  wrap.innerHTML = '';
+  wrap.appendChild(clone);
+  wrap.style.transform = 'scale(1)';
+
+  // Show overlay
+  document.getElementById('focusZoomSlider').value = 100;
+  document.getElementById('focusZoomVal').textContent = '100%';
+  document.getElementById('focusOverlay').classList.add('on');
+  _focusOpen = true;
+
+  // Auto-fit after render
+  requestAnimationFrame(function(){
+    requestAnimationFrame(focusFit);
+  });
+}
+
+function openFocusSection(secId) {
+  // Show ALL clusters of a section in focus view
+  var sec = SECS.find(function(s){return s.id===secId;});
+  if(!sec) return;
+
+  var totalMembers = sec.clusters.reduce(function(a,cl){
+    return a + cl.teams.reduce(function(b,t){return b+t.members.length;},0);
+  },0);
+  document.getElementById('focusTitle').textContent = sec.label;
+  document.getElementById('focusMeta').textContent =
+    sec.clusters.length + ' clusters · ' + totalMembers + ' members';
+
+  var wrap = document.getElementById('focusClusterWrap');
+  wrap.innerHTML = '';
+
+  // Clone each cluster
+  sec.clusters.forEach(function(cl){
+    var srcEl = document.getElementById('cl-'+cl.id);
+    if(!srcEl) return;
+    var clone = srcEl.cloneNode(true);
+    clone.querySelectorAll('button.focus-btn').forEach(function(b){b.remove();});
+    clone.querySelectorAll('.tl-del').forEach(function(b){b.style.display='none';});
+    clone.style.borderRadius = '0';
+    clone.style.boxShadow = 'none';
+    clone.style.marginBottom = '6px';
+    wrap.appendChild(clone);
+  });
+  wrap.style.transform = 'scale(1)';
+  wrap.style.width = 'max-content';
+  wrap.style.minWidth = '100%';
+
+  document.getElementById('focusZoomSlider').value = 100;
+  document.getElementById('focusZoomVal').textContent = '100%';
+  document.getElementById('focusOverlay').classList.add('on');
+  _focusOpen = true;
+
+  requestAnimationFrame(function(){
+    requestAnimationFrame(focusFit);
+  });
+}
+
+function closeFocusView() {
+  document.getElementById('focusOverlay').classList.remove('on');
+  _focusOpen = false;
+  // Clear after animation
+  setTimeout(function(){
+    document.getElementById('focusClusterWrap').innerHTML = '';
+  }, 300);
+}
+
+function _closeFocusIfBg(e) {
+  if(e.target === document.getElementById('focusOverlay')) closeFocusView();
+}
+
+function setFocusZoom(val) {
+  val = Math.max(20, Math.min(150, parseInt(val)));
+  var wrap = document.getElementById('focusClusterWrap');
+  var body = document.getElementById('focusBody');
+  wrap.style.transformOrigin = 'top left';
+  wrap.style.transform = 'scale(' + (val/100) + ')';
+  // Adjust outer size so scrollbar appears correctly
+  var naturalW = wrap.scrollWidth;
+  var naturalH = wrap.scrollHeight;
+  wrap.style.marginRight = Math.max(0, naturalW*(val/100) - naturalW) + 'px';
+  document.getElementById('focusZoomSlider').value = val;
+  document.getElementById('focusZoomVal').textContent = val + '%';
+}
+
+function focusFit() {
+  // Calculate the zoom needed to fit the cluster in the visible area
+  var body  = document.getElementById('focusBody');
+  var wrap  = document.getElementById('focusClusterWrap');
+
+  // Reset first to get natural size
+  wrap.style.transform = 'scale(1)';
+
+  var bW = body.clientWidth  - 24; // padding
+  var bH = body.clientHeight - 24;
+  var cW = wrap.scrollWidth;
+  var cH = wrap.scrollHeight;
+  if(!cW || !cH) return;
+
+  // Fit both width and height, pick the smaller zoom
+  var zoomW = Math.floor((bW / cW) * 100);
+  var zoomH = Math.floor((bH / cH) * 100);
+  var zoom  = Math.max(20, Math.min(100, Math.min(zoomW, zoomH)));
+
+  setFocusZoom(zoom);
+}
+
+// Close on Escape key
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape' && _focusOpen) closeFocusView();
+});
+
+// ════════════════════════════════════════════════
+// DARK / LIGHT THEME TOGGLE
+// ════════════════════════════════════════════════
+function applyTheme(theme){
+  document.documentElement.setAttribute('data-theme', theme);
+  try{localStorage.setItem('tdm_theme', theme);}catch(e){}
+  var dark = theme === 'dark';
+  // Header button
+  var ti = document.getElementById('themeIcon');
+  var tl = document.getElementById('themeLabel');
+  if(ti) ti.textContent = dark ? '☀️' : '🌙';
+  if(tl) tl.textContent = dark ? 'Light' : 'Dark';
+  // Login button
+  var li = document.getElementById('loginThemeIcon');
+  var ll = document.getElementById('loginThemeLabel');
+  if(li) li.textContent = dark ? '☀️' : '🌙';
+  if(ll) ll.textContent = dark ? 'Light Mode' : 'Dark Mode';
+}
+
+function toggleTheme(){
+  var cur = document.documentElement.getAttribute('data-theme') || 'light';
+  applyTheme(cur === 'dark' ? 'light' : 'dark');
+}
+
+// Load saved theme on startup
+(function(){
+  var saved = 'light';
+  try{ saved = localStorage.getItem('tdm_theme') || 'light'; }catch(e){}
+  applyTheme(saved);
+})();
+
+
+// ════════════════════════════════════════════════════════════════
+// ROTATION SYSTEM
+// Each rotation entry: {
+//   id, memberId, memberName, memberRole,
+//   slots: [{clusterId, clusterName, sectionName, weeks: [1,2] }]
+//   startDate: 'YYYY-MM-DD'  (week 1 starts from this Monday)
+//   cycleWeeks: 4            (total cycle length, e.g. 4 = 2+2)
+// }
+// ════════════════════════════════════════════════════════════════
+
+var _ROTATIONS = [];
+
+function saveRotations(){
+  try{localStorage.setItem('tdm_rotations', JSON.stringify(_ROTATIONS));}catch(e){}
+}
+function loadRotations(){
+  try{var r=localStorage.getItem('tdm_rotations');if(r)_ROTATIONS=JSON.parse(r);}catch(e){}
+  return _ROTATIONS;
+}
+
+// Get ISO week number from date
+function getWeekNumber(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var dayNum=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-dayNum);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+
+// Get which week in the rotation cycle we're currently in (1-based)
+function getCurrentRotationWeek(rotation){
+  if(!rotation.startDate) return 1;
+  var start=new Date(rotation.startDate+'T00:00:00');
+  var now=new Date();
+  var diffDays=Math.floor((now-start)/(1000*60*60*24));
+  if(diffDays<0) return 1;
+  var weeksSinceStart=Math.floor(diffDays/7);
+  var cycleWeek=(weeksSinceStart % rotation.cycleWeeks)+1;
+  return cycleWeek;
+}
+
+// Find which slot is active for this rotation right now
+function getActiveSlot(rotation){
+  var week=getCurrentRotationWeek(rotation);
+  return rotation.slots.find(function(sl){return sl.weeks.indexOf(week)>=0;})||rotation.slots[0];
+}
+
+// Build list of all clusters for dropdown
+function getAllClusters(){
+  var list=[];
+  SECS.forEach(function(s){
+    s.clusters.forEach(function(cl){
+      list.push({id:cl.id,name:cl.name,section:s.label,sColor:s.color});
+    });
+  });
+  return list;
+}
+
+// ── RENDER ROTATION PAGE ──
+function renderRotation(){
+  loadRotations();
+  var grid=document.getElementById('rotGrid');
+  if(!grid) return;
+
+  // Update week indicator
+  var ind=document.getElementById('rotWeekIndicator');
+  if(ind){
+    var now=new Date();
+    var wk=getWeekNumber(now);
+    ind.textContent='Week '+wk+' of '+now.getFullYear();
+  }
+
+  if(!_ROTATIONS.length){
+    grid.innerHTML=
+      '<div class="rot-empty" style="grid-column:1/-1">'+
+        '<div class="rot-empty-icon">⟳</div>'+
+        '<div style="font-weight:600;font-size:14px;margin-bottom:8px">No rotation schedules yet</div>'+
+        '<div style="font-size:12px;margin-bottom:16px;color:var(--text3)">Add a rotation to define which members move between clusters on a schedule</div>'+
+        '<button onclick="openAddRotationModal()" style="padding:9px 22px;background:linear-gradient(135deg,#7C3AED,#4F46E5);color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--f)">+ Add First Rotation</button>'+
+      '</div>';
+    return;
+  }
+
+  grid.innerHTML='';
+  _ROTATIONS.forEach(function(rot){
+    var activeSlot=getActiveSlot(rot);
+    var cycleWeek=getCurrentRotationWeek(rot);
+    var card=document.createElement('div');
+    card.className='rot-card';
+
+    var slotsHTML=rot.slots.map(function(sl,si){
+      var isActive=(sl===activeSlot);
+      var weekLabels=sl.weeks.map(function(w){return 'Wk '+w;}).join(', ');
+      return '<div class="rot-slot '+(isActive?'active-slot':'inactive-slot')+'" onclick="editRotationSlot(\''+rot.id+'\','+si+')" title="Click to edit">'+
+        '<div class="rot-week-badge">'+weekLabels+'</div>'+
+        '<div style="flex:1">'+
+          '<div class="rot-cluster-name">'+sl.clusterName+'</div>'+
+          '<div class="rot-cluster-sub">'+sl.sectionName+'</div>'+
+        '</div>'+
+        (isActive?'<div class="rot-active-tag">▶ Now</div>':'')+
+      '</div>';
+    }).join('');
+
+    card.innerHTML=
+      '<div class="rot-card-hdr">'+
+        '<div style="font-size:22px">⟳</div>'+
+        '<div style="flex:1">'+
+          '<div class="rot-name">'+rot.memberName+'</div>'+
+          '<div style="font-size:10px;color:rgba(255,255,255,.55);margin-top:1px">'+rot.memberRole+' &nbsp;·&nbsp; '+rot.cycleWeeks+'-week cycle &nbsp;·&nbsp; Week '+cycleWeek+' now</div>'+
+        '</div>'+
+        '<div style="display:flex;gap:5px">'+
+          '<button onclick="applyOneRotation(\''+rot.id+'\')" title="Move to active cluster now" style="font-size:10px;padding:3px 9px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;font-family:var(--f);font-weight:600">Apply</button>'+
+          '<button onclick="editRotation(\''+rot.id+'\')" title="Edit" style="font-size:10px;padding:3px 9px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;font-family:var(--f)">✎ Edit</button>'+
+          '<button onclick="deleteRotation(\''+rot.id+'\')" title="Remove" style="font-size:10px;padding:3px 9px;border:1px solid rgba(255,87,87,.4);border-radius:6px;background:rgba(255,87,87,.12);color:#FDA4AF;cursor:pointer;font-family:var(--f)">✕</button>'+
+        '</div>'+
+      '</div>'+
+      '<div class="rot-card-body">'+slotsHTML+'</div>';
+    grid.appendChild(card);
+  });
+}
+
+// ── OPEN ADD/EDIT ROTATION MODAL ──
+function openAddRotationModal(existingId){
+  var existing=existingId?_ROTATIONS.find(function(r){return r.id===existingId;}):null;
+  var clusters=getAllClusters();
+  var allMembers=[];
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){tl.members.forEach(function(m){
+    if(!allMembers.find(function(x){return x.id===m.id;}))
+      allMembers.push({id:m.id,name:m.name,role:m.role});
+  });});});});
+  pool.forEach(function(p){
+    if(!allMembers.find(function(x){return x.name===p.name;}))
+      allMembers.push({id:p.pid,name:p.name,role:p.role});
+  });
+  allMembers.sort(function(a,b){return a.name.localeCompare(b.name);});
+
+  var memberOpts=allMembers.map(function(m){
+    return '<option value="'+m.id+'" data-role="'+m.role+'" '+(existing&&existing.memberId===m.id?'selected':'')+'>'+m.name+' ('+m.role+')</option>';
+  }).join('');
+
+  var clusterOpts=clusters.map(function(cl){
+    return '<option value="'+cl.id+'" data-name="'+cl.name+'" data-sec="'+cl.section+'">'+cl.name+' — '+cl.section+'</option>';
+  }).join('');
+
+  var cycleWeeks=existing?existing.cycleWeeks:4;
+  var startDate=existing?existing.startDate:new Date().toISOString().slice(0,10);
+
+  // Build slots from existing or default 2 slots
+  var slots=existing?existing.slots:[
+    {clusterId:'',clusterName:'',sectionName:'',weeks:[1,2]},
+    {clusterId:'',clusterName:'',sectionName:'',weeks:[3,4]}
+  ];
+
+  function buildSlotRow(sl,idx,total){
+    var wkChecks='';
+    for(var w=1;w<=cycleWeeks;w++){
+      wkChecks+='<label style="display:inline-flex;align-items:center;gap:2px;font-size:10px;cursor:pointer;margin-right:4px">'+
+        '<input type="checkbox" class="rot-wk-cb" data-slot="'+idx+'" data-wk="'+w+'" '+(sl.weeks.indexOf(w)>=0?'checked':'')+'>'+
+        'W'+w+'</label>';
+    }
+    return '<div class="rot-modal-slot" id="rotSlot'+idx+'">'+
+      '<label>Cluster:</label>'+
+      '<select class="rot-cl-sel" data-slot="'+idx+'" onchange="_rotUpdateSlot(this,'+idx+')">'+
+        '<option value="">— select cluster —</option>'+
+        clusters.map(function(cl){return '<option value="'+cl.id+'" data-name="'+cl.name+'" data-sec="'+cl.section+'" '+(sl.clusterId===cl.id?'selected':'')+'>'+cl.name+' — '+cl.section+'</option>';}).join('')+
+      '</select>'+
+      '<button class="rm-slot" onclick="_rotRemoveSlot('+idx+')" title="Remove">✕</button>'+
+      '<span style="grid-column:1;font-size:10px;color:var(--text3)">Weeks active:</span>'+
+      '<div style="grid-column:2/-1;display:flex;flex-wrap:wrap;gap:2px;align-items:center">'+wkChecks+'</div>'+
+    '</div>';
+  }
+
+  var slotsHTML=slots.map(function(sl,i){return buildSlotRow(sl,i,slots.length);}).join('');
+
+  document.getElementById('mbox').innerHTML=
+    '<h3>'+(existing?'✎ Edit':'+ Add')+' Rotation Schedule</h3>'+
+    '<div class="mrow"><label>Team Member</label>'+
+      '<select class="msel" id="rotMember">'+memberOpts+'</select>'+
+    '</div>'+
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">'+
+      '<div class="mrow" style="margin-bottom:0"><label>Cycle Length (weeks)</label>'+
+        '<input class="minp" type="number" id="rotCycle" min="2" max="26" value="'+cycleWeeks+'" oninput="_rotRebuildSlots()">'+
+      '</div>'+
+      '<div class="mrow" style="margin-bottom:0"><label>Cycle Start Date</label>'+
+        '<input class="minp" type="date" id="rotStart" value="'+startDate+'">'+
+      '</div>'+
+    '</div>'+
+    '<label style="font-size:11px;font-weight:600;color:var(--text2);display:block;margin-bottom:6px">Cluster Slots (assign weeks to each cluster)</label>'+
+    '<div class="rot-modal-slots" id="rotSlotList">'+slotsHTML+'</div>'+
+    '<button class="rot-add-slot" onclick="_rotAddSlot()">+ Add Another Cluster</button>'+
+    '<div class="mbtns">'+
+      '<button class="mb" onclick="closeMod()">Cancel</button>'+
+      '<button class="mb ok" onclick="_saveRotation('+(existing?'\''+existing.id+'\'':'null')+')">'+( existing?'Save Changes':'Add Rotation')+'</button>'+
+    '</div>';
+
+  // Store slots in a temp variable accessible to helpers
+  window._rotSlots=JSON.parse(JSON.stringify(slots));
+  window._rotClusters=clusters;
+  document.getElementById('mbd').classList.add('on');
+}
+
+function _rotUpdateSlot(sel,idx){
+  var opt=sel.options[sel.selectedIndex];
+  if(!window._rotSlots[idx]) window._rotSlots[idx]={weeks:[]};
+  window._rotSlots[idx].clusterId=sel.value;
+  window._rotSlots[idx].clusterName=opt.dataset.name||'';
+  window._rotSlots[idx].sectionName=opt.dataset.sec||'';
+}
+
+function _rotAddSlot(){
+  var cycle=parseInt(document.getElementById('rotCycle').value)||4;
+  var list=document.getElementById('rotSlotList');
+  var idx=window._rotSlots.length;
+  window._rotSlots.push({clusterId:'',clusterName:'',sectionName:'',weeks:[]});
+  var div=document.createElement('div');
+  var clusters=window._rotClusters||getAllClusters();
+  var clOpts=clusters.map(function(cl){return '<option value="'+cl.id+'" data-name="'+cl.name+'" data-sec="'+cl.section+'">'+cl.name+' — '+cl.section+'</option>';}).join('');
+  var wkChecks='';
+  for(var w=1;w<=cycle;w++){
+    wkChecks+='<label style="display:inline-flex;align-items:center;gap:2px;font-size:10px;cursor:pointer;margin-right:4px"><input type="checkbox" class="rot-wk-cb" data-slot="'+idx+'" data-wk="'+w+'"> W'+w+'</label>';
+  }
+  div.className='rot-modal-slot';div.id='rotSlot'+idx;
+  div.innerHTML='<label>Cluster:</label><select class="rot-cl-sel" data-slot="'+idx+'" onchange="_rotUpdateSlot(this,'+idx+')"><option value="">— select cluster —</option>'+clOpts+'</select><button class="rm-slot" onclick="_rotRemoveSlot('+idx+')" title="Remove">✕</button><span style="grid-column:1;font-size:10px;color:var(--text3)">Weeks active:</span><div style="grid-column:2/-1;display:flex;flex-wrap:wrap;gap:2px;align-items:center">'+wkChecks+'</div>';
+  list.appendChild(div);
+}
+
+function _rotRemoveSlot(idx){
+  var el=document.getElementById('rotSlot'+idx);
+  if(el) el.remove();
+  window._rotSlots[idx]=null;
+}
+
+function _rotRebuildSlots(){
+  // Re-render slot checkboxes when cycle length changes
+  var cycle=parseInt(document.getElementById('rotCycle').value)||4;
+  document.querySelectorAll('.rot-modal-slot').forEach(function(slotEl){
+    var idx=parseInt(slotEl.id.replace('rotSlot',''));
+    var curWks=[];
+    slotEl.querySelectorAll('.rot-wk-cb:checked').forEach(function(cb){curWks.push(parseInt(cb.dataset.wk));});
+    var wkChecks='';
+    for(var w=1;w<=cycle;w++){
+      wkChecks+='<label style="display:inline-flex;align-items:center;gap:2px;font-size:10px;cursor:pointer;margin-right:4px"><input type="checkbox" class="rot-wk-cb" data-slot="'+idx+'" data-wk="'+w+'" '+(curWks.indexOf(w)>=0?'checked':'')+'>W'+w+'</label>';
+    }
+    var wkDiv=slotEl.querySelector('div[style*="flex-wrap"]');
+    if(wkDiv) wkDiv.innerHTML=wkChecks;
+  });
+}
+
+function _saveRotation(existingId){
+  var memSel=document.getElementById('rotMember');
+  if(!memSel||!memSel.value){toast('Select a member');return;}
+  var selOpt=memSel.options[memSel.selectedIndex];
+  var memberName=selOpt.text.split(' (')[0];
+  var memberRole=selOpt.text.match(/\(([^)]+)\)/);
+  memberRole=memberRole?memberRole[1]:'';
+  var cycle=parseInt(document.getElementById('rotCycle').value)||4;
+  var startDate=document.getElementById('rotStart').value||new Date().toISOString().slice(0,10);
+
+  // Collect slot data from DOM
+  var slots=[];
+  document.querySelectorAll('.rot-modal-slot').forEach(function(slotEl){
+    var sel=slotEl.querySelector('.rot-cl-sel');
+    if(!sel||!sel.value) return;
+    var opt=sel.options[sel.selectedIndex];
+    var weeks=[];
+    slotEl.querySelectorAll('.rot-wk-cb:checked').forEach(function(cb){weeks.push(parseInt(cb.dataset.wk));});
+    if(weeks.length===0){toast('Assign at least one week to each cluster slot');return;}
+    slots.push({
+      clusterId:sel.value,
+      clusterName:opt.dataset.name||opt.text.split(' — ')[0],
+      sectionName:opt.dataset.sec||opt.text.split(' — ')[1]||'',
+      weeks:weeks.sort(function(a,b){return a-b;})
+    });
+  });
+
+  if(slots.length<1){toast('Add at least one cluster slot');return;}
+
+  var rotId=existingId||'rot'+Date.now();
+  var newRot={
+    id:rotId,
+    memberId:memSel.value,
+    memberName:memberName,
+    memberRole:memberRole,
+    slots:slots,
+    cycleWeeks:cycle,
+    startDate:startDate
+  };
+
+  if(existingId){
+    var idx=_ROTATIONS.findIndex(function(r){return r.id===existingId;});
+    if(idx>=0) _ROTATIONS[idx]=newRot;
+    else _ROTATIONS.push(newRot);
+  } else {
+    _ROTATIONS.push(newRot);
+  }
+
+  // Tag member as rotational on their card
+  _tagRotationalMember(memberName, true);
+
+  saveRotations();
+  closeMod();
+  renderRotation();
+  persist();
+  render();
+  toast('Rotation saved for '+memberName);
+}
+
+function _tagRotationalMember(memberName, isRotational){
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+    tl.members.forEach(function(m){if(m.name===memberName) m.isRotational=isRotational;});
+  });});});
+  pool.forEach(function(p){if(p.name===memberName) p.isRotational=isRotational;});
+}
+
+function editRotation(rotId){
+  openAddRotationModal(rotId);
+}
+
+function deleteRotation(rotId){
+  var rot=_ROTATIONS.find(function(r){return r.id===rotId;});
+  if(!rot) return;
+  if(!confirm('Remove rotation schedule for '+rot.memberName+'?')) return;
+  _ROTATIONS=_ROTATIONS.filter(function(r){return r.id!==rotId;});
+  // Untag member
+  _tagRotationalMember(rot.memberName, false);
+  saveRotations();
+  renderRotation();
+  persist();render();
+  toast('Rotation removed');
+}
+
+// ── APPLY ROTATIONS ──
+// Move each rotational member to their active cluster for the current week
+function applyCurrentRotation(){
+  loadRotations();
+  if(!_ROTATIONS.length){toast('No rotations defined');return;}
+  var moved=0,notFound=0;
+  _ROTATIONS.forEach(function(rot){
+    var r=applyOneRotation(rot.id, true);
+    if(r===true) moved++;
+    else if(r===false) notFound++;
+  });
+  persist();render();
+  toast('Applied: '+moved+' member'+(moved!==1?'s':'')+' moved'+(notFound>0?' · '+notFound+' not found':''));
+}
+
+function applyOneRotation(rotId, silent){
+  var rot=_ROTATIONS.find(function(r){return r.id===rotId;});
+  if(!rot) return false;
+  var activeSlot=getActiveSlot(rot);
+  if(!activeSlot||!activeSlot.clusterId) return false;
+
+  // Find the member
+  var memberName=rot.memberName;
+  var foundIn=null;
+  var foundMember=null;
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+    tl.members.forEach(function(m,mi){
+      if(m.name===memberName){foundIn={sec:s,cl:cl,tl:tl,idx:mi};foundMember=m;}
+    });
+  });});});
+
+  // Find the target cluster
+  var targetCl=null,targetSec=null;
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){
+    if(cl.id===activeSlot.clusterId){targetCl=cl;targetSec=s;}
+  });});
+
+  if(!targetCl){if(!silent)toast('Target cluster not found: '+activeSlot.clusterName);return false;}
+
+  // Already in the right cluster?
+  if(foundIn&&foundIn.cl.id===targetCl.id){
+    if(!silent)toast(memberName+' is already in '+targetCl.name);
+    return true;
+  }
+
+  // Remove from current location
+  if(foundIn){
+    foundIn.tl.members.splice(foundIn.idx,1);
+  } else {
+    // Check pool
+    var pi=pool.findIndex(function(p){return p.name===memberName;});
+    if(pi>=0){foundMember=pool[pi];pool.splice(pi,1);}
+  }
+
+  if(!foundMember){
+    if(!silent)toast(memberName+' not found on board');return false;
+  }
+
+  // Add to target cluster — find a suitable team line or first team
+  foundMember.isRotational=true;
+  var targetTl=targetCl.teams.find(function(t){return t.type==='PPM';})||targetCl.teams[0];
+  if(!targetTl){
+    // Create a default team if cluster is empty
+    targetTl={id:makeId(),type:'CALLOUT',manDays:0,members:[]};
+    targetCl.teams.push(targetTl);
+  }
+  targetTl.members.push(foundMember);
+
+  hist.push({lbl:'Rotated: '+memberName+' → '+targetCl.name,time:now(),user:CU,type:'rotation'});
+  if(!silent){persist();render();toast(memberName+' → '+targetCl.name+' ✓');}
+  return true;
+}
+
+// ── SHOW ROTATION INFO IN CARD ──
+// Called from showPg
+function _rotLoadAndTag(){
+  loadRotations();
+  _ROTATIONS.forEach(function(rot){_tagRotationalMember(rot.memberName,true);});
 }
 
 
