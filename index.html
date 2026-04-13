@@ -183,11 +183,11 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .content{flex:1;padding:0;overflow:hidden;min-height:0;display:flex;flex-direction:column}
 .pg{display:none}
 .pg.on{display:block;height:100%;overflow-y:auto;overflow-x:hidden;padding:14px 18px;flex:1}
-.pg.on#pg-board{display:flex;flex-direction:column;overflow:hidden;padding:10px 16px}
+.pg.on#pg-board{display:flex;flex-direction:column;overflow:hidden;padding:7px 12px}
 .pg.on#pg-planning{display:flex;flex-direction:column;overflow:hidden;padding:10px 14px}
 
 /* ── TOP BAR ── */
-.btop{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap;flex-shrink:0}
+.btop{display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap;flex-shrink:0}
 .btop h2{font-size:14px;font-weight:600;flex:1}
 .sinp{font-size:11px;padding:5px 10px;border:1px solid var(--border);border-radius:var(--r);background:#fff;color:var(--text);width:150px;font-family:var(--f);outline:none}
 .sinp:focus{border-color:var(--blue)}
@@ -201,15 +201,15 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .tb.red{background:var(--red);color:#fff;border-color:var(--red)}
 
 /* ── LEGEND ── */
-.leg{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:5px 10px;background:#fff;border:1px solid var(--border);border-radius:var(--rl);margin-bottom:6px;box-shadow:var(--shadow);flex-shrink:0}
+.leg{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:3px 8px;background:#fff;border:1px solid var(--border);border-radius:var(--rl);margin-bottom:4px;box-shadow:var(--shadow);flex-shrink:0}
 .li{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--text2)}
 .ld{width:7px;height:7px;border-radius:50%}
 .lb{width:22px;height:12px;border-radius:3px}
 .ls{width:1px;height:14px;background:var(--border)}
 
 /* ── ACCOM BAR ── */
-.abar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:4px 10px;background:#EFF6FF;border:1px solid var(--blue-m);border-radius:var(--r);margin-bottom:6px;flex-shrink:0}
-.ap{font-size:9px;padding:2px 6px;border-radius:5px;font-weight:700}
+.abar{display:flex;flex-wrap:wrap;gap:5px;align-items:center;padding:3px 8px;background:#EFF6FF;border:1px solid var(--blue-m);border-radius:var(--r);margin-bottom:4px;flex-shrink:0}
+.ap{font-size:7.5px;padding:1px 4px;border-radius:3px;font-weight:700}
 .abar .al{font-size:10px;color:var(--blue);font-weight:600}
 .abar .ad{font-size:10px;color:var(--text3)}
 
@@ -217,19 +217,19 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .blayout{display:grid;grid-template-columns:1fr 210px;gap:10px;align-items:start;flex:1;min-height:0;overflow:hidden}
 
 /* ── SECTION ── */
-.section{margin-bottom:6px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
-.shdr{display:flex;align-items:center;gap:8px;padding:6px 12px;cursor:pointer;user-select:none}
-.shdr h3{font-size:12px;font-weight:700;color:#fff;flex:1}
+.section{margin-bottom:5px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.shdr{display:flex;align-items:center;gap:8px;padding:5px 10px;cursor:pointer;user-select:none}
+.shdr h3{font-size:11.5px;font-weight:700;color:#fff;flex:1}
 .shdr .sc{font-size:10px;background:rgba(255,255,255,.22);color:#fff;border-radius:7px;padding:1px 8px}
 .shdr .sa{font-size:10px;color:rgba(255,255,255,.5)}
-.sbody{padding:6px 8px;background:#fff}
+.sbody{padding:4px 6px;background:#fff}
 
 /* ── CLUSTER ── */
-.cluster{margin-bottom:5px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
+.cluster{margin-bottom:4px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 
 /* ── CLUSTER NOTES — simple textarea ── */
 .cluster-notes-wrap{
-  width:160px;flex-shrink:0;
+  width:120px;flex-shrink:0;
   border-left:1px solid var(--border);
   display:flex;flex-direction:column;
   background:#FFFDF5;
@@ -243,7 +243,7 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .cluster-notes-ta{
   flex:1;width:100%;
   border:none;outline:none;resize:none;
-  font-family:var(--f);font-size:11px;
+  font-family:var(--f);font-size:10.5px;
   line-height:1.5;color:var(--text);
   background:transparent;
   padding:2px 8px 6px;
@@ -257,10 +257,10 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .cluster-teams{flex:1;display:flex;flex-direction:column}
 .cluster-teams .team-line{border-left:none!important}
 .cluster:last-child{margin-bottom:0}
-.cluster-hdr{display:flex;align-items:center;gap:5px;padding:4px 9px;background:var(--slate-l);border-bottom:1px solid var(--border)}
-.cluster-hdr h4{font-size:11px;font-weight:700;color:var(--text);flex:1}
+.cluster-hdr{display:flex;align-items:center;gap:4px;padding:3px 7px;background:var(--slate-l);border-bottom:1px solid var(--border)}
+.cluster-hdr h4{font-size:10px;font-weight:700;color:var(--text);flex:1}
 .cluster-stats{display:flex;gap:6px;align-items:center}
-.cstat{font-size:10px;color:var(--text3);background:#fff;border:1px solid var(--border);border-radius:5px;padding:2px 7px}
+.cstat{font-size:9px;color:var(--text3);background:#fff;border:1px solid var(--border);border-radius:4px;padding:1px 6px}
 .cstat strong{color:var(--text);font-weight:600}
 .cluster-btns{display:flex;gap:4px}
 .cbtn{font-size:10px;padding:3px 9px;border:1px solid var(--border);border-radius:var(--r);background:#fff;color:var(--text2);cursor:pointer;font-family:var(--f);font-weight:500;transition:all .12s}
@@ -269,22 +269,22 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .cbtn.del-cl:hover{background:var(--red-l);border-color:#FECACA}
 
 /* ── TEAM LINE ── */
-.team-line{display:flex;align-items:stretch;border-bottom:1px solid var(--border);background:#fff;position:relative;transition:background .15s;min-height:82px}
+.team-line{display:flex;align-items:center;border-bottom:1px solid var(--border);background:#fff;position:relative;transition:background .15s;height:56px;min-height:56px;max-height:56px;overflow:hidden}
 .team-line:last-child{border-bottom:none}
 .team-line:hover{background:#FAFBFC}
 
 /* Left meta strip */
-.tl-meta{width:120px;flex-shrink:0;padding:6px 8px;border-right:1px solid var(--border);background:var(--bg);display:flex;flex-direction:column;gap:4px;justify-content:center}
-.tl-type{font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;display:inline-flex;align-items:center;gap:3px;width:fit-content}
+.tl-meta{width:96px;flex-shrink:0;padding:3px 7px;border-right:1px solid var(--border);background:var(--bg);display:flex;flex-direction:column;gap:3px;justify-content:center;align-self:stretch}
+.tl-type{font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;display:inline-flex;align-items:center;gap:2px;width:fit-content;white-space:nowrap}
 .tl-days{font-size:10px;color:var(--text2);display:flex;align-items:center;gap:4px;margin-top:2px}
-.tl-days input{width:52px;padding:2px 5px;border:1px solid var(--border);border-radius:4px;font-size:10px;font-family:var(--f);color:var(--text);background:#fff;outline:none;text-align:center}
+.tl-days input{width:44px;padding:1px 4px;border:1px solid var(--border);border-radius:4px;font-size:9.5px;font-family:var(--f);color:var(--text);background:#fff;outline:none;text-align:center}
 .tl-days input:focus{border-color:var(--blue)}
 .tl-name{font-size:9px;color:var(--text3);margin-top:2px;font-style:italic}
 .tl-del{position:absolute;top:6px;right:8px;font-size:10px;color:var(--text3);cursor:pointer;padding:2px 5px;border-radius:4px;transition:all .12s;background:none;border:none;font-family:var(--f)}
 .tl-del:hover{color:var(--red);background:var(--red-l)}
 
 /* Cards row */
-.cards-row{display:flex;align-items:stretch;gap:5px;padding:6px 8px;flex:1;overflow-x:auto;flex-wrap:nowrap}
+.cards-row{display:flex;align-items:center;gap:3px;padding:4px 5px;flex:1;overflow-x:auto;flex-wrap:nowrap}
 .cards-row::-webkit-scrollbar{height:3px}
 .cards-row::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
 
@@ -292,9 +292,9 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .role-sep{color:var(--border2);font-size:16px;flex-shrink:0;line-height:1;align-self:center}
 
 /* ── CARD ── */
-.card{border:1px solid var(--border);border-radius:var(--r);padding:5px 7px;background:#fff;cursor:grab;position:relative;width:90px;flex-shrink:0;min-height:70px;height:100%;display:flex;flex-direction:column;gap:2px;transition:border-color .12s,transform .12s,box-shadow .12s}
+.card{border:1px solid var(--border);border-radius:var(--r);padding:0;background:#fff;cursor:grab;position:relative;width:160px;flex-shrink:0;height:48px;min-height:48px;max-height:48px;display:flex;flex-direction:row;gap:0;transition:border-color .12s,transform .12s,box-shadow .12s}
 /* Cluster Engineer card slightly wider to stand out as first/main */
-.card.is-cluster-eng{width:98px!important;}
+.card.is-cluster-eng{width:170px!important;}
 .card:hover{border-color:var(--border2);background:var(--bg);box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:2}
 .card.avs{border:1.5px solid var(--purple);background:var(--purple-l)}
 .card.sub{border:1.5px solid var(--amber);background:var(--amber-l)}
@@ -307,7 +307,21 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .card.pop-in{animation:pIn .4s cubic-bezier(.34,1.56,.64,1) forwards}
 @keyframes pOut{0%{transform:scale(1);opacity:1}25%{transform:scale(1.2) translateY(-8px);opacity:1}55%{transform:scale(.85) translateY(5px);opacity:.6}100%{transform:scale(1);opacity:1}}
 @keyframes pIn{0%{transform:scale(.6) translateY(-14px);opacity:0}70%{transform:scale(1.05) translateY(2px);opacity:1}100%{transform:scale(1) translateY(0);opacity:1}}
-.rdot{width:6px;height:6px;border-radius:50%;position:absolute;top:7px;right:8px}
+.rdot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+
+/* ── HORIZONTAL CARD LAYOUT ── */
+.card-left{width:72px;flex-shrink:0;display:flex;flex-direction:column;justify-content:center;padding:3px 4px 3px 6px;border-right:1px solid rgba(0,0,0,.08);gap:2px;min-width:0;overflow:hidden}
+.card-right{flex:1;display:flex;flex-direction:column;justify-content:center;padding:2px 4px 2px 4px;gap:1px;min-width:0;overflow:hidden}
+.card-name{font-size:11px;font-weight:700;color:var(--text);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.2px}
+.card-role-strip{
+  display:flex;align-items:center;gap:3px;
+}
+.card-role-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.card-role-lbl{font-size:7.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.02em;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-badges{display:flex;flex-wrap:nowrap;gap:2px;align-items:center;overflow:hidden}
+.card-tags{display:flex;flex-wrap:nowrap;gap:2px;overflow:hidden}
+[data-theme="dark"] .card-left{border-right-color:rgba(255,255,255,.06)}
+[data-theme="dark"] .card-name{color:var(--text)!important}
 .lic{position:absolute;bottom:5px;right:7px;font-size:12px;line-height:1}
 .cmenu{position:fixed;z-index:900;background:#fff;border:0.5px solid var(--border2);border-radius:var(--rl);box-shadow:0 8px 32px rgba(0,0,0,.18);min-width:230px;max-width:260px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden}
 .cmenu-hdr{padding:9px 13px;background:var(--navy);color:#fff;flex-shrink:0}
@@ -348,16 +362,16 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .sw-ld{font-size:10px;color:var(--text3)}
 
 
-.rdot{width:6px;height:6px;border-radius:50%;position:absolute;top:5px;right:6px}
-.lic-tag{display:inline-flex;align-items:center;gap:2px;font-size:8px;font-weight:700;background:#1D4ED8;color:#fff;border-radius:4px;padding:2px 5px;margin-top:3px;letter-spacing:.02em;white-space:nowrap}
-.crole{font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.03em;padding-right:12px;line-height:1.2}
-.cname2{font-size:11px;font-weight:500;color:var(--text);line-height:1.35;word-break:break-word}
-.caccom{display:flex;flex-wrap:wrap;gap:2px;margin-top:3px}
+.rdot-gone{}
+.lic-tag{display:inline-flex;align-items:center;gap:1px;font-size:7px;font-weight:700;background:#1D4ED8;color:#fff;border-radius:3px;padding:1px 4px;margin-top:1px;letter-spacing:.02em;white-space:nowrap}
+.crole{font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:.03em;padding-right:10px;line-height:1.1}
+.cname2{font-size:11px;font-weight:600;color:var(--text);line-height:1.25;word-break:break-word;letter-spacing:-.1px}
+.caccom{display:flex;flex-wrap:wrap;gap:2px;margin-top:2px}
 
 /* Add member button */
-.add-member-btn{width:62px;align-self:stretch;min-height:70px;border:1.5px dashed var(--border2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:var(--text3);font-size:10px;flex-shrink:0;transition:all .15s;background:transparent;font-family:var(--f)}
+.add-member-btn{width:36px;flex-shrink:0;height:48px;border:1.5px dashed var(--border2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:var(--text3);font-size:9px;flex-shrink:0;transition:all .15s;background:transparent;font-family:var(--f)}
 .add-member-btn:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-l)}
-.add-member-btn .plus{font-size:18px;line-height:1;margin-bottom:2px}
+.add-member-btn .plus{font-size:14px;line-height:1;margin-bottom:1px}
 
 /* ── SIDE PANEL ── */
 .side{display:flex;flex-direction:column;gap:7px;position:sticky;top:0;height:calc(100vh - 90px);overflow-y:auto}
@@ -667,9 +681,9 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 
 /* ── BIG CLUSTER ENGINEER CARD ── */
 .ce-big-card{
-  width:90px;flex-shrink:0;align-self:stretch;
+  width:68px;flex-shrink:0;align-self:stretch;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:4px;padding:8px 6px;
+  gap:3px;padding:5px 4px;
   background:linear-gradient(160deg,#EEF2FF 0%,#E0E7FF 100%);
   border-right:3px solid #4F46E5;
   border-top:none;
@@ -679,19 +693,19 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 }
 .ce-big-card:hover{background:linear-gradient(160deg,#E0E7FF 0%,#C7D2FE 100%)}
 .ce-big-badge{
-  font-size:9px;font-weight:700;
+  font-size:8px;font-weight:700;
   background:#4F46E5;color:#fff;
   border-radius:5px;padding:2px 7px;
   text-align:center;letter-spacing:.02em;
   white-space:nowrap;
 }
 .ce-big-name{
-  font-size:12px;font-weight:800;
+  font-size:11px;font-weight:800;
   color:#3730A3;text-align:center;
   line-height:1.2;word-break:break-word;
 }
 .ce-big-teams{
-  font-size:9px;color:#6366F1;
+  font-size:8px;color:#6366F1;
   background:#EEF2FF;border:1px solid #C7D2FE;
   border-radius:4px;padding:1px 6px;
   margin-top:2px;
@@ -721,21 +735,16 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
   box-shadow:0 0 0 3px rgba(124,58,237,.13),0 2px 8px rgba(124,58,237,.15)!important;
   border-top:3px solid #7C3AED!important;
 }
-.role-crown{display:inline-flex;align-items:center;gap:3px;font-size:8px;font-weight:700;border-radius:4px;padding:1px 5px;margin-bottom:2px;letter-spacing:.02em}
+.role-crown{display:inline-flex;align-items:center;gap:2px;font-size:7px;font-weight:700;border-radius:3px;padding:1px 4px;margin-bottom:0;letter-spacing:.02em;white-space:nowrap}
 .role-crown.ce{background:#4F46E5;color:#fff}
 .role-crown.bo{background:#B45309;color:#fff}
 .role-crown.exp{background:#7C3AED;color:#fff}
 .role-crown.lt{background:#99F6E4;color:#0F766E}
 
 /* ── MAN DAYS HIGHLIGHT ── */
-.tl-days-highlight{
-  display:flex;align-items:center;gap:4px;
-  background:linear-gradient(90deg,#EFF6FF,#DBEAFE);
-  border:1px solid #93C5FD;border-radius:6px;
-  padding:3px 7px;margin-top:3px;
-}
-.tl-days-highlight .md-label{font-size:9px;font-weight:700;color:#1D4ED8;letter-spacing:.03em;white-space:nowrap}
-.tl-days-highlight input{width:52px;padding:2px 5px;border:1px solid #93C5FD;border-radius:4px;font-size:10px;font-family:var(--f);color:#1D4ED8;background:#fff;outline:none;text-align:center;font-weight:700}
+.tl-days-highlight{display:flex;align-items:center;gap:4px;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:5px;padding:3px 5px;margin-top:2px}
+.tl-days-highlight .md-label{font-size:9px;font-weight:700;color:#1D4ED8;white-space:nowrap;letter-spacing:-.1px}
+.tl-days-highlight input{width:40px;padding:2px 4px;border:1px solid #93C5FD;border-radius:4px;font-size:10px;font-family:var(--f);color:#1D4ED8;background:#fff;outline:none;text-align:center;font-weight:700}
 .tl-days-highlight input:focus{border-color:#2563EB;box-shadow:0 0 0 2px rgba(37,99,235,.2)}
 
 /* ── CLUSTER HEADER LEADER BADGES ── */
@@ -745,14 +754,14 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .leader-badge.lt-badge{background:#99F6E4;color:#0F766E;border:1px solid #5EEAD4}
 
 /* ── SKILLS & CONTRACTOR ── */
-.skill-tag{display:inline-block;font-size:8px;padding:1px 4px;border-radius:3px;font-weight:600;background:#E0F2FE;color:#0369A1;margin:1px 1px 0 0}
+.skill-tag{display:inline-block;font-size:7px;padding:1px 3px;border-radius:2px;font-weight:600;background:#E0F2FE;color:#0369A1;margin:1px 1px 0 0}
 .card-skills{display:flex;flex-wrap:wrap;margin-top:3px}
 .contractor-tag{font-size:8px;padding:1px 5px;border-radius:3px;font-weight:600;background:#FEF3C7;color:#92400E;margin-top:2px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .shift-night{font-size:8px;padding:1px 5px;border-radius:3px;background:#1E293B;color:#fff;margin-top:2px;display:inline-block}
 .shift-off{font-size:8px;padding:1px 5px;border-radius:3px;background:#F1F5F9;color:#64748B;margin-top:2px;display:inline-block}
-.tag-training{font-size:8px;padding:1px 5px;border-radius:3px;background:#FEF9C3;color:#854D0E;border:1px solid #FDE047;margin-top:2px;display:inline-block;font-weight:700}
-.tag-temp{font-size:8px;padding:1px 5px;border-radius:3px;background:#FFE4E6;color:#9F1239;border:1px dashed #FDA4AF;margin-top:2px;display:inline-block;font-weight:700}
-.tag-leave{font-size:8px;padding:1px 5px;border-radius:3px;background:#FEF2F2;color:#991B1B;border:1px solid #FECACA;margin-top:2px;display:inline-block;font-weight:700;animation:leavePulse 2s ease-in-out infinite}
+.tag-training{font-size:7px;padding:1px 3px;border-radius:3px;background:#FEF9C3;color:#854D0E;border:1px solid #FDE047;margin-top:1px;display:inline-block;font-weight:700}
+.tag-temp{font-size:7px;padding:1px 3px;border-radius:3px;background:#FFE4E6;color:#9F1239;border:1px dashed #FDA4AF;margin-top:1px;display:inline-block;font-weight:700}
+.tag-leave{font-size:7px;padding:1px 3px;border-radius:3px;background:#FEF2F2;color:#991B1B;border:1px solid #FECACA;margin-top:1px;display:inline-block;font-weight:700;animation:leavePulse 2s ease-in-out infinite}
 @keyframes leavePulse{0%,100%{opacity:1}50%{opacity:.65}}
 .card.has-leave{border-top:4px solid #DC2626!important;opacity:.82}
 .has-leave .cname2{text-decoration:line-through;text-decoration-color:#DC2626;text-decoration-thickness:2px}
@@ -1564,15 +1573,26 @@ function cardHTML(m,tlId){
   if(m.inTraining) extras+='<span class="tag-training">&#127979; Training</span>';
   if(m.isTemp) extras+='<span class="tag-temp">&#8987; Temporary</span>';
   if(m.onLeave) extras+='<span class="tag-leave">&#9992; On Leave</span>';
+  var accomHTML=m.accom&&m.accom.length?acHTML(m.accom):'';
+  var licHTML=licIcon(m);
+  var fw=isCE?'800':isBO||m.role==='Expert'?'700':isLT?'700':'600';
+  // ── LEFT-RIGHT horizontal split ──
+  // LEFT: colour bar + name + role label
+  // RIGHT: crown badge + accom + lic + tags
+  var rightContent='';
+  if(crownBadge) rightContent+=crownBadge;
+  if(accomHTML||licHTML) rightContent+='<div class="card-badges">'+accomHTML+licHTML+'</div>';
+  if(extras) rightContent+='<div class="card-tags">'+extras+'</div>';
   return '<div class="'+cls+'" data-id="'+m.id+'" data-tl="'+tlId+'" draggable="true">'+
-    '<div class="rdot" style="background:'+col+'"></div>'+
-    crownBadge+
-    '<div class="crole">'+m.role+'</div>'+
-    '<div class="cname2" style="font-weight:'+(isCE?'700':isBO||m.role==='Expert'?'700':isLT?'600':'500')+'">'+m.name+'</div>'+
-    (m.accom&&m.accom.length?'<div class="caccom">'+acHTML(m.accom)+'</div>':'')+
-    extras+
-    licIcon(m)+
-    '</div>';
+    '<div class="card-left" style="border-left:3px solid '+col+'">'+
+      '<div class="card-name" style="font-weight:'+fw+'">'+m.name+'</div>'+
+      '<div class="card-role-strip">'+
+        '<div class="card-role-dot" style="background:'+col+'"></div>'+
+        '<div class="card-role-lbl">'+m.role+'</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="card-right">'+rightContent+'</div>'+
+  '</div>';
 }
 
 // Called after render() to bind all drag/click events via addEventListener
@@ -1691,23 +1711,15 @@ function teamLineHTML(tl,secId,clId,ceId){
   const leadMember=tl.members.find(m=>m.role==='Back Office')||tl.members.find(m=>m.role==='Expert')||tl.members.find(m=>m.role==='Lead Tech')||tl.members.find(m=>m.id!==ceId)||tl.members[0];
   let html=`<div class="team-line" data-tl="${tl.id}" style="border-left:3px solid ${isPPM?'#2563EB':wt.color}">
     <div class="tl-meta">
-      <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">
-        <div class="tl-type" style="background:${wt.bg};color:${wt.color}">${wt.label}</div>
-        ${isPPM&&warned.length>0?`<span title="Warning: ${warned.map(m=>m.name+' ('+m.role+')').join(', ')} are Lead/Manager — excluded from PPM days" style="font-size:9px;color:#D97706;background:#FEF3C7;border-radius:4px;padding:1px 5px;font-weight:600;cursor:help">⚠ ${warned.length} excluded</span>`:''}
-        ${!isPPM?`<span style="font-size:9px;color:#7C3AED;background:#EDE9FE;border-radius:4px;padding:1px 5px;font-weight:600">Non-PPM</span>`:''}
-      </div>
+      <div class="tl-type" style="background:${wt.bg};color:${wt.color}">${wt.label}</div>
       ${isPPM?`<div class="tl-days-highlight">
-        <span class="md-label">&#128197; Man Days:</span>
+        <span class="md-label">Days</span>
         <input type="number" value="${tl.manDays||0}" min="0"
           onchange="updateManDays('${tl.id}',this.value)"
           onclick="ev=>ev.stopPropagation()"
-          title="Man Days for this PPM team (manual entry)">
+          title="PPM Man Days">
       </div>`:''}
-      ${isPPM?`<div style="font-size:9px;color:#2563EB;margin-top:2px">
-        <strong>${workers}</strong> PPM worker${workers!==1?'s':''} · ${tl.members.length} total
-        ${warned.length>0?`<span style="color:#D97706"> (${warned.length} excl.)</span>`:''}
-      </div>`:`<div style="font-size:9px;color:#7C3AED;margin-top:2px">Callout / WO / Enquiry</div>`}
-      ${leadMember&&leadMember.id!==ceId?`<div class="tl-name">Lead: ${leadMember.name}</div>`:''}
+      ${warned.length>0?`<div style="font-size:8px;color:#D97706;margin-top:1px" title="${warned.map(m=>m.name).join(', ')} excluded">⚠${warned.length} excl.</div>`:''}
     </div>
     <div class="cards-row" data-tl="${tl.id}"
       ondragover="ev=>{ev.preventDefault();ev.currentTarget.classList.add('over')}"
@@ -1739,6 +1751,17 @@ function teamLineHTML(tl,secId,clId,ceId){
 }
 
 // ── CLUSTER NOTES — simple ──────────────────────────────────
+function _savePlanClNote(clId, val){
+  for(var i=0;i<PLAN_SECS.length;i++){
+    for(var j=0;j<PLAN_SECS[i].clusters.length;j++){
+      if(PLAN_SECS[i].clusters[j].id===clId){
+        PLAN_SECS[i].clusters[j].note=val;
+        savePlan();return;
+      }
+    }
+  }
+}
+
 function _saveClNote(clId, val){
   for(var i=0;i<SECS.length;i++){
     for(var j=0;j<SECS[i].clusters.length;j++){
@@ -4170,14 +4193,22 @@ function planCardHTML(m,tlId){
   if(m.onLeave) extras+='<span class="tag-leave">&#9992; On Leave</span>';
   if(m.licDriving) extras+='<span class="lic-tag">🚗 DL</span>';
   if(m.isRotational) extras+='<span class="tag-rotation">⟳ Rotational</span>';
-  var fw=isCE||isBO||isExp?'700':isLT?'600':'500';
+  var fw=isCE?'800':isBO||isExp?'700':isLT?'700':'600';
+  var accomHTML=m.accom&&m.accom.length?acHTML(m.accom):'';
+  var licHTML=m.licDriving?'<span class="lic-tag">🚗 DL</span>':'';
+  var rightContent='';
+  if(crownBadge) rightContent+=crownBadge;
+  if(accomHTML||licHTML) rightContent+='<div class="card-badges">'+accomHTML+licHTML+'</div>';
+  if(extras) rightContent+='<div class="card-tags">'+extras+'</div>';
   return '<div class="'+cls+'" data-id="'+m.id+'" data-tl="'+tlId+'" draggable="true">'+
-    '<div class="rdot" style="background:'+col+'"></div>'+
-    crownBadge+
-    '<div class="crole">'+m.role+'</div>'+
-    '<div class="cname2" style="font-weight:'+fw+'">'+m.name+'</div>'+
-    (m.accom&&m.accom.length?'<div class="caccom">'+acHTML(m.accom)+'</div>':'')+
-    extras+
+    '<div class="card-left" style="border-left:3px solid '+col+'">'+
+      '<div class="card-name" style="font-weight:'+fw+'">'+m.name+'</div>'+
+      '<div class="card-role-strip">'+
+        '<div class="card-role-dot" style="background:'+col+'"></div>'+
+        '<div class="card-role-lbl">'+m.role+'</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="card-right">'+rightContent+'</div>'+
   '</div>';
 }
 
@@ -4214,7 +4245,11 @@ function planClusterHTML(cl,secId){
       return 5;
     };
     nonCE=nonCE.slice().sort(function(a,b){return planRoleRank(a.role)-planRoleRank(b.role);});
-    var cards=nonCE.map(function(m){return planCardHTML(m,tl.id);}).join('');
+    var cards=nonCE.map(function(m){
+      var c=planCardHTML(m,tl.id);
+      // Inject onclick for context menu
+      return c.replace('data-id="'+m.id+'"','data-id="'+m.id+'" onclick="openPlanCardMenu(event,\''+m.id+'\',\''+tl.id+'\')"');
+    }).join('');
     teamsHTML+='<div class="team-line" data-tl="'+tl.id+'" style="border-left:3px solid '+(isPPM?'#2563EB':wt.color)+'">'+
       '<div class="tl-meta">'+
         '<div class="tl-type" style="background:'+wt.bg+';color:'+wt.color+'">'+wt.label+'</div>'+
@@ -4226,16 +4261,28 @@ function planClusterHTML(cl,secId){
       '<button class="tl-del" onclick="deletePlanTeamLine(\''+tl.id+'\')" title="Remove">✕</button>'+
     '</div>';
   });
+  // Add plan notes textarea
+  var planNoteVal=cl.note||'';
   return '<div class="cluster" id="plcl-'+cl.id+'">'+
     '<div class="cluster-hdr">'+
       '<h4>'+cl.name+(ppmDays>0?'<span style="font-size:10px;font-weight:500;color:#2563EB;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:5px;padding:1px 8px;margin-left:6px">'+ppmDays+' PPM Days</span>':'')+'</h4>'+
-      '<div class="cluster-stats"><div class="cstat">Members: <strong>'+totalM+'</strong></div></div>'+
+      '<div class="cluster-stats">'+
+        '<div class="cstat">Members: <strong>'+totalM+'</strong></div>'+
+        (ppmDays>0?'<div class="cstat" style="border-color:#BFDBFE;background:#EFF6FF">PPM Days: <strong style="color:#2563EB">'+ppmDays+'</strong></div>':'')+
+      '</div>'+
       '<div class="cluster-btns">'+
-        '<button class="cbtn" onclick="openPlanAddTeam(\''+secId+'\',\''+cl.id+'\')">+ Team</button>'+
-        '<button class="cbtn del-cl" onclick="deletePlanCluster(\''+secId+'\',\''+cl.id+'\')">✕</button>'+
+        '<button class="cbtn focus-btn" onclick="openFocusView(\''+cl.id+'\')" title="Focus view">⊡</button>'+
+        '<button class="cbtn" onclick="openPlanAddTeam(\''+secId+'\',\''+cl.id+'\')" >+ Team</button>'+
+        '<button class="cbtn del-cl" onclick="deletePlanCluster(\''+secId+'\',\''+cl.id+'\')" >✕</button>'+
       '</div>'+
     '</div>'+
-    '<div class="cluster-body">'+ceHTML+'<div class="cluster-teams">'+teamsHTML+'</div></div>'+
+    '<div class="cluster-body">'+ceHTML+
+      '<div class="cluster-teams">'+teamsHTML+'</div>'+
+      '<div class="cluster-notes-wrap">'+
+        '<div class="cluster-notes-label">📋 Notes</div>'+
+        '<textarea class="cluster-notes-ta" placeholder="Add remarks…" onclick="event.stopPropagation()" oninput="_savePlanClNote(\''+cl.id+'\',this.value)">'+escH(planNoteVal)+'</textarea>'+
+      '</div>'+
+    '</div>'+
   '</div>';
 }
 
