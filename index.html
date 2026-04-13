@@ -226,6 +226,36 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 
 /* ── CLUSTER ── */
 .cluster{margin-bottom:5px;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
+
+/* ── CLUSTER NOTES — simple textarea ── */
+.cluster-notes-wrap{
+  width:160px;flex-shrink:0;
+  border-left:1px solid var(--border);
+  display:flex;flex-direction:column;
+  background:#FFFDF5;
+}
+[data-theme="dark"] .cluster-notes-wrap{background:#1C1C14!important;border-color:var(--border)!important}
+.cluster-notes-label{
+  font-size:9px;font-weight:700;color:var(--text3);
+  text-transform:uppercase;letter-spacing:.06em;
+  padding:5px 8px 2px;
+}
+.cluster-notes-ta{
+  flex:1;width:100%;
+  border:none;outline:none;resize:none;
+  font-family:var(--f);font-size:11px;
+  line-height:1.5;color:var(--text);
+  background:transparent;
+  padding:2px 8px 6px;
+  min-height:60px;
+}
+.cluster-notes-ta::placeholder{color:var(--text3);font-size:10.5px}
+[data-theme="dark"] .cluster-notes-ta{color:var(--text)!important}
+
+/* Cluster body flex — must include notes wrap */
+.cluster-body{display:flex;align-items:stretch}
+.cluster-teams{flex:1;display:flex;flex-direction:column}
+.cluster-teams .team-line{border-left:none!important}
 .cluster:last-child{margin-bottom:0}
 .cluster-hdr{display:flex;align-items:center;gap:5px;padding:4px 9px;background:var(--slate-l);border-bottom:1px solid var(--border)}
 .cluster-hdr h4{font-size:11px;font-weight:700;color:var(--text);flex:1}
@@ -1708,6 +1738,20 @@ function teamLineHTML(tl,secId,clId,ceId){
   return html;
 }
 
+// ── CLUSTER NOTES — simple ──────────────────────────────────
+function _saveClNote(clId, val){
+  for(var i=0;i<SECS.length;i++){
+    for(var j=0;j<SECS[i].clusters.length;j++){
+      if(SECS[i].clusters[j].id===clId){
+        SECS[i].clusters[j].note=val;
+        persist();
+        return;
+      }
+    }
+  }
+}
+// ─────────────────────────────────────────────────────────────
+
 function clusterHTML(cl,secId){
   const ppmDays=totalPPMDays(cl);
   const ppmTeamCount=ppmTeamsOnly(cl).length;
@@ -1763,7 +1807,18 @@ function clusterHTML(cl,secId){
   const teamOrder=r=>{if(r==='CALLOUT')return 0;if(r==='WORKORDER')return 1;if(r==='ENQUIRY')return 2;if(r==='NIGHT')return 3;if(r==='DAY')return 4;if(r==='PPM')return 5;return 6;};
   const sortedTeams=[...cl.teams].sort((a,b)=>teamOrder(a.type)-teamOrder(b.type));
   sortedTeams.forEach(tl=>{html+=teamLineHTML(tl,secId,cl.id,clusterEng?clusterEng.id:null);});
-  html+=`</div></div></div>`;
+
+  html+=`</div>
+    <div class="cluster-notes-wrap">
+      <div class="cluster-notes-label">📋 Notes</div>
+      <textarea class="cluster-notes-ta"
+        id="cln_${cl.id}"
+        placeholder="Add remarks…"
+        onclick="event.stopPropagation()"
+        oninput="_saveClNote('${cl.id}',this.value)"
+      >${escH(cl.note||'')}</textarea>
+    </div>
+  </div></div>`;
   return html;
 }
 
