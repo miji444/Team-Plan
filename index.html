@@ -848,6 +848,117 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
 .md-stat{background:#fff;border:1px solid var(--border);border-radius:var(--rl);padding:12px;text-align:center}
 .md-stat-val{font-size:24px;font-weight:700}
 .md-stat-lbl{font-size:10px;color:var(--text3);margin-top:2px}
+
+/* ════════════════════════════════════════════════════
+   MEMBER PROFILE / DOCUMENTS MODAL
+════════════════════════════════════════════════════ */
+.profile-modal{max-width:680px;width:96vw;padding:0;display:flex;flex-direction:column;max-height:90vh;overflow:hidden;border-radius:16px}
+.profile-hdr{display:flex;align-items:center;gap:14px;padding:18px 20px 14px;background:linear-gradient(135deg,#0F1C2E,#1E2F45);flex-shrink:0}
+.profile-avatar{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;flex-shrink:0;letter-spacing:-.5px}
+.profile-hdr-info{flex:1;min-width:0}
+.profile-hdr-name{font-size:17px;font-weight:700;color:#fff;letter-spacing:-.3px}
+.profile-hdr-role{font-size:11px;color:rgba(255,255,255,.5);margin-top:2px}
+.profile-hdr-badges{display:flex;gap:5px;margin-top:5px;flex-wrap:wrap}
+.profile-tabs{display:flex;background:#F8FAFC;border-bottom:1px solid var(--border);flex-shrink:0}
+.profile-tab{flex:1;padding:9px 6px;text-align:center;font-size:11px;font-weight:600;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none;font-family:var(--f)}
+.profile-tab:hover{color:var(--text2);background:#F1F5F9}
+.profile-tab.active{color:var(--blue);border-bottom-color:var(--blue);background:#fff}
+.profile-body{flex:1;overflow-y:auto;padding:16px 20px}
+.profile-body::-webkit-scrollbar{width:4px}
+.profile-body::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+/* Doc section */
+.doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.doc-card{border:1.5px solid var(--border);border-radius:10px;padding:11px 13px;background:#fff;transition:border-color .15s;cursor:pointer;position:relative}
+.doc-card:hover{border-color:var(--blue)}
+.doc-card.has-doc{border-color:#22C55E;background:#F0FDF4}
+.doc-card.expiring{border-color:#F59E0B;background:#FFFBEB}
+.doc-card.expired{border-color:#EF4444;background:#FEF2F2}
+.doc-card-icon{font-size:20px;margin-bottom:6px}
+.doc-card-name{font-size:11.5px;font-weight:700;color:var(--text);margin-bottom:2px}
+.doc-card-num{font-size:10.5px;color:var(--text2);font-family:monospace}
+.doc-card-exp{font-size:10px;color:var(--text3);margin-top:3px}
+.doc-card.has-doc .doc-card-exp{color:#16A34A}
+.doc-card.expiring .doc-card-exp{color:#D97706;font-weight:600}
+.doc-card.expired .doc-card-exp{color:#DC2626;font-weight:700}
+.doc-status-dot{position:absolute;top:10px;right:11px;width:8px;height:8px;border-radius:50%}
+
+/* Vehicle card */
+.vehicle-card{border:1.5px solid var(--border);border-radius:10px;padding:12px 14px;background:#fff;margin-bottom:10px}
+.vehicle-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.vehicle-field{flex:1;min-width:120px}
+.vehicle-field label{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
+.vehicle-field input{width:100%;padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-family:var(--f);font-size:12px;color:var(--text);outline:none;transition:border-color .2s}
+.vehicle-field input:focus{border-color:var(--blue)}
+
+/* Profile form fields */
+.pf-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.pf-field{display:flex;flex-direction:column;gap:3px}
+.pf-field label{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em}
+.pf-field input,.pf-field select{padding:7px 10px;border:1.5px solid var(--border);border-radius:7px;font-family:var(--f);font-size:12px;color:var(--text);outline:none;transition:border-color .2s;background:#fff}
+.pf-field input:focus,.pf-field select:focus{border-color:var(--blue)}
+.pf-section-hdr{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin:14px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px}
+.pf-save-bar{padding:10px 20px;border-top:1px solid var(--border);background:#F8FAFC;display:flex;justify-content:flex-end;gap:8px;flex-shrink:0}
+
+/* Doc edit modal */
+.doc-edit-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 0}
+
+/* ════════════════════════════════════════════════════
+   TRAINING PLAN PAGE
+════════════════════════════════════════════════════ */
+.training-page{padding:0}
+.tp-topbar{display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.tp-topbar h2{font-size:14px;font-weight:700;flex:1;color:var(--text)}
+
+/* Level badge */
+.lvl-badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;border-radius:20px;padding:2px 9px;white-space:nowrap}
+.lvl-L1{background:#DBEAFE;color:#1D4ED8;border:1px solid #93C5FD}
+.lvl-L2{background:#EDE9FE;color:#6D28D9;border:1px solid #C4B5FD}
+.lvl-L3{background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7}
+.lvl-OEM{background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff;border:none}
+.lvl-none{background:#F1F5F9;color:#64748B;border:1px solid var(--border)}
+
+/* Training status */
+.ts-badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;border-radius:6px;padding:2px 8px;white-space:nowrap}
+.ts-scheduled{background:#DBEAFE;color:#1D4ED8}
+.ts-ongoing{background:#FEF3C7;color:#92400E}
+.ts-completed{background:#D1FAE5;color:#065F46}
+.ts-failed{background:#FEE2E2;color:#991B1B}
+.ts-qualified{background:linear-gradient(135deg,#7C3AED,#4F46E5);color:#fff}
+
+/* Training matrix */
+.tp-matrix{background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow)}
+.tp-matrix-hdr{display:grid;background:var(--navy);color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.tp-matrix-hdr div{padding:8px 10px;border-right:1px solid rgba(255,255,255,.1)}
+.tp-matrix-hdr div:last-child{border-right:none}
+.tp-row{display:grid;border-bottom:1px solid var(--border);transition:background .12s}
+.tp-row:last-child{border-bottom:none}
+.tp-row:hover{background:#F8FAFC}
+.tp-cell{padding:8px 10px;border-right:1px solid var(--border);font-size:11.5px;display:flex;align-items:center;gap:6px}
+.tp-cell:last-child{border-right:none}
+.tp-member-name{font-weight:600;color:var(--text)}
+.tp-member-role{font-size:9.5px;color:var(--text3)}
+
+/* Training record cards */
+.tr-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--rl);padding:14px;margin-bottom:10px;box-shadow:var(--shadow);position:relative}
+.tr-card:hover{border-color:var(--blue-m)}
+.tr-card-hdr{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.tr-card-title{font-size:13px;font-weight:700;color:var(--text);flex:1;letter-spacing:-.2px}
+.tr-meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+.tr-meta-item{display:flex;flex-direction:column;gap:2px}
+.tr-meta-label{font-size:9.5px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em}
+.tr-meta-val{font-size:12px;color:var(--text);font-weight:500}
+.tr-attendees{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}
+.tr-attendee{display:flex;align-items:center;gap:5px;background:#F8FAFC;border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-size:11px}
+.tr-attendee-name{font-weight:600;color:var(--text)}
+.tr-attendee-result{font-size:9px}
+.tr-add-btn{border:1.5px dashed var(--border2);background:transparent;border-radius:var(--rl);padding:12px;text-align:center;cursor:pointer;color:var(--text3);font-size:12px;font-family:var(--f);transition:all .15s;width:100%;margin-bottom:10px}
+.tr-add-btn:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-l)}
+
+/* Progress bar for qualification */
+.qual-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;margin-top:4px}
+.qual-bar-fill{height:100%;border-radius:3px;transition:width .5s ease}
+
 </style>
 </head>
 <body>
@@ -888,6 +999,8 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
       <button class="ntab" onclick="showPg('analytics',this)">Analytics</button>
       <button class="ntab" onclick="showPg('planning',this)" style="color:rgba(196,181,253,.85)">📋 Planning</button>
       <button class="ntab" onclick="showPg('rotation',this)" style="color:rgba(34,211,238,.85)">⟳ Rotation</button>
+      <button class="ntab" onclick="showPg('docs',this)">🪪 Documents</button>
+      <button class="ntab" onclick="showPg('training',this)">🎓 Training</button>
       <button class="ntab" onclick="showPg('settings',this)">⚙ Settings</button>
     </div>
     <div class="hbtns">
@@ -1025,7 +1138,51 @@ body{font-family:var(--f);background:var(--bg);color:var(--text);font-size:13px;
     </div>
 
     <!-- SETTINGS -->
-    <div class="pg" id="pg-settings">
+    <!-- DOCUMENTS PAGE -->
+    <div class="pg" id="pg-docs">
+      <div class="tp-topbar">
+        <h2>🪪 Member Documents &amp; Profiles</h2>
+        <input class="sinp" type="text" id="docsSearch" placeholder="Search member…" oninput="renderDocsPage(this.value)" style="width:180px">
+        <select class="tb" id="docsFilter" onchange="renderDocsPage(document.getElementById('docsSearch').value)" style="padding:5px 10px">
+          <option value="all">All Members</option>
+          <option value="missing">Missing Docs</option>
+          <option value="expiring">Expiring (30 days)</option>
+          <option value="expired">Expired</option>
+        </select>
+      </div>
+      <div id="docsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px"></div>
+    </div>
+
+    <!-- TRAINING PAGE -->
+    <div class="pg" id="pg-training">
+      <div class="tp-topbar">
+        <h2>🎓 Training Plan</h2>
+        <select class="tb" id="tpFilterSec" onchange="renderTrainingPage()" style="padding:5px 10px;max-width:160px">
+          <option value="all">All Sections</option>
+        </select>
+        <select class="tb" id="tpFilterLvl" onchange="renderTrainingPage()" style="padding:5px 10px">
+          <option value="all">All Levels</option>
+          <option value="L1">L1 — Basic</option>
+          <option value="L2">L2 — Intermediate</option>
+          <option value="L3">L3 — Advanced</option>
+          <option value="OEM">OEM</option>
+        </select>
+        <button class="tb acc" onclick="openAddTrainingModal()">+ Add Training Session</button>
+      </div>
+      <!-- Matrix: member × qualification level -->
+      <div style="background:#fff;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow)">
+        <div style="padding:8px 14px;background:var(--navy);display:flex;align-items:center;gap:10px">
+          <span style="font-size:12px;font-weight:700;color:#fff;flex:1">Qualification Matrix — AVS Members</span>
+          <span style="font-size:10px;color:rgba(255,255,255,.5)">Click a cell to update qualification</span>
+        </div>
+        <div id="tpMatrix" style="overflow-x:auto"></div>
+      </div>
+      <!-- Training sessions -->
+      <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Training Sessions</div>
+      <div id="tpSessions"></div>
+    </div>
+
+        <div class="pg" id="pg-settings">
       <div class="btop">
         <h2>⚙ Settings &amp; Configuration</h2>
         <button class="tb acc" onclick="saveAllSettings()">💾 Save All Changes</button>
@@ -2208,6 +2365,11 @@ function openCardMenu(ev,mid,tlId){
   sw.appendChild(_mkItem('&#8646;','Switch team or cluster',false,'',function(){openSwitchPanel(mid);}));
   menu.appendChild(sw);
 
+  // Profile / Documents
+  var profSec=_mkSec('Profile & Documents');
+  profSec.appendChild(_mkItem('🪪','View Profile & Documents',false,'',function(){openMemberProfileFromMenu(mid);}));
+  menu.appendChild(profSec);
+
   // Actions
   var act=_mkSec('Actions');
   act.appendChild(_mkItem('&#8659;','Move to unassigned pool',false,'',function(){toPool(mid);}));
@@ -2923,6 +3085,8 @@ function showPg(id,btn){
   if(id==='planning')  renderPlanBoard(true);
   if(id==='settings')  renderSettings();
   if(id==='rotation')  {_rotLoadAndTag();renderRotation();}
+  if(id==='docs')       renderDocsPage('');
+  if(id==='training')   renderTrainingPage();
 }
 
 // ── DUPLICATE PLAN ────────────────────────────────────────────────────
@@ -5412,6 +5576,586 @@ function _rotLoadAndTag(){
   _ROTATIONS.forEach(function(rot){_tagRotationalMember(rot.memberName,true);});
 }
 
+
+// ═══════════════════════════════════════════════════════════════
+// MEMBER DOCUMENTS & PROFILE SYSTEM
+// ═══════════════════════════════════════════════════════════════
+
+// Document types with icons and expiry tracking
+var DOC_TYPES = [
+  {key:'emiratesId',   label:'Emirates ID',    icon:'🪪', hasExpiry:true},
+  {key:'passport',     label:'Passport',        icon:'📘', hasExpiry:true},
+  {key:'visa',         label:'UAE Visa',        icon:'🛂', hasExpiry:true},
+  {key:'drivingLic',   label:'Driving Licence', icon:'🚗', hasExpiry:true},
+  {key:'tradeLic',     label:'Trade Licence',   icon:'📋', hasExpiry:true},
+  {key:'noc',          label:'NOC Letter',      icon:'📄', hasExpiry:true},
+  {key:'medFitness',   label:'Medical Fitness', icon:'🏥', hasExpiry:true},
+  {key:'workPermit',   label:'Work Permit',     icon:'📃', hasExpiry:true},
+  {key:'cert1',        label:'Certificate',     icon:'🏅', hasExpiry:false},
+  {key:'cert2',        label:'Certificate 2',   icon:'🏅', hasExpiry:false},
+];
+
+function getMemberDocs(memberId){
+  try{var d=localStorage.getItem('tdm_docs_'+memberId);return d?JSON.parse(d):{};}catch(e){return{};}
+}
+function saveMemberDocs(memberId,docs){
+  try{localStorage.setItem('tdm_docs_'+memberId,JSON.stringify(docs));}catch(e){}
+}
+function getMemberProfile(memberId){
+  try{var d=localStorage.getItem('tdm_prof_'+memberId);return d?JSON.parse(d):{};}catch(e){return{};}
+}
+function saveMemberProfile(memberId,prof){
+  try{localStorage.setItem('tdm_prof_'+memberId,JSON.stringify(prof));}catch(e){}
+}
+
+function docStatus(doc){
+  if(!doc||!doc.number) return 'missing';
+  if(!doc.expiry) return 'ok';
+  var d=new Date(doc.expiry), now=new Date();
+  var days=Math.floor((d-now)/(1000*60*60*24));
+  if(days<0) return 'expired';
+  if(days<=30) return 'expiring';
+  return 'ok';
+}
+
+function renderDocsPage(filter){
+  var searchVal=(filter||'').toLowerCase();
+  var statusFilter=document.getElementById('docsFilter')?document.getElementById('docsFilter').value:'all';
+  var grid=document.getElementById('docsGrid');
+  if(!grid) return;
+
+  // Collect all AVS members (non-Sub Team)
+  var members=[];
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+    tl.members.forEach(function(m){
+      if(m.role!=='Sub Team'&&m.role!=='Driver'){
+        if(!searchVal||m.name.toLowerCase().includes(searchVal)||m.role.toLowerCase().includes(searchVal)){
+          members.push({m:m,cl:cl.name,sec:s.label});
+        }
+      }
+    });
+  });});});
+
+  // Filter by status if needed
+  if(statusFilter!=='all'){
+    members=members.filter(function(item){
+      var docs=getMemberDocs(item.m.id);
+      return DOC_TYPES.some(function(dt){
+        var st=docStatus(docs[dt.key]);
+        if(statusFilter==='missing') return st==='missing';
+        if(statusFilter==='expiring') return st==='expiring';
+        if(statusFilter==='expired') return st==='expired';
+        return false;
+      });
+    });
+  }
+
+  if(!members.length){
+    grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3)"><div style="font-size:32px;margin-bottom:10px">📂</div><div style="font-size:13px;font-weight:600">No members found</div></div>';
+    return;
+  }
+
+  grid.innerHTML='';
+  members.forEach(function(item){
+    var m=item.m;
+    var docs=getMemberDocs(m.id);
+    var prof=getMemberProfile(m.id);
+    var col=RC[m.role]||'#64748B';
+    var initials=m.name.split(' ').map(function(w){return w[0]||'';}).slice(0,2).join('').toUpperCase();
+
+    // Count doc statuses
+    var okCount=0,missingCount=0,expiringCount=0,expiredCount=0;
+    DOC_TYPES.forEach(function(dt){
+      var st=docStatus(docs[dt.key]);
+      if(st==='ok')okCount++;
+      else if(st==='missing')missingCount++;
+      else if(st==='expiring')expiringCount++;
+      else if(st==='expired')expiredCount++;
+    });
+
+    var card=document.createElement('div');
+    card.style.cssText='background:#fff;border:1.5px solid var(--border);border-radius:12px;overflow:hidden;cursor:pointer;transition:border-color .15s,box-shadow .15s;box-shadow:var(--shadow)';
+    card.onmouseenter=function(){this.style.borderColor='#2563EB';this.style.boxShadow='0 4px 16px rgba(37,99,235,.12)';}
+    card.onmouseleave=function(){this.style.borderColor='var(--border)';this.style.boxShadow='var(--shadow)';}
+    card.onclick=function(){openMemberProfile(m.id);}
+
+    var statusBar='';
+    if(expiredCount) statusBar+='<span style="background:#FEE2E2;color:#991B1B;font-size:9px;font-weight:700;padding:1px 7px;border-radius:20px">'+expiredCount+' Expired</span>';
+    if(expiringCount) statusBar+='<span style="background:#FEF3C7;color:#92400E;font-size:9px;font-weight:700;padding:1px 7px;border-radius:20px">'+expiringCount+' Expiring</span>';
+    if(missingCount) statusBar+='<span style="background:#F1F5F9;color:#64748B;font-size:9px;font-weight:700;padding:1px 7px;border-radius:20px">'+missingCount+' Missing</span>';
+
+    var carPlate=prof.carPlate?('<span style="font-family:monospace;font-size:11px;background:#F1F5F9;border:1px solid var(--border);border-radius:4px;padding:2px 8px">🚗 '+prof.carPlate+'</span>'):'';
+
+    card.innerHTML=
+      '<div style="padding:12px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)">'
+        +'<div style="width:40px;height:40px;border-radius:10px;background:'+col+';display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff;flex-shrink:0">'+initials+'</div>'
+        +'<div style="flex:1;min-width:0">'
+          +'<div style="font-size:13px;font-weight:700;color:var(--text)">'+m.name+'</div>'
+          +'<div style="font-size:10px;color:var(--text3)">'+m.role+' &nbsp;·&nbsp; '+item.cl+'</div>'
+        +'</div>'
+        +carPlate+
+      '</div>'
+      +'<div style="padding:10px 14px">'
+        +'<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px">'+
+          DOC_TYPES.slice(0,6).map(function(dt){
+            var st=docStatus(docs[dt.key]);
+            var colors={ok:'#16A34A',expiring:'#D97706',expired:'#DC2626',missing:'#CBD5E1'};
+            return '<span title="'+dt.label+': '+st+'" style="font-size:16px;filter:'+(st==='missing'?'grayscale(1) opacity(.35)':'none')+'">'+dt.icon+'</span>';
+          }).join('')
+        +'</div>'
+        +'<div style="display:flex;gap:4px;flex-wrap:wrap">'+(statusBar||'<span style="background:#D1FAE5;color:#065F46;font-size:9px;font-weight:700;padding:1px 7px;border-radius:20px">✓ '+okCount+' OK</span>')+'</div>'
+      +'</div>';
+    grid.appendChild(card);
+  });
+}
+
+// ── MEMBER PROFILE MODAL ──
+var _profMemberId=null;
+var _profTab='docs';
+
+function openMemberProfile(memberId){
+  _profMemberId=memberId;
+  _profTab='docs';
+  var mf=findMember(memberId);
+  if(!mf){toast('Member not found');return;}
+  var m=mf.m;
+  var box=document.getElementById('mbox');
+  box.className='mbox profile-modal';
+  var col=RC[m.role]||'#64748B';
+  var initials=m.name.split(' ').map(function(w){return w[0]||'';}).slice(0,2).join('').toUpperCase();
+  box.innerHTML=
+    '<div class="profile-hdr">'
+      +'<div class="profile-avatar" style="background:'+col+'">'+initials+'</div>'
+      +'<div class="profile-hdr-info">'
+        +'<div class="profile-hdr-name">'+m.name+'</div>'
+        +'<div class="profile-hdr-role">'+m.role+' &nbsp;·&nbsp; '+mf.cl.name+'</div>'
+        +'<div class="profile-hdr-badges" id="profBadges"></div>'
+      +'</div>'
+      +'<button onclick="closeMod()" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:8px;width:30px;height:30px;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--f)">✕</button>'
+    +'</div>'
+    +'<div class="profile-tabs">'
+      +'<button class="profile-tab active" data-tab="docs" onclick="_switchProfTab(\'docs\',this)">🪪 Documents</button>'
+      +'<button class="profile-tab" data-tab="vehicle" onclick="_switchProfTab(\'vehicle\',this)">🚗 Vehicle</button>'
+      +'<button class="profile-tab" data-tab="certs" onclick="_switchProfTab(\'certs\',this)">🏅 Certificates</button>'
+      +'<button class="profile-tab" data-tab="info" onclick="_switchProfTab(\'info\',this)">👤 Info</button>'
+    +'</div>'
+    +'<div class="profile-body" id="profBody"></div>'
+    +'<div class="pf-save-bar"><button class="mb" onclick="closeMod()">Close</button><button class="mb ok" onclick="_saveProfile()">💾 Save Profile</button></div>';
+  document.getElementById('mbd').classList.add('on');
+  _renderProfTab('docs');
+}
+
+function _switchProfTab(tab,btn){
+  _profTab=tab;
+  document.querySelectorAll('.profile-tab').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  _renderProfTab(tab);
+}
+
+function _renderProfTab(tab){
+  var body=document.getElementById('profBody');
+  if(!body||!_profMemberId) return;
+  var docs=getMemberDocs(_profMemberId);
+  var prof=getMemberProfile(_profMemberId);
+
+  if(tab==='docs'){
+    var html='<div class="doc-grid">';
+    DOC_TYPES.slice(0,8).forEach(function(dt){
+      var doc=docs[dt.key]||{};
+      var st=docStatus(doc);
+      var dotColor={ok:'#22C55E',expiring:'#F59E0B',expired:'#EF4444',missing:'#CBD5E1'}[st];
+      var cls='doc-card'+(st!=='missing'?' has-doc':'')+(st==='expiring'?' expiring':'')+(st==='expired'?' expired':'');
+      html+='<div class="'+cls+'" onclick="_editDoc(\''+dt.key+'\')">'
+        +'<div class="doc-status-dot" style="background:'+dotColor+'"></div>'
+        +'<div class="doc-card-icon">'+dt.icon+'</div>'
+        +'<div class="doc-card-name">'+dt.label+'</div>'
+        +(doc.number?'<div class="doc-card-num">'+escH(doc.number)+'</div>':'<div class="doc-card-num" style="color:var(--text3);font-style:italic">Not added</div>')
+        +(dt.hasExpiry?'<div class="doc-card-exp">'+(doc.expiry?'Exp: '+doc.expiry:(st==='missing'?'—':'No expiry'))+'</div>':'')
+      +'</div>';
+    });
+    html+='</div>';
+    body.innerHTML=html;
+  }
+  else if(tab==='vehicle'){
+    body.innerHTML=
+      '<div class="pf-section-hdr">🚗 Vehicle Details</div>'
+      +'<div class="vehicle-card">'
+        +'<div class="vehicle-row">'
+          +'<div class="vehicle-field"><label>Plate Number</label><input id="vPlate" value="'+escH(prof.carPlate||'')+'" placeholder="e.g. Dubai A 12345"></div>'
+          +'<div class="vehicle-field"><label>Make / Model</label><input id="vModel" value="'+escH(prof.carModel||'')+'" placeholder="e.g. Toyota Camry"></div>'
+        +'</div>'
+        +'<div class="vehicle-row">'
+          +'<div class="vehicle-field"><label>Colour</label><input id="vColor" value="'+escH(prof.carColor||'')+'" placeholder="e.g. White"></div>'
+          +'<div class="vehicle-field"><label>Insurance Expiry</label><input id="vInsExp" type="date" value="'+escH(prof.carInsExpiry||'')+'"></div>'
+        +'</div>'
+        +'<div class="vehicle-row">'
+          +'<div class="vehicle-field"><label>Mulkiya Expiry</label><input id="vMulExp" type="date" value="'+escH(prof.carMulExpiry||'')+'"></div>'
+          +'<div class="vehicle-field"><label>Notes</label><input id="vNotes" value="'+escH(prof.carNotes||'')+'" placeholder="Any notes…"></div>'
+        +'</div>'
+      +'</div>';
+  }
+  else if(tab==='certs'){
+    var certList=prof.certs||[];
+    var html='<div class="pf-section-hdr">🏅 Certificates &amp; Achievements</div>';
+    certList.forEach(function(c,i){
+      html+='<div style="display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end;margin-bottom:8px;padding:10px;background:#F8FAFC;border-radius:8px;border:1px solid var(--border)">'
+        +'<div class="pf-field"><label>Certificate Name</label><input value="'+escH(c.name||'')+'" oninput="_updateCert('+i+',\'name\',this.value)"></div>'
+        +'<div class="pf-field"><label>Issued By / Date</label><input value="'+escH(c.issuer||'')+'" oninput="_updateCert('+i+',\'issuer\',this.value)" placeholder="e.g. Honeywell 2024"></div>'
+        +'<button onclick="_removeCert('+i+')" style="padding:7px 10px;background:var(--red-l);color:var(--red);border:1px solid #FECACA;border-radius:6px;cursor:pointer;font-size:12px;font-family:var(--f)">✕</button>'
+      +'</div>';
+    });
+    html+='<button onclick="_addCert()" style="width:100%;padding:10px;border:1.5px dashed var(--border2);border-radius:8px;background:transparent;color:var(--text3);cursor:pointer;font-family:var(--f);font-size:12px;transition:all .15s" onmouseover="this.style.borderColor=\'#2563EB\';this.style.color=\'#2563EB\'" onmouseout="this.style.borderColor=\'var(--border2)\';this.style.color=\'var(--text3)\'">+ Add Certificate</button>';
+    body.innerHTML=html;
+  }
+  else if(tab==='info'){
+    body.innerHTML=
+      '<div class="pf-section-hdr">👤 Personal Info</div>'
+      +'<div class="pf-row">'
+        +'<div class="pf-field"><label>Mobile</label><input id="pMobile" value="'+escH(prof.mobile||'')+'" placeholder="e.g. 050 123 4567"></div>'
+        +'<div class="pf-field"><label>Email</label><input id="pEmail" type="email" value="'+escH(prof.email||'')+'" placeholder="name@company.com"></div>'
+      +'</div>'
+      +'<div class="pf-row">'
+        +'<div class="pf-field"><label>Nationality</label><input id="pNat" value="'+escH(prof.nationality||'')+'" placeholder="e.g. Indian"></div>'
+        +'<div class="pf-field"><label>Date of Birth</label><input id="pDob" type="date" value="'+escH(prof.dob||'')+'"></div>'
+      +'</div>'
+      +'<div class="pf-section-hdr">📋 Employment</div>'
+      +'<div class="pf-row">'
+        +'<div class="pf-field"><label>Employee ID</label><input id="pEmpId" value="'+escH(prof.empId||'')+'" placeholder="e.g. AVS-0042"></div>'
+        +'<div class="pf-field"><label>Join Date</label><input id="pJoin" type="date" value="'+escH(prof.joinDate||'')+'"></div>'
+      +'</div>'
+      +'<div class="pf-row">'
+        +'<div class="pf-field"><label>Emergency Contact</label><input id="pEmContact" value="'+escH(prof.emergencyContact||'')+'" placeholder="Name — Phone"></div>'
+        +'<div class="pf-field"><label>Bank / IBAN</label><input id="pIban" value="'+escH(prof.iban||'')+'" placeholder="IBAN (last 4 digits safe)"></div>'
+      +'</div>';
+  }
+}
+
+function _editDoc(docKey){
+  var docs=getMemberDocs(_profMemberId);
+  var doc=docs[docKey]||{};
+  var dt=DOC_TYPES.find(function(d){return d.key===docKey;})||{label:docKey,hasExpiry:true};
+  var html='<h3 style="margin-bottom:16px">'+dt.icon+' '+dt.label+'</h3>'
+    +'<div class="doc-edit-form">'
+      +'<div class="pf-field"><label>Document Number</label><input id="docNum" value="'+escH(doc.number||'')+'" placeholder="ID / Passport number…"></div>'
+      +(dt.hasExpiry?'<div class="pf-field"><label>Expiry Date</label><input id="docExp" type="date" value="'+escH(doc.expiry||'')+'"></div>':'<div></div>')
+      +'<div class="pf-field" style="grid-column:1/-1"><label>Notes</label><input id="docNote" value="'+escH(doc.notes||'')+'" placeholder="Any notes…"></div>'
+    +'</div>'
+    +'<div class="mbtns">'
+      +'<button class="mb" onclick="_renderProfTab(\'docs\')">← Back</button>'
+      +'<button class="mb danger" onclick="_clearDoc(\''+docKey+'\')">Clear</button>'
+      +'<button class="mb ok" onclick="_saveDoc(\''+docKey+'\')">Save</button>'
+    +'</div>';
+  document.getElementById('profBody').innerHTML=html;
+  setTimeout(function(){var el=document.getElementById('docNum');if(el)el.focus();},30);
+}
+function _saveDoc(docKey){
+  var docs=getMemberDocs(_profMemberId);
+  docs[docKey]={
+    number:(document.getElementById('docNum')||{}).value||'',
+    expiry:(document.getElementById('docExp')||{}).value||'',
+    notes:(document.getElementById('docNote')||{}).value||''
+  };
+  saveMemberDocs(_profMemberId,docs);
+  _renderProfTab('docs');
+  toast('Document saved');
+}
+function _clearDoc(docKey){
+  var docs=getMemberDocs(_profMemberId);
+  delete docs[docKey];
+  saveMemberDocs(_profMemberId,docs);
+  _renderProfTab('docs');
+  toast('Document cleared');
+}
+
+function _addCert(){
+  var prof=getMemberProfile(_profMemberId);
+  if(!prof.certs) prof.certs=[];
+  prof.certs.push({name:'',issuer:''});
+  saveMemberProfile(_profMemberId,prof);
+  _renderProfTab('certs');
+}
+function _removeCert(idx){
+  var prof=getMemberProfile(_profMemberId);
+  if(prof.certs) prof.certs.splice(idx,1);
+  saveMemberProfile(_profMemberId,prof);
+  _renderProfTab('certs');
+}
+function _updateCert(idx,field,val){
+  var prof=getMemberProfile(_profMemberId);
+  if(prof.certs&&prof.certs[idx]) prof.certs[idx][field]=val;
+  saveMemberProfile(_profMemberId,prof);
+}
+
+function _saveProfile(){
+  var prof=getMemberProfile(_profMemberId);
+  // collect vehicle
+  ['carPlate','carModel','carColor','carInsExpiry','carMulExpiry','carNotes'].forEach(function(k,i){
+    var ids=['vPlate','vModel','vColor','vInsExp','vMulExp','vNotes'];
+    var el=document.getElementById(ids[i]);if(el) prof[k]=el.value;
+  });
+  // collect info
+  ['mobile','email','nationality','dob','empId','joinDate','emergencyContact','iban'].forEach(function(k,i){
+    var ids=['pMobile','pEmail','pNat','pDob','pEmpId','pJoin','pEmContact','pIban'];
+    var el=document.getElementById(ids[i]);if(el) prof[k]=el.value;
+  });
+  saveMemberProfile(_profMemberId,prof);
+  toast('Profile saved ✓');
+}
+
+// ── Add "View Profile" to card context menu ──
+function openMemberProfileFromMenu(mid){
+  _closeMenu();
+  setTimeout(function(){openMemberProfile(mid);},80);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// TRAINING PLAN SYSTEM
+// ═══════════════════════════════════════════════════════════════
+
+var TRAINING_LEVELS=['L1','L2','L3','OEM'];
+var TRAINING_SYSTEMS=['HVAC','Fire Alarm','BMS','Access Control','CCTV','Plumbing','Electrical','Lift/Elevator','Generator','Chiller','AHU','ELV'];
+
+function getTrainingSessions(){try{return JSON.parse(localStorage.getItem('tdm_training')||'[]');}catch(e){return[];}}
+function saveTrainingSessions(a){try{localStorage.setItem('tdm_training',JSON.stringify(a));}catch(e){}}
+function getMemberQual(memberId){try{return JSON.parse(localStorage.getItem('tdm_qual_'+memberId)||'{}');}catch(e){return{};}}
+function saveMemberQual(memberId,q){try{localStorage.setItem('tdm_qual_'+memberId,JSON.stringify(q));}catch(e){}}
+
+function getAVSMembers(){
+  var members=[];
+  SECS.forEach(function(s){s.clusters.forEach(function(cl){cl.teams.forEach(function(tl){
+    tl.members.forEach(function(m){
+      if(m.role!=='Sub Team'&&m.role!=='Driver'&&m.role!=='QC'&&m.role!=='Planning'){
+        if(!members.find(function(x){return x.id===m.id;}))
+          members.push({id:m.id,name:m.name,role:m.role,cl:cl.name,sec:s.label});
+      }
+    });
+  });});});
+  return members;
+}
+
+function renderTrainingPage(){
+  // Populate section filter
+  var secFilter=document.getElementById('tpFilterSec');
+  if(secFilter&&secFilter.options.length===1){
+    SECS.forEach(function(s){
+      var o=document.createElement('option');o.value=s.id;o.textContent=s.label;
+      secFilter.appendChild(o);
+    });
+  }
+
+  var lvlFilter=document.getElementById('tpFilterLvl')?document.getElementById('tpFilterLvl').value:'all';
+  var secVal=secFilter?secFilter.value:'all';
+
+  var members=getAVSMembers().filter(function(m){
+    return secVal==='all'||SECS.find(function(s){return s.id===secVal&&s.clusters.some(function(cl){return cl.name===m.cl;});});
+  });
+
+  // ── Qualification Matrix ──
+  var matrix=document.getElementById('tpMatrix');
+  if(matrix){
+    var cols=['Member','Role'].concat(TRAINING_SYSTEMS.slice(0,6));
+    var colW=['150px','90px'].concat(TRAINING_SYSTEMS.slice(0,6).map(function(){return '1fr';}));
+    var gridStyle='grid-template-columns:'+colW.join(' ');
+    var hdrHTML='<div class="tp-matrix-hdr" style="'+gridStyle+'">';
+    cols.forEach(function(c){hdrHTML+='<div>'+c+'</div>';});
+    hdrHTML+='</div>';
+
+    var rowsHTML='';
+    members.slice(0,20).forEach(function(mem){
+      var qual=getMemberQual(mem.id);
+      rowsHTML+='<div class="tp-row" style="'+gridStyle+'">';
+      rowsHTML+='<div class="tp-cell"><div><div class="tp-member-name">'+escH(mem.name)+'</div><div class="tp-member-role">'+mem.cl+'</div></div></div>';
+      rowsHTML+='<div class="tp-cell"><span class="lvl-badge lvl-none" style="font-size:9px">'+mem.role.split(' ')[0]+'</span></div>';
+      TRAINING_SYSTEMS.slice(0,6).forEach(function(sys){
+        var lvl=qual[sys]||'none';
+        var cls='lvl-badge lvl-'+(lvl==='none'?'none':lvl);
+        rowsHTML+='<div class="tp-cell" onclick="_cycleQual(\''+mem.id+'\',\''+sys+'\')" style="cursor:pointer" title="Click to update: '+mem.name+' — '+sys+'">'
+          +'<span class="'+cls+'">'+( lvl==='none'?'—':lvl)+'</span>'
+        +'</div>';
+      });
+      rowsHTML+='</div>';
+    });
+    matrix.innerHTML=hdrHTML+rowsHTML;
+  }
+
+  // ── Training Sessions ──
+  var sessions=getTrainingSessions();
+  if(lvlFilter!=='all') sessions=sessions.filter(function(s){return s.level===lvlFilter;});
+  var sessDiv=document.getElementById('tpSessions');
+  if(!sessDiv) return;
+
+  if(!sessions.length){
+    sessDiv.innerHTML='<div style="text-align:center;padding:40px;color:var(--text3)"><div style="font-size:32px;margin-bottom:10px">🎓</div><div style="font-size:13px;font-weight:600;margin-bottom:8px">No training sessions yet</div><div style="font-size:12px;margin-bottom:16px">Create training sessions, assign attendees, and track qualification progress</div><button onclick="openAddTrainingModal()" style="padding:9px 22px;background:#2563EB;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--f)">+ Add First Session</button></div>';
+    return;
+  }
+
+  sessDiv.innerHTML='';
+  sessions.slice().reverse().forEach(function(sess,ri){
+    var i=sessions.length-1-ri;
+    var lvlCls='lvl-badge lvl-'+sess.level;
+    var stCls='ts-badge ts-'+sess.status;
+    var card=document.createElement('div');card.className='tr-card';
+    var attendeeHTML=sess.attendees?sess.attendees.map(function(a){
+      var resultCol={pass:'#16A34A',fail:'#DC2626',pending:'#64748B'}[a.result]||'#64748B';
+      var qualIcon=a.promoted?'⬆':'';
+      return '<div class="tr-attendee">'
+        +'<div class="tr-attendee-name">'+escH(a.name)+'</div>'
+        +'<span class="ts-badge ts-'+(a.result==='pass'?'qualified':a.result==='fail'?'failed':'scheduled')+'" style="font-size:8.5px">'+( a.result==='pass'?'✓ Pass':a.result==='fail'?'✗ Fail':'Pending')+qualIcon+'</span>'
+      +'</div>';
+    }).join(''):'';
+
+    card.innerHTML=
+      '<div class="tr-card-hdr">'
+        +'<span class="'+lvlCls+'">'+sess.level+'</span>'
+        +'<div class="tr-card-title">'+escH(sess.system)+' Training</div>'
+        +'<span class="'+stCls+'">'+sess.status+'</span>'
+        +'<button onclick="_deleteSession('+i+')" style="margin-left:8px;background:none;border:none;color:var(--text3);cursor:pointer;font-size:14px;font-family:var(--f)" title="Delete">✕</button>'
+      +'</div>'
+      +'<div class="tr-meta-grid">'
+        +'<div class="tr-meta-item"><div class="tr-meta-label">📅 Date</div><div class="tr-meta-val">'+escH(sess.date||'—')+'</div></div>'
+        +'<div class="tr-meta-item"><div class="tr-meta-label">🕐 Time</div><div class="tr-meta-val">'+escH(sess.time||'—')+'</div></div>'
+        +'<div class="tr-meta-item"><div class="tr-meta-label">📍 Site / Location</div><div class="tr-meta-val">'+escH(sess.site||'—')+'</div></div>'
+        +'<div class="tr-meta-item"><div class="tr-meta-label">👨‍🏫 Trainer</div><div class="tr-meta-val">'+escH(sess.trainer||'—')+'</div></div>'
+        +'<div class="tr-meta-item"><div class="tr-meta-label">🔧 System</div><div class="tr-meta-val">'+escH(sess.system||'—')+'</div></div>'
+        +'<div class="tr-meta-item"><div class="tr-meta-label">👥 Attendees</div><div class="tr-meta-val">'+(sess.attendees?sess.attendees.length:0)+' members</div></div>'
+      +'</div>'
+      +(attendeeHTML?'<div class="tr-attendees">'+attendeeHTML+'</div>':'')
+      +'<div style="margin-top:10px;display:flex;gap:6px">'
+        +'<button onclick="openEditSessionModal('+i+')" style="font-size:11px;padding:4px 12px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;font-family:var(--f)">✎ Edit</button>'
+        +'<button onclick="openMarkResultsModal('+i+')" style="font-size:11px;padding:4px 12px;border:1px solid #BFDBFE;border-radius:6px;background:#EFF6FF;color:#1D4ED8;cursor:pointer;font-family:var(--f)">📝 Mark Results</button>'
+      +'</div>';
+    sessDiv.appendChild(card);
+  });
+}
+
+function _cycleQual(memberId,system){
+  var qual=getMemberQual(memberId);
+  var levels=['none','L1','L2','L3','OEM'];
+  var cur=qual[system]||'none';
+  var next=levels[(levels.indexOf(cur)+1)%levels.length];
+  qual[system]=next;
+  saveMemberQual(memberId,qual);
+  renderTrainingPage();
+  var mem=getAVSMembers().find(function(m){return m.id===memberId;});
+  toast((mem?mem.name:memberId)+' — '+system+': '+(next==='none'?'Cleared':next)+' ✓');
+}
+
+function openAddTrainingModal(existingIdx){
+  var sess=existingIdx!==undefined?getTrainingSessions()[existingIdx]:{};
+  var members=getAVSMembers();
+  var sysOpts=TRAINING_SYSTEMS.map(function(s){return '<option value="'+s+'"'+(sess.system===s?' selected':'')+'>'+s+'</option>';}).join('');
+  var memChecks=members.map(function(m){
+    var attending=sess.attendees&&sess.attendees.some(function(a){return a.id===m.id;});
+    return '<label style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;cursor:pointer;font-size:11.5px;background:'+(attending?'#EFF6FF':'#F8FAFC')+';border:1px solid '+(attending?'#BFDBFE':'var(--border)')+'">'
+      +'<input type="checkbox" class="tr-mem-cb" value="'+m.id+'" data-name="'+escH(m.name)+'" '+(attending?'checked':'')+'>'
+      +'<strong>'+escH(m.name)+'</strong><span style="color:var(--text3);font-size:10px">'+m.role+'</span>'
+    +'</label>';
+  }).join('');
+
+  document.getElementById('mbox').className='mbox';
+  document.getElementById('mbox').innerHTML=
+    '<h3>'+(existingIdx!==undefined?'Edit':'Add')+' Training Session</h3>'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">'
+      +'<div class="pf-field"><label>Level</label><select id="trLevel" class="msel"><option value="L1"'+(sess.level==='L1'?' selected':'')+'>L1 — Basic / Internal</option><option value="L2"'+(sess.level==='L2'?' selected':'')+'>L2 — Intermediate</option><option value="L3"'+(sess.level==='L3'?' selected':'')+'>L3 — Advanced</option><option value="OEM"'+(sess.level==='OEM'?' selected':'')+'>OEM — Manufacturer</option></select></div>'
+      +'<div class="pf-field"><label>System / Subject</label><select id="trSystem" class="msel">'+sysOpts+'</select></div>'
+      +'<div class="pf-field"><label>Trainer Name</label><input class="minp" id="trTrainer" value="'+escH(sess.trainer||'')+'" placeholder="e.g. Ahmed Al Farsi"></div>'
+      +'<div class="pf-field"><label>Site / Location</label><input class="minp" id="trSite" value="'+escH(sess.site||'')+'" placeholder="e.g. HAZ Main Office"></div>'
+      +'<div class="pf-field"><label>Date</label><input class="minp" type="date" id="trDate" value="'+escH(sess.date||new Date().toISOString().slice(0,10))+'"></div>'
+      +'<div class="pf-field"><label>Time</label><input class="minp" type="time" id="trTime" value="'+escH(sess.time||'09:00')+'"></div>'
+      +'<div class="pf-field"><label>Status</label><select id="trStatus" class="msel"><option value="scheduled">Scheduled</option><option value="ongoing">Ongoing</option><option value="completed"'+(sess.status==='completed'?' selected':'')+'>Completed</option></select></div>'
+      +'<div class="pf-field"><label>Notes</label><input class="minp" id="trNotes" value="'+escH(sess.notes||'')+'" placeholder="Optional notes…"></div>'
+    +'</div>'
+    +'<div class="mrow"><label style="font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em">Select Attendees (AVS Members Only)</label>'
+    +'<div style="display:flex;flex-wrap:wrap;gap:5px;max-height:180px;overflow-y:auto;padding:8px;background:#F8FAFC;border-radius:8px;border:1px solid var(--border);margin-top:6px">'+memChecks+'</div></div>'
+    +'<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button><button class="mb ok" onclick="_saveTrainingSession('+(existingIdx!==undefined?existingIdx:'null')+')">Save Session</button></div>';
+  document.getElementById('mbd').classList.add('on');
+}
+
+function openEditSessionModal(idx){openAddTrainingModal(idx);}
+
+function _saveTrainingSession(existingIdx){
+  var sessions=getTrainingSessions();
+  var attendeeEls=document.querySelectorAll('.tr-mem-cb:checked');
+  var attendees=Array.from(attendeeEls).map(function(el){
+    var existing=existingIdx!==null&&sessions[existingIdx]&&sessions[existingIdx].attendees&&sessions[existingIdx].attendees.find(function(a){return a.id===el.value;});
+    return {id:el.value,name:el.dataset.name,result:existing?existing.result:'pending',promoted:existing?existing.promoted:false};
+  });
+  var newSess={
+    level:document.getElementById('trLevel').value,
+    system:document.getElementById('trSystem').value,
+    trainer:document.getElementById('trTrainer').value,
+    site:document.getElementById('trSite').value,
+    date:document.getElementById('trDate').value,
+    time:document.getElementById('trTime').value,
+    status:document.getElementById('trStatus').value,
+    notes:document.getElementById('trNotes').value,
+    attendees:attendees,
+    created:new Date().toISOString()
+  };
+  if(existingIdx!==null&&existingIdx!==undefined) sessions[existingIdx]=newSess;
+  else sessions.push(newSess);
+  saveTrainingSessions(sessions);
+  closeMod();renderTrainingPage();
+  toast('Training session saved ✓');
+}
+
+function openMarkResultsModal(idx){
+  var sessions=getTrainingSessions();
+  var sess=sessions[idx];
+  if(!sess||!sess.attendees||!sess.attendees.length){toast('No attendees in this session');return;}
+  var rows=sess.attendees.map(function(a,ai){
+    return '<div style="display:flex;align-items:center;gap:10px;padding:8px;background:#F8FAFC;border-radius:8px;border:1px solid var(--border);margin-bottom:6px">'
+      +'<div style="flex:1;font-weight:600;font-size:12px">'+escH(a.name)+'</div>'
+      +'<select data-ai="'+ai+'" class="res-sel msel" style="width:120px;font-size:11px">'
+        +'<option value="pending"'+(a.result==='pending'?' selected':'')+'>⏳ Pending</option>'
+        +'<option value="pass"'+(a.result==='pass'?' selected':'')+'>✓ Pass</option>'
+        +'<option value="fail"'+(a.result==='fail'?' selected':'')+'>✗ Fail</option>'
+      +'</select>'
+      +'<label style="display:flex;align-items:center;gap:4px;font-size:11px;cursor:pointer">'
+        +'<input type="checkbox" data-ai="'+ai+'" class="prom-cb" '+(a.promoted?'checked':'')+'>Promote ⬆</label>'
+    +'</div>';
+  }).join('');
+
+  document.getElementById('mbox').className='mbox';
+  document.getElementById('mbox').innerHTML=
+    '<h3>📝 Mark Results — '+escH(sess.system)+' ('+sess.level+')</h3>'
+    +'<div style="margin:14px 0">'+rows+'</div>'
+    +'<div class="mbtns"><button class="mb" onclick="closeMod()">Cancel</button>'
+    +'<button class="mb ok" onclick="_saveResults('+idx+')">Save Results</button></div>';
+  document.getElementById('mbd').classList.add('on');
+}
+
+function _saveResults(idx){
+  var sessions=getTrainingSessions();
+  var sess=sessions[idx];
+  document.querySelectorAll('.res-sel').forEach(function(sel){
+    var ai=parseInt(sel.dataset.ai);
+    var promCb=document.querySelector('.prom-cb[data-ai="'+ai+'"]');
+    sess.attendees[ai].result=sel.value;
+    sess.attendees[ai].promoted=promCb?promCb.checked:false;
+    // Auto-update qualification if pass
+    if(sel.value==='pass'){
+      var qual=getMemberQual(sess.attendees[ai].id);
+      var curLvl=qual[sess.system]||'none';
+      var levels=['none','L1','L2','L3','OEM'];
+      var sessIdx=levels.indexOf(sess.level);
+      if(sessIdx>levels.indexOf(curLvl)){qual[sess.system]=sess.level;saveMemberQual(sess.attendees[ai].id,qual);}
+    }
+  });
+  sess.status='completed';
+  saveTrainingSessions(sessions);
+  closeMod();renderTrainingPage();
+  toast('Results saved — qualifications updated ✓');
+}
+
+function _deleteSession(idx){
+  if(!confirm('Delete this training session?')) return;
+  var sessions=getTrainingSessions();
+  sessions.splice(idx,1);
+  saveTrainingSessions(sessions);
+  renderTrainingPage();
+  toast('Session deleted');
+}
 
 </script>
 </body>
